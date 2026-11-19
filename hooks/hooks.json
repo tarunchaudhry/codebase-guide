@@ -1,0 +1,29 @@
+{
+  "description": "SessionStart: one-line notice when this repo has no codebase guide or it is stale (never generates; opt out with CODEBASE_GUIDE_NOTICE=0). PreToolUse: auto-approve only explain-agent JSON writes to .codebase-guide/explain/out/ and this plugin's own CLI commands.",
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/session-notice.mjs\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Write|Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/scripts/permissions.mjs\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}

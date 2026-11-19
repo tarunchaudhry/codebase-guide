@@ -1,0 +1,2512 @@
+{
+ "edges": [
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "shop/signals.py"
+    }
+   ],
+   "id": "calls:py:class:shop/models.py#Order->py:function:shop/signals.py#notify_order",
+   "inferred": true,
+   "kind": "calls",
+   "source": "py:class:shop/models.py#Order",
+   "target": "py:function:shop/signals.py#notify_order",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 10,
+     "path": "shop/management/commands/import_products.py"
+    }
+   ],
+   "id": "calls:py:method:shop/management/commands/import_products.py#Command.handle->py:class:shop/models.py#Product",
+   "kind": "calls",
+   "source": "py:method:shop/management/commands/import_products.py#Command.handle",
+   "target": "py:class:shop/models.py#Product",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 14,
+     "path": "manage.py"
+    }
+   ],
+   "id": "calls:py:module:manage.py->py:function:manage.py#main",
+   "kind": "calls",
+   "source": "py:module:manage.py",
+   "target": "py:function:manage.py#main",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "shop/management/commands/import_products.py"
+    }
+   ],
+   "id": "handles:config:script:shop/management/commands/import_products.py#import_products->py:method:shop/management/commands/import_products.py#Command.handle",
+   "kind": "handles",
+   "source": "config:script:shop/management/commands/import_products.py#import_products",
+   "target": "py:method:shop/management/commands/import_products.py#Command.handle",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 7,
+     "path": "accounts/urls.py"
+    }
+   ],
+   "id": "handles:py:endpoint:accounts/urls.py#accounts/login/->py:class:accounts/views.py#LoginView",
+   "kind": "handles",
+   "source": "py:endpoint:accounts/urls.py#accounts/login/",
+   "target": "py:class:accounts/views.py#LoginView",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "accounts/urls.py"
+    }
+   ],
+   "id": "handles:py:endpoint:accounts/urls.py#accounts/profile/->py:function:accounts/views.py#profile",
+   "kind": "handles",
+   "source": "py:endpoint:accounts/urls.py#accounts/profile/",
+   "target": "py:function:accounts/views.py#profile",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 10,
+     "path": "config/urls.py"
+    }
+   ],
+   "id": "handles:py:endpoint:config/urls.py#health/->py:function:accounts/views.py#health",
+   "kind": "handles",
+   "source": "py:endpoint:config/urls.py#health/",
+   "target": "py:function:accounts/views.py#health",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 7,
+     "path": "shop/legacy_urls.py"
+    }
+   ],
+   "id": "handles:py:endpoint:shop/legacy_urls.py#api/legacy/products/(?P<pk>\\d+)/->py:function:shop/views.py#product_detail",
+   "kind": "handles",
+   "source": "py:endpoint:shop/legacy_urls.py#api/legacy/products/(?P<pk>\\d+)/",
+   "target": "py:function:shop/views.py#product_detail",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "shop/legacy_urls.py"
+    }
+   ],
+   "id": "handles:py:endpoint:shop/legacy_urls.py#api/legacy/products/->py:class:shop/views.py#ProductListView",
+   "kind": "handles",
+   "source": "py:endpoint:shop/legacy_urls.py#api/legacy/products/",
+   "target": "py:class:shop/views.py#ProductListView",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 7,
+     "path": "shop/urls.py"
+    }
+   ],
+   "id": "handles:py:endpoint:shop/urls.py#DELETE products/<pk>/->py:class:shop/views.py#ProductViewSet",
+   "kind": "handles",
+   "source": "py:endpoint:shop/urls.py#DELETE products/<pk>/",
+   "target": "py:class:shop/views.py#ProductViewSet",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "shop/urls.py"
+    }
+   ],
+   "id": "handles:py:endpoint:shop/urls.py#GET orders/->py:method:shop/views.py#OrderViewSet.list",
+   "kind": "handles",
+   "source": "py:endpoint:shop/urls.py#GET orders/",
+   "target": "py:method:shop/views.py#OrderViewSet.list",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "shop/urls.py"
+    }
+   ],
+   "id": "handles:py:endpoint:shop/urls.py#GET orders/<pk>/->py:class:shop/views.py#OrderViewSet",
+   "kind": "handles",
+   "source": "py:endpoint:shop/urls.py#GET orders/<pk>/",
+   "target": "py:class:shop/views.py#OrderViewSet",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 7,
+     "path": "shop/urls.py"
+    }
+   ],
+   "id": "handles:py:endpoint:shop/urls.py#GET products/->py:class:shop/views.py#ProductViewSet",
+   "kind": "handles",
+   "source": "py:endpoint:shop/urls.py#GET products/",
+   "target": "py:class:shop/views.py#ProductViewSet",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 7,
+     "path": "shop/urls.py"
+    }
+   ],
+   "id": "handles:py:endpoint:shop/urls.py#GET products/<pk>/->py:class:shop/views.py#ProductViewSet",
+   "kind": "handles",
+   "source": "py:endpoint:shop/urls.py#GET products/<pk>/",
+   "target": "py:class:shop/views.py#ProductViewSet",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 7,
+     "path": "shop/urls.py"
+    }
+   ],
+   "id": "handles:py:endpoint:shop/urls.py#PATCH products/<pk>/->py:class:shop/views.py#ProductViewSet",
+   "kind": "handles",
+   "source": "py:endpoint:shop/urls.py#PATCH products/<pk>/",
+   "target": "py:class:shop/views.py#ProductViewSet",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 7,
+     "path": "shop/urls.py"
+    }
+   ],
+   "id": "handles:py:endpoint:shop/urls.py#POST products/->py:class:shop/views.py#ProductViewSet",
+   "kind": "handles",
+   "source": "py:endpoint:shop/urls.py#POST products/",
+   "target": "py:class:shop/views.py#ProductViewSet",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 7,
+     "path": "shop/urls.py"
+    }
+   ],
+   "id": "handles:py:endpoint:shop/urls.py#POST products/<pk>/restock/->py:method:shop/views.py#ProductViewSet.restock",
+   "kind": "handles",
+   "source": "py:endpoint:shop/urls.py#POST products/<pk>/restock/",
+   "target": "py:method:shop/views.py#ProductViewSet.restock",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 7,
+     "path": "shop/urls.py"
+    }
+   ],
+   "id": "handles:py:endpoint:shop/urls.py#PUT products/<pk>/->py:class:shop/views.py#ProductViewSet",
+   "kind": "handles",
+   "source": "py:endpoint:shop/urls.py#PUT products/<pk>/",
+   "target": "py:class:shop/views.py#ProductViewSet",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "accounts/urls.py"
+    }
+   ],
+   "id": "imports:py:module:accounts/urls.py->py:module:accounts/views.py",
+   "kind": "imports",
+   "source": "py:module:accounts/urls.py",
+   "target": "py:module:accounts/views.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 5,
+     "path": "accounts/views.py"
+    }
+   ],
+   "id": "imports:py:module:accounts/views.py->py:module:accounts/models.py",
+   "kind": "imports",
+   "source": "py:module:accounts/views.py",
+   "target": "py:module:accounts/models.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 4,
+     "path": "config/urls.py"
+    }
+   ],
+   "id": "imports:py:module:config/urls.py->py:module:accounts/views.py",
+   "kind": "imports",
+   "source": "py:module:config/urls.py",
+   "target": "py:module:accounts/views.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "shop/apps.py"
+    }
+   ],
+   "id": "imports:py:module:shop/apps.py->py:module:shop/signals.py",
+   "kind": "imports",
+   "source": "py:module:shop/apps.py",
+   "target": "py:module:shop/signals.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "shop/legacy_urls.py"
+    }
+   ],
+   "id": "imports:py:module:shop/legacy_urls.py->py:module:shop/views.py",
+   "kind": "imports",
+   "source": "py:module:shop/legacy_urls.py",
+   "target": "py:module:shop/views.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "shop/management/commands/import_products.py"
+    }
+   ],
+   "id": "imports:py:module:shop/management/commands/import_products.py->py:module:shop/models.py",
+   "kind": "imports",
+   "source": "py:module:shop/management/commands/import_products.py",
+   "target": "py:module:shop/models.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "shop/serializers.py"
+    }
+   ],
+   "id": "imports:py:module:shop/serializers.py->py:module:shop/models.py",
+   "kind": "imports",
+   "source": "py:module:shop/serializers.py",
+   "target": "py:module:shop/models.py",
+   "weight": 2
+  },
+  {
+   "evidence": [
+    {
+     "line": 4,
+     "path": "shop/signals.py"
+    }
+   ],
+   "id": "imports:py:module:shop/signals.py->py:module:shop/models.py",
+   "kind": "imports",
+   "source": "py:module:shop/signals.py",
+   "target": "py:module:shop/models.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 4,
+     "path": "shop/urls.py"
+    }
+   ],
+   "id": "imports:py:module:shop/urls.py->py:module:shop/views.py",
+   "kind": "imports",
+   "source": "py:module:shop/urls.py",
+   "target": "py:module:shop/views.py",
+   "weight": 2
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "shop/views.py"
+    }
+   ],
+   "id": "imports:py:module:shop/views.py->py:module:shop/models.py",
+   "kind": "imports",
+   "source": "py:module:shop/views.py",
+   "target": "py:module:shop/models.py",
+   "weight": 2
+  },
+  {
+   "evidence": [
+    {
+     "line": 7,
+     "path": "shop/views.py"
+    }
+   ],
+   "id": "imports:py:module:shop/views.py->py:module:shop/permissions.py",
+   "kind": "imports",
+   "source": "py:module:shop/views.py",
+   "target": "py:module:shop/permissions.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "shop/views.py"
+    }
+   ],
+   "id": "imports:py:module:shop/views.py->py:module:shop/serializers.py",
+   "kind": "imports",
+   "source": "py:module:shop/views.py",
+   "target": "py:module:shop/serializers.py",
+   "weight": 2
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "config/settings.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:accounts/urls.py#accounts/login/->py:class:accounts/middleware.py#AuditMiddleware",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 2
+   },
+   "source": "py:endpoint:accounts/urls.py#accounts/login/",
+   "target": "py:class:accounts/middleware.py#AuditMiddleware",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "config/settings.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:accounts/urls.py#accounts/profile/->py:class:accounts/middleware.py#AuditMiddleware",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 2
+   },
+   "source": "py:endpoint:accounts/urls.py#accounts/profile/",
+   "target": "py:class:accounts/middleware.py#AuditMiddleware",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "config/settings.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:config/urls.py#health/->py:class:accounts/middleware.py#AuditMiddleware",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 2
+   },
+   "source": "py:endpoint:config/urls.py#health/",
+   "target": "py:class:accounts/middleware.py#AuditMiddleware",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "config/settings.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:shop/legacy_urls.py#api/legacy/products/(?P<pk>\\d+)/->py:class:accounts/middleware.py#AuditMiddleware",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 2
+   },
+   "source": "py:endpoint:shop/legacy_urls.py#api/legacy/products/(?P<pk>\\d+)/",
+   "target": "py:class:accounts/middleware.py#AuditMiddleware",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "config/settings.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:shop/legacy_urls.py#api/legacy/products/->py:class:accounts/middleware.py#AuditMiddleware",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 2
+   },
+   "source": "py:endpoint:shop/legacy_urls.py#api/legacy/products/",
+   "target": "py:class:accounts/middleware.py#AuditMiddleware",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "config/settings.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:shop/urls.py#DELETE products/<pk>/->py:class:accounts/middleware.py#AuditMiddleware",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 2
+   },
+   "source": "py:endpoint:shop/urls.py#DELETE products/<pk>/",
+   "target": "py:class:accounts/middleware.py#AuditMiddleware",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 11,
+     "path": "shop/views.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:shop/urls.py#DELETE products/<pk>/->py:class:shop/permissions.py#IsStaffOrReadOnly",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 4
+   },
+   "source": "py:endpoint:shop/urls.py#DELETE products/<pk>/",
+   "target": "py:class:shop/permissions.py#IsStaffOrReadOnly",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "config/settings.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:shop/urls.py#GET orders/->py:class:accounts/middleware.py#AuditMiddleware",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 2
+   },
+   "source": "py:endpoint:shop/urls.py#GET orders/",
+   "target": "py:class:accounts/middleware.py#AuditMiddleware",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "config/settings.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:shop/urls.py#GET orders/<pk>/->py:class:accounts/middleware.py#AuditMiddleware",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 2
+   },
+   "source": "py:endpoint:shop/urls.py#GET orders/<pk>/",
+   "target": "py:class:accounts/middleware.py#AuditMiddleware",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "config/settings.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:shop/urls.py#GET products/->py:class:accounts/middleware.py#AuditMiddleware",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 2
+   },
+   "source": "py:endpoint:shop/urls.py#GET products/",
+   "target": "py:class:accounts/middleware.py#AuditMiddleware",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 11,
+     "path": "shop/views.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:shop/urls.py#GET products/->py:class:shop/permissions.py#IsStaffOrReadOnly",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 4
+   },
+   "source": "py:endpoint:shop/urls.py#GET products/",
+   "target": "py:class:shop/permissions.py#IsStaffOrReadOnly",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "config/settings.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:shop/urls.py#GET products/<pk>/->py:class:accounts/middleware.py#AuditMiddleware",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 2
+   },
+   "source": "py:endpoint:shop/urls.py#GET products/<pk>/",
+   "target": "py:class:accounts/middleware.py#AuditMiddleware",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 11,
+     "path": "shop/views.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:shop/urls.py#GET products/<pk>/->py:class:shop/permissions.py#IsStaffOrReadOnly",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 4
+   },
+   "source": "py:endpoint:shop/urls.py#GET products/<pk>/",
+   "target": "py:class:shop/permissions.py#IsStaffOrReadOnly",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "config/settings.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:shop/urls.py#PATCH products/<pk>/->py:class:accounts/middleware.py#AuditMiddleware",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 2
+   },
+   "source": "py:endpoint:shop/urls.py#PATCH products/<pk>/",
+   "target": "py:class:accounts/middleware.py#AuditMiddleware",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 11,
+     "path": "shop/views.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:shop/urls.py#PATCH products/<pk>/->py:class:shop/permissions.py#IsStaffOrReadOnly",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 4
+   },
+   "source": "py:endpoint:shop/urls.py#PATCH products/<pk>/",
+   "target": "py:class:shop/permissions.py#IsStaffOrReadOnly",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "config/settings.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:shop/urls.py#POST products/->py:class:accounts/middleware.py#AuditMiddleware",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 2
+   },
+   "source": "py:endpoint:shop/urls.py#POST products/",
+   "target": "py:class:accounts/middleware.py#AuditMiddleware",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 11,
+     "path": "shop/views.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:shop/urls.py#POST products/->py:class:shop/permissions.py#IsStaffOrReadOnly",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 4
+   },
+   "source": "py:endpoint:shop/urls.py#POST products/",
+   "target": "py:class:shop/permissions.py#IsStaffOrReadOnly",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "config/settings.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:shop/urls.py#POST products/<pk>/restock/->py:class:accounts/middleware.py#AuditMiddleware",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 2
+   },
+   "source": "py:endpoint:shop/urls.py#POST products/<pk>/restock/",
+   "target": "py:class:accounts/middleware.py#AuditMiddleware",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 11,
+     "path": "shop/views.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:shop/urls.py#POST products/<pk>/restock/->py:class:shop/permissions.py#IsStaffOrReadOnly",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 4
+   },
+   "source": "py:endpoint:shop/urls.py#POST products/<pk>/restock/",
+   "target": "py:class:shop/permissions.py#IsStaffOrReadOnly",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "config/settings.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:shop/urls.py#PUT products/<pk>/->py:class:accounts/middleware.py#AuditMiddleware",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 2
+   },
+   "source": "py:endpoint:shop/urls.py#PUT products/<pk>/",
+   "target": "py:class:accounts/middleware.py#AuditMiddleware",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 11,
+     "path": "shop/views.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:shop/urls.py#PUT products/<pk>/->py:class:shop/permissions.py#IsStaffOrReadOnly",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 4
+   },
+   "source": "py:endpoint:shop/urls.py#PUT products/<pk>/",
+   "target": "py:class:shop/permissions.py#IsStaffOrReadOnly",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 24,
+     "path": "shop/models.py"
+    }
+   ],
+   "id": "model-relation:py:class:shop/models.py#Order->py:class:accounts/models.py#Customer",
+   "kind": "model-relation",
+   "source": "py:class:shop/models.py#Order",
+   "target": "py:class:accounts/models.py#Customer",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 28,
+     "path": "shop/models.py"
+    }
+   ],
+   "id": "model-relation:py:class:shop/models.py#OrderItem->py:class:shop/models.py#Order",
+   "kind": "model-relation",
+   "source": "py:class:shop/models.py#OrderItem",
+   "target": "py:class:shop/models.py#Order",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 29,
+     "path": "shop/models.py"
+    }
+   ],
+   "id": "model-relation:py:class:shop/models.py#OrderItem->py:class:shop/models.py#Product",
+   "kind": "model-relation",
+   "source": "py:class:shop/models.py#OrderItem",
+   "target": "py:class:shop/models.py#Product",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 19,
+     "path": "shop/models.py"
+    }
+   ],
+   "id": "model-relation:py:class:shop/models.py#Product->py:class:shop/models.py#Category",
+   "kind": "model-relation",
+   "source": "py:class:shop/models.py#Product",
+   "target": "py:class:shop/models.py#Category",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 9,
+     "path": "config/urls.py"
+    }
+   ],
+   "id": "mounts:py:route-group:config/urls.py->py:route-group:accounts/urls.py",
+   "kind": "mounts",
+   "meta": {
+    "prefix": "accounts/"
+   },
+   "source": "py:route-group:config/urls.py",
+   "target": "py:route-group:accounts/urls.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "config/urls.py"
+    }
+   ],
+   "id": "mounts:py:route-group:config/urls.py->py:route-group:shop/urls.py",
+   "kind": "mounts",
+   "meta": {
+    "prefix": "api/"
+   },
+   "source": "py:route-group:config/urls.py",
+   "target": "py:route-group:shop/urls.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 12,
+     "path": "shop/urls.py"
+    }
+   ],
+   "id": "mounts:py:route-group:shop/urls.py->py:route-group:shop/legacy_urls.py",
+   "kind": "mounts",
+   "meta": {
+    "prefix": "legacy/"
+   },
+   "source": "py:route-group:shop/urls.py",
+   "target": "py:route-group:shop/legacy_urls.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 11,
+     "path": "shop/urls.py"
+    }
+   ],
+   "id": "mounts:py:route-group:shop/urls.py->py:route-group:shop/urls.py#router",
+   "kind": "mounts",
+   "meta": {
+    "prefix": "api/"
+   },
+   "source": "py:route-group:shop/urls.py",
+   "target": "py:route-group:shop/urls.py#router",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 7,
+     "path": "manage.py"
+    }
+   ],
+   "id": "reads-env:py:function:manage.py#main->config:env-var:DJANGO_SETTINGS_MODULE",
+   "kind": "reads-env",
+   "source": "py:function:manage.py#main",
+   "target": "config:env-var:DJANGO_SETTINGS_MODULE",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 4,
+     "path": "config/settings.py"
+    }
+   ],
+   "id": "reads-env:py:module:config/settings.py->config:env-var:DJANGO_DEBUG",
+   "kind": "reads-env",
+   "source": "py:module:config/settings.py",
+   "target": "config:env-var:DJANGO_DEBUG",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "config/settings.py"
+    }
+   ],
+   "id": "reads-env:py:module:config/settings.py->config:env-var:DJANGO_SECRET_KEY",
+   "kind": "reads-env",
+   "source": "py:module:config/settings.py",
+   "target": "config:env-var:DJANGO_SECRET_KEY",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 22,
+     "path": "shop/views.py"
+    },
+    {
+     "line": 23,
+     "path": "shop/views.py"
+    }
+   ],
+   "id": "reads-model:py:class:shop/views.py#OrderViewSet->py:class:shop/models.py#Order",
+   "kind": "reads-model",
+   "source": "py:class:shop/views.py#OrderViewSet",
+   "target": "py:class:shop/models.py#Order",
+   "weight": 2
+  },
+  {
+   "evidence": [
+    {
+     "line": 11,
+     "path": "shop/views.py"
+    },
+    {
+     "line": 12,
+     "path": "shop/views.py"
+    }
+   ],
+   "id": "reads-model:py:class:shop/views.py#ProductViewSet->py:class:shop/models.py#Product",
+   "kind": "reads-model",
+   "source": "py:class:shop/views.py#ProductViewSet",
+   "target": "py:class:shop/models.py#Product",
+   "weight": 2
+  },
+  {
+   "evidence": [
+    {
+     "line": 14,
+     "path": "accounts/views.py"
+    }
+   ],
+   "id": "reads-model:py:function:accounts/views.py#profile->py:class:accounts/models.py#Customer",
+   "kind": "reads-model",
+   "source": "py:function:accounts/views.py#profile",
+   "target": "py:class:accounts/models.py#Customer",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 35,
+     "path": "shop/views.py"
+    }
+   ],
+   "id": "reads-model:py:function:shop/views.py#product_detail->py:class:shop/models.py#Product",
+   "kind": "reads-model",
+   "source": "py:function:shop/views.py#product_detail",
+   "target": "py:class:shop/models.py#Product",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 27,
+     "path": "shop/views.py"
+    }
+   ],
+   "id": "reads-model:py:method:shop/views.py#OrderViewSet.list->py:class:shop/models.py#Order",
+   "kind": "reads-model",
+   "source": "py:method:shop/views.py#OrderViewSet.list",
+   "target": "py:class:shop/models.py#Order",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 18,
+     "path": "shop/views.py"
+    }
+   ],
+   "id": "reads-model:py:method:shop/views.py#ProductViewSet.restock->py:class:shop/models.py#Product",
+   "kind": "reads-model",
+   "source": "py:method:shop/views.py#ProductViewSet.restock",
+   "target": "py:class:shop/models.py#Product",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 12,
+     "path": "shop/serializers.py"
+    }
+   ],
+   "id": "serializes:py:class:shop/serializers.py#OrderSerializer->py:class:shop/models.py#Order",
+   "kind": "serializes",
+   "source": "py:class:shop/serializers.py#OrderSerializer",
+   "target": "py:class:shop/models.py#Order",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "shop/serializers.py"
+    }
+   ],
+   "id": "serializes:py:class:shop/serializers.py#ProductSerializer->py:class:shop/models.py#Product",
+   "kind": "serializes",
+   "source": "py:class:shop/serializers.py#ProductSerializer",
+   "target": "py:class:shop/models.py#Product",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 22,
+     "path": "shop/views.py"
+    }
+   ],
+   "id": "serializes:py:class:shop/views.py#OrderViewSet->py:class:shop/serializers.py#OrderSerializer",
+   "kind": "serializes",
+   "source": "py:class:shop/views.py#OrderViewSet",
+   "target": "py:class:shop/serializers.py#OrderSerializer",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 11,
+     "path": "shop/views.py"
+    }
+   ],
+   "id": "serializes:py:class:shop/views.py#ProductViewSet->py:class:shop/serializers.py#ProductSerializer",
+   "kind": "serializes",
+   "source": "py:class:shop/views.py#ProductViewSet",
+   "target": "py:class:shop/serializers.py#ProductSerializer",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 10,
+     "path": "shop/management/commands/import_products.py"
+    }
+   ],
+   "id": "writes-model:py:method:shop/management/commands/import_products.py#Command.handle->py:class:shop/models.py#Product",
+   "kind": "writes-model",
+   "source": "py:method:shop/management/commands/import_products.py#Command.handle",
+   "target": "py:class:shop/models.py#Product",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 19,
+     "path": "shop/views.py"
+    }
+   ],
+   "id": "writes-model:py:method:shop/views.py#ProductViewSet.restock->py:class:shop/models.py#Product",
+   "kind": "writes-model",
+   "source": "py:method:shop/views.py#ProductViewSet.restock",
+   "target": "py:class:shop/models.py#Product",
+   "weight": 1
+  }
+ ],
+ "nodes": [
+  {
+   "id": "config:env-var:DJANGO_DEBUG",
+   "kind": "env-var",
+   "label": "DJANGO_DEBUG",
+   "lang": "config",
+   "level": 3,
+   "meta": {},
+   "parent": null
+  },
+  {
+   "id": "config:env-var:DJANGO_SECRET_KEY",
+   "kind": "env-var",
+   "label": "DJANGO_SECRET_KEY",
+   "lang": "config",
+   "level": 3,
+   "meta": {},
+   "parent": null
+  },
+  {
+   "id": "config:env-var:DJANGO_SETTINGS_MODULE",
+   "kind": "env-var",
+   "label": "DJANGO_SETTINGS_MODULE",
+   "lang": "config",
+   "level": 3,
+   "meta": {},
+   "parent": null
+  },
+  {
+   "id": "config:script:shop/management/commands/import_products.py#import_products",
+   "kind": "script",
+   "label": "import_products",
+   "lang": "config",
+   "level": 3,
+   "line": 6,
+   "meta": {
+    "role": "management-command",
+    "signature": "python manage.py import_products"
+   },
+   "parent": "py:project:.",
+   "path": "shop/management/commands/import_products.py"
+  },
+  {
+   "endLine": 6,
+   "id": "py:class:accounts/middleware.py#AuditMiddleware",
+   "kind": "class",
+   "label": "AuditMiddleware",
+   "lang": "py",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "exported": true,
+    "loc": 6
+   },
+   "parent": "py:module:accounts/middleware.py",
+   "path": "accounts/middleware.py"
+  },
+  {
+   "endLine": 7,
+   "id": "py:class:accounts/models.py#Customer",
+   "kind": "class",
+   "label": "Customer",
+   "lang": "py",
+   "level": 3,
+   "line": 5,
+   "meta": {
+    "exported": true,
+    "fields": [
+     {
+      "name": "user",
+      "relation": "o2o → external",
+      "type": "OneToOneField"
+     },
+     {
+      "name": "phone",
+      "type": "CharField"
+     }
+    ],
+    "framework": "django",
+    "loc": 3,
+    "role": "model",
+    "signature": "class Customer(models.Model)"
+   },
+   "parent": "py:module:accounts/models.py",
+   "path": "accounts/models.py"
+  },
+  {
+   "endLine": 19,
+   "id": "py:class:accounts/views.py#LoginView",
+   "kind": "class",
+   "label": "LoginView",
+   "lang": "py",
+   "level": 3,
+   "line": 17,
+   "meta": {
+    "exported": true,
+    "framework": "drf",
+    "loc": 3,
+    "role": "view",
+    "signature": "class LoginView(APIView)"
+   },
+   "parent": "py:module:accounts/views.py",
+   "path": "accounts/views.py"
+  },
+  {
+   "endLine": 8,
+   "id": "py:class:shop/apps.py#ShopConfig",
+   "kind": "class",
+   "label": "ShopConfig",
+   "lang": "py",
+   "level": 3,
+   "line": 4,
+   "meta": {
+    "exported": true,
+    "framework": "django",
+    "loc": 5,
+    "role": "app-config",
+    "signature": "class ShopConfig(AppConfig)"
+   },
+   "parent": "py:module:shop/apps.py",
+   "path": "shop/apps.py"
+  },
+  {
+   "endLine": 10,
+   "id": "py:class:shop/management/commands/import_products.py#Command",
+   "kind": "class",
+   "label": "Command",
+   "lang": "py",
+   "level": 3,
+   "line": 6,
+   "meta": {
+    "exported": true,
+    "framework": "django",
+    "loc": 5,
+    "role": "management-command",
+    "signature": "class Command(BaseCommand)"
+   },
+   "parent": "py:module:shop/management/commands/import_products.py",
+   "path": "shop/management/commands/import_products.py"
+  },
+  {
+   "endLine": 12,
+   "id": "py:class:shop/models.py#Category",
+   "kind": "class",
+   "label": "Category",
+   "lang": "py",
+   "level": 3,
+   "line": 11,
+   "meta": {
+    "exported": true,
+    "fields": [
+     {
+      "name": "name",
+      "type": "CharField"
+     }
+    ],
+    "framework": "django",
+    "loc": 2,
+    "role": "model",
+    "signature": "class Category(models.Model)"
+   },
+   "parent": "py:module:shop/models.py",
+   "path": "shop/models.py"
+  },
+  {
+   "endLine": 24,
+   "id": "py:class:shop/models.py#Order",
+   "kind": "class",
+   "label": "Order",
+   "lang": "py",
+   "level": 3,
+   "line": 23,
+   "meta": {
+    "exported": true,
+    "fields": [
+     {
+      "name": "created_at",
+      "type": "DateTimeField"
+     },
+     {
+      "name": "customer",
+      "relation": "fk",
+      "type": "ForeignKey"
+     }
+    ],
+    "framework": "django",
+    "loc": 2,
+    "role": "model",
+    "signature": "class Order(TimeStamped)"
+   },
+   "parent": "py:module:shop/models.py",
+   "path": "shop/models.py"
+  },
+  {
+   "endLine": 30,
+   "id": "py:class:shop/models.py#OrderItem",
+   "kind": "class",
+   "label": "OrderItem",
+   "lang": "py",
+   "level": 3,
+   "line": 27,
+   "meta": {
+    "exported": true,
+    "fields": [
+     {
+      "name": "order",
+      "relation": "fk",
+      "type": "ForeignKey"
+     },
+     {
+      "name": "product",
+      "relation": "fk",
+      "type": "ForeignKey"
+     },
+     {
+      "name": "quantity",
+      "type": "PositiveIntegerField"
+     }
+    ],
+    "framework": "django",
+    "loc": 4,
+    "role": "model",
+    "signature": "class OrderItem(models.Model)"
+   },
+   "parent": "py:module:shop/models.py",
+   "path": "shop/models.py"
+  },
+  {
+   "endLine": 20,
+   "id": "py:class:shop/models.py#Product",
+   "kind": "class",
+   "label": "Product",
+   "lang": "py",
+   "level": 3,
+   "line": 15,
+   "meta": {
+    "doc": "Something we sell.",
+    "exported": true,
+    "fields": [
+     {
+      "name": "created_at",
+      "type": "DateTimeField"
+     },
+     {
+      "name": "name",
+      "type": "CharField"
+     },
+     {
+      "name": "category",
+      "relation": "fk",
+      "type": "ForeignKey"
+     },
+     {
+      "name": "stock",
+      "type": "IntegerField"
+     }
+    ],
+    "framework": "django",
+    "loc": 6,
+    "role": "model",
+    "signature": "class Product(TimeStamped)"
+   },
+   "parent": "py:module:shop/models.py",
+   "path": "shop/models.py"
+  },
+  {
+   "endLine": 8,
+   "id": "py:class:shop/models.py#TimeStamped",
+   "kind": "class",
+   "label": "TimeStamped",
+   "lang": "py",
+   "level": 3,
+   "line": 4,
+   "meta": {
+    "exported": true,
+    "fields": [
+     {
+      "name": "created_at",
+      "type": "DateTimeField"
+     }
+    ],
+    "framework": "django",
+    "loc": 5,
+    "role": "abstract-model",
+    "signature": "class TimeStamped(models.Model)"
+   },
+   "parent": "py:module:shop/models.py",
+   "path": "shop/models.py"
+  },
+  {
+   "endLine": 6,
+   "id": "py:class:shop/permissions.py#IsStaffOrReadOnly",
+   "kind": "class",
+   "label": "IsStaffOrReadOnly",
+   "lang": "py",
+   "level": 3,
+   "line": 4,
+   "meta": {
+    "exported": true,
+    "loc": 3,
+    "signature": "class IsStaffOrReadOnly(BasePermission)"
+   },
+   "parent": "py:module:shop/permissions.py",
+   "path": "shop/permissions.py"
+  },
+  {
+   "endLine": 17,
+   "id": "py:class:shop/serializers.py#OrderSerializer",
+   "kind": "class",
+   "label": "OrderSerializer",
+   "lang": "py",
+   "level": 3,
+   "line": 12,
+   "meta": {
+    "exported": true,
+    "fields": [
+     {
+      "name": "total",
+      "type": "IntegerField"
+     },
+     {
+      "name": "id",
+      "type": "model field"
+     },
+     {
+      "name": "customer",
+      "type": "model field"
+     }
+    ],
+    "framework": "drf",
+    "loc": 6,
+    "role": "serializer",
+    "signature": "class OrderSerializer(serializers.ModelSerializer)"
+   },
+   "parent": "py:module:shop/serializers.py",
+   "path": "shop/serializers.py"
+  },
+  {
+   "endLine": 9,
+   "id": "py:class:shop/serializers.py#ProductSerializer",
+   "kind": "class",
+   "label": "ProductSerializer",
+   "lang": "py",
+   "level": 3,
+   "line": 6,
+   "meta": {
+    "exported": true,
+    "fields": [
+     {
+      "name": "id",
+      "type": "model field"
+     },
+     {
+      "name": "name",
+      "type": "model field"
+     },
+     {
+      "name": "category",
+      "type": "model field"
+     },
+     {
+      "name": "stock",
+      "type": "model field"
+     }
+    ],
+    "framework": "drf",
+    "loc": 4,
+    "role": "serializer",
+    "signature": "class ProductSerializer(serializers.ModelSerializer)"
+   },
+   "parent": "py:module:shop/serializers.py",
+   "path": "shop/serializers.py"
+  },
+  {
+   "endLine": 27,
+   "id": "py:class:shop/views.py#OrderViewSet",
+   "kind": "class",
+   "label": "OrderViewSet",
+   "lang": "py",
+   "level": 3,
+   "line": 22,
+   "meta": {
+    "exported": true,
+    "framework": "drf",
+    "loc": 6,
+    "role": "viewset",
+    "signature": "class OrderViewSet(viewsets.ReadOnlyModelViewSet)"
+   },
+   "parent": "py:module:shop/views.py",
+   "path": "shop/views.py"
+  },
+  {
+   "endLine": 31,
+   "id": "py:class:shop/views.py#ProductListView",
+   "kind": "class",
+   "label": "ProductListView",
+   "lang": "py",
+   "level": 3,
+   "line": 30,
+   "meta": {
+    "exported": true,
+    "framework": "django",
+    "loc": 2,
+    "role": "view",
+    "signature": "class ProductListView(ListView)"
+   },
+   "parent": "py:module:shop/views.py",
+   "path": "shop/views.py"
+  },
+  {
+   "endLine": 19,
+   "id": "py:class:shop/views.py#ProductViewSet",
+   "kind": "class",
+   "label": "ProductViewSet",
+   "lang": "py",
+   "level": 3,
+   "line": 11,
+   "meta": {
+    "exported": true,
+    "framework": "drf",
+    "loc": 9,
+    "role": "viewset",
+    "signature": "class ProductViewSet(viewsets.ModelViewSet)"
+   },
+   "parent": "py:module:shop/views.py",
+   "path": "shop/views.py"
+  },
+  {
+   "id": "py:endpoint:accounts/urls.py#accounts/login/",
+   "kind": "endpoint",
+   "label": "POST /accounts/login/",
+   "lang": "py",
+   "level": 3,
+   "line": 7,
+   "meta": {
+    "framework": "django",
+    "http": {
+     "fullPath": "/accounts/login/",
+     "methods": [
+      "POST"
+     ],
+     "pathTemplate": "login/"
+    }
+   },
+   "parent": "py:route-group:accounts/urls.py",
+   "path": "accounts/urls.py"
+  },
+  {
+   "id": "py:endpoint:accounts/urls.py#accounts/profile/",
+   "kind": "endpoint",
+   "label": "GET|POST /accounts/profile/",
+   "lang": "py",
+   "level": 3,
+   "line": 6,
+   "meta": {
+    "framework": "django",
+    "http": {
+     "fullPath": "/accounts/profile/",
+     "methods": [
+      "GET",
+      "POST"
+     ],
+     "pathTemplate": "profile/"
+    }
+   },
+   "parent": "py:route-group:accounts/urls.py",
+   "path": "accounts/urls.py"
+  },
+  {
+   "id": "py:endpoint:config/urls.py#health/",
+   "kind": "endpoint",
+   "label": "* /health/",
+   "lang": "py",
+   "level": 3,
+   "line": 10,
+   "meta": {
+    "framework": "django",
+    "http": {
+     "fullPath": "/health/",
+     "methods": [
+      "*"
+     ],
+     "pathTemplate": "health/"
+    }
+   },
+   "parent": "py:route-group:config/urls.py",
+   "path": "config/urls.py"
+  },
+  {
+   "id": "py:endpoint:shop/legacy_urls.py#api/legacy/products/",
+   "kind": "endpoint",
+   "label": "GET /api/legacy/products/",
+   "lang": "py",
+   "level": 3,
+   "line": 6,
+   "meta": {
+    "framework": "django",
+    "http": {
+     "fullPath": "/api/legacy/products/",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "products/"
+    }
+   },
+   "parent": "py:route-group:shop/legacy_urls.py",
+   "path": "shop/legacy_urls.py"
+  },
+  {
+   "id": "py:endpoint:shop/legacy_urls.py#api/legacy/products/(?P<pk>\\d+)/",
+   "kind": "endpoint",
+   "label": "* /api/legacy/products/(?P<pk>\\d+)/",
+   "lang": "py",
+   "level": 3,
+   "line": 7,
+   "meta": {
+    "framework": "django",
+    "http": {
+     "fullPath": "/api/legacy/products/(?P<pk>\\d+)/",
+     "methods": [
+      "*"
+     ],
+     "pathTemplate": "products/(?P<pk>\\d+)/"
+    }
+   },
+   "parent": "py:route-group:shop/legacy_urls.py",
+   "path": "shop/legacy_urls.py"
+  },
+  {
+   "id": "py:endpoint:shop/urls.py#DELETE products/<pk>/",
+   "kind": "endpoint",
+   "label": "DELETE /api/products/<pk>/",
+   "lang": "py",
+   "level": 3,
+   "line": 7,
+   "meta": {
+    "framework": "drf",
+    "http": {
+     "fullPath": "/api/products/<pk>/",
+     "methods": [
+      "DELETE"
+     ],
+     "pathTemplate": "products/<pk>/"
+    }
+   },
+   "parent": "py:route-group:shop/urls.py#router",
+   "path": "shop/urls.py"
+  },
+  {
+   "id": "py:endpoint:shop/urls.py#GET orders/",
+   "kind": "endpoint",
+   "label": "GET /api/orders/",
+   "lang": "py",
+   "level": 3,
+   "line": 8,
+   "meta": {
+    "framework": "drf",
+    "http": {
+     "fullPath": "/api/orders/",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "orders/"
+    }
+   },
+   "parent": "py:route-group:shop/urls.py#router",
+   "path": "shop/urls.py"
+  },
+  {
+   "id": "py:endpoint:shop/urls.py#GET orders/<pk>/",
+   "kind": "endpoint",
+   "label": "GET /api/orders/<pk>/",
+   "lang": "py",
+   "level": 3,
+   "line": 8,
+   "meta": {
+    "framework": "drf",
+    "http": {
+     "fullPath": "/api/orders/<pk>/",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "orders/<pk>/"
+    }
+   },
+   "parent": "py:route-group:shop/urls.py#router",
+   "path": "shop/urls.py"
+  },
+  {
+   "id": "py:endpoint:shop/urls.py#GET products/",
+   "kind": "endpoint",
+   "label": "GET /api/products/",
+   "lang": "py",
+   "level": 3,
+   "line": 7,
+   "meta": {
+    "framework": "drf",
+    "http": {
+     "fullPath": "/api/products/",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "products/"
+    }
+   },
+   "parent": "py:route-group:shop/urls.py#router",
+   "path": "shop/urls.py"
+  },
+  {
+   "id": "py:endpoint:shop/urls.py#GET products/<pk>/",
+   "kind": "endpoint",
+   "label": "GET /api/products/<pk>/",
+   "lang": "py",
+   "level": 3,
+   "line": 7,
+   "meta": {
+    "framework": "drf",
+    "http": {
+     "fullPath": "/api/products/<pk>/",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "products/<pk>/"
+    }
+   },
+   "parent": "py:route-group:shop/urls.py#router",
+   "path": "shop/urls.py"
+  },
+  {
+   "id": "py:endpoint:shop/urls.py#PATCH products/<pk>/",
+   "kind": "endpoint",
+   "label": "PATCH /api/products/<pk>/",
+   "lang": "py",
+   "level": 3,
+   "line": 7,
+   "meta": {
+    "framework": "drf",
+    "http": {
+     "fullPath": "/api/products/<pk>/",
+     "methods": [
+      "PATCH"
+     ],
+     "pathTemplate": "products/<pk>/"
+    }
+   },
+   "parent": "py:route-group:shop/urls.py#router",
+   "path": "shop/urls.py"
+  },
+  {
+   "id": "py:endpoint:shop/urls.py#POST products/",
+   "kind": "endpoint",
+   "label": "POST /api/products/",
+   "lang": "py",
+   "level": 3,
+   "line": 7,
+   "meta": {
+    "framework": "drf",
+    "http": {
+     "fullPath": "/api/products/",
+     "methods": [
+      "POST"
+     ],
+     "pathTemplate": "products/"
+    }
+   },
+   "parent": "py:route-group:shop/urls.py#router",
+   "path": "shop/urls.py"
+  },
+  {
+   "id": "py:endpoint:shop/urls.py#POST products/<pk>/restock/",
+   "kind": "endpoint",
+   "label": "POST /api/products/<pk>/restock/",
+   "lang": "py",
+   "level": 3,
+   "line": 7,
+   "meta": {
+    "framework": "drf",
+    "http": {
+     "fullPath": "/api/products/<pk>/restock/",
+     "methods": [
+      "POST"
+     ],
+     "pathTemplate": "products/<pk>/restock/"
+    }
+   },
+   "parent": "py:route-group:shop/urls.py#router",
+   "path": "shop/urls.py"
+  },
+  {
+   "id": "py:endpoint:shop/urls.py#PUT products/<pk>/",
+   "kind": "endpoint",
+   "label": "PUT /api/products/<pk>/",
+   "lang": "py",
+   "level": 3,
+   "line": 7,
+   "meta": {
+    "framework": "drf",
+    "http": {
+     "fullPath": "/api/products/<pk>/",
+     "methods": [
+      "PUT"
+     ],
+     "pathTemplate": "products/<pk>/"
+    }
+   },
+   "parent": "py:route-group:shop/urls.py#router",
+   "path": "shop/urls.py"
+  },
+  {
+   "endLine": 9,
+   "id": "py:function:accounts/views.py#health",
+   "kind": "function",
+   "label": "health",
+   "lang": "py",
+   "level": 3,
+   "line": 8,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "framework": "django",
+    "loc": 2,
+    "role": "view",
+    "signature": "def health(request)"
+   },
+   "parent": "py:module:accounts/views.py",
+   "path": "accounts/views.py"
+  },
+  {
+   "endLine": 14,
+   "id": "py:function:accounts/views.py#profile",
+   "kind": "function",
+   "label": "profile",
+   "lang": "py",
+   "level": 3,
+   "line": 13,
+   "meta": {
+    "complexity": 1,
+    "decorators": [
+     "rest_framework.decorators.api_view"
+    ],
+    "exported": true,
+    "framework": "drf",
+    "loc": 2,
+    "role": "view",
+    "signature": "def profile(request)"
+   },
+   "parent": "py:module:accounts/views.py",
+   "path": "accounts/views.py"
+  },
+  {
+   "endLine": 10,
+   "id": "py:function:manage.py#main",
+   "kind": "function",
+   "label": "main",
+   "lang": "py",
+   "level": 3,
+   "line": 6,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 5,
+    "signature": "def main()"
+   },
+   "parent": "py:module:manage.py",
+   "path": "manage.py"
+  },
+  {
+   "endLine": 10,
+   "id": "py:function:shop/signals.py#notify_order",
+   "kind": "function",
+   "label": "notify_order",
+   "lang": "py",
+   "level": 3,
+   "line": 8,
+   "meta": {
+    "complexity": 2,
+    "decorators": [
+     "django.dispatch.receiver"
+    ],
+    "exported": true,
+    "framework": "django",
+    "loc": 3,
+    "role": "signal-handler",
+    "signature": "def notify_order(sender, instance, created, **kwargs)"
+   },
+   "parent": "py:module:shop/signals.py",
+   "path": "shop/signals.py"
+  },
+  {
+   "endLine": 35,
+   "id": "py:function:shop/views.py#product_detail",
+   "kind": "function",
+   "label": "product_detail",
+   "lang": "py",
+   "level": 3,
+   "line": 34,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "framework": "django",
+    "loc": 2,
+    "role": "view",
+    "signature": "def product_detail(request, pk)"
+   },
+   "parent": "py:module:shop/views.py",
+   "path": "shop/views.py"
+  },
+  {
+   "endLine": 6,
+   "id": "py:method:accounts/middleware.py#AuditMiddleware.__call__",
+   "kind": "method",
+   "label": "AuditMiddleware.__call__",
+   "lang": "py",
+   "level": 3,
+   "line": 5,
+   "meta": {
+    "complexity": 1,
+    "loc": 2,
+    "signature": "def __call__(self, request)"
+   },
+   "parent": "py:class:accounts/middleware.py#AuditMiddleware",
+   "path": "accounts/middleware.py"
+  },
+  {
+   "endLine": 3,
+   "id": "py:method:accounts/middleware.py#AuditMiddleware.__init__",
+   "kind": "method",
+   "label": "AuditMiddleware.__init__",
+   "lang": "py",
+   "level": 3,
+   "line": 2,
+   "meta": {
+    "complexity": 1,
+    "loc": 2,
+    "signature": "def __init__(self, get_response)"
+   },
+   "parent": "py:class:accounts/middleware.py#AuditMiddleware",
+   "path": "accounts/middleware.py"
+  },
+  {
+   "endLine": 19,
+   "id": "py:method:accounts/views.py#LoginView.post",
+   "kind": "method",
+   "label": "LoginView.post",
+   "lang": "py",
+   "level": 3,
+   "line": 18,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 2,
+    "signature": "def post(self, request)"
+   },
+   "parent": "py:class:accounts/views.py#LoginView",
+   "path": "accounts/views.py"
+  },
+  {
+   "endLine": 8,
+   "id": "py:method:shop/apps.py#ShopConfig.ready",
+   "kind": "method",
+   "label": "ShopConfig.ready",
+   "lang": "py",
+   "level": 3,
+   "line": 7,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 2,
+    "signature": "def ready(self)"
+   },
+   "parent": "py:class:shop/apps.py#ShopConfig",
+   "path": "shop/apps.py"
+  },
+  {
+   "endLine": 10,
+   "id": "py:method:shop/management/commands/import_products.py#Command.handle",
+   "kind": "method",
+   "label": "Command.handle",
+   "lang": "py",
+   "level": 3,
+   "line": 9,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 2,
+    "signature": "def handle(self, *args, **options)"
+   },
+   "parent": "py:class:shop/management/commands/import_products.py#Command",
+   "path": "shop/management/commands/import_products.py"
+  },
+  {
+   "endLine": 6,
+   "id": "py:method:shop/permissions.py#IsStaffOrReadOnly.has_permission",
+   "kind": "method",
+   "label": "IsStaffOrReadOnly.has_permission",
+   "lang": "py",
+   "level": 3,
+   "line": 5,
+   "meta": {
+    "complexity": 2,
+    "exported": true,
+    "loc": 2,
+    "signature": "def has_permission(self, request, view)"
+   },
+   "parent": "py:class:shop/permissions.py#IsStaffOrReadOnly",
+   "path": "shop/permissions.py"
+  },
+  {
+   "endLine": 27,
+   "id": "py:method:shop/views.py#OrderViewSet.list",
+   "kind": "method",
+   "label": "OrderViewSet.list",
+   "lang": "py",
+   "level": 3,
+   "line": 26,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 2,
+    "signature": "def list(self, request)"
+   },
+   "parent": "py:class:shop/views.py#OrderViewSet",
+   "path": "shop/views.py"
+  },
+  {
+   "endLine": 19,
+   "id": "py:method:shop/views.py#ProductViewSet.restock",
+   "kind": "method",
+   "label": "ProductViewSet.restock",
+   "lang": "py",
+   "level": 3,
+   "line": 17,
+   "meta": {
+    "complexity": 1,
+    "decorators": [
+     "rest_framework.decorators.action"
+    ],
+    "exported": true,
+    "loc": 3,
+    "signature": "def restock(self, request, pk=None)"
+   },
+   "parent": "py:class:shop/views.py#ProductViewSet",
+   "path": "shop/views.py"
+  },
+  {
+   "id": "py:module-group:.",
+   "kind": "module-group",
+   "label": "06-django-drf",
+   "lang": "py",
+   "level": 1,
+   "meta": {},
+   "parent": "py:project:.",
+   "path": "."
+  },
+  {
+   "id": "py:module-group:accounts",
+   "kind": "module-group",
+   "label": "accounts",
+   "lang": "py",
+   "level": 1,
+   "meta": {
+    "framework": "django",
+    "role": "django-app"
+   },
+   "parent": "py:module-group:.",
+   "path": "accounts"
+  },
+  {
+   "id": "py:module-group:config",
+   "kind": "module-group",
+   "label": "config",
+   "lang": "py",
+   "level": 1,
+   "meta": {},
+   "parent": "py:module-group:.",
+   "path": "config"
+  },
+  {
+   "id": "py:module-group:shop",
+   "kind": "module-group",
+   "label": "shop",
+   "lang": "py",
+   "level": 1,
+   "meta": {
+    "framework": "django",
+    "role": "django-app"
+   },
+   "parent": "py:module-group:.",
+   "path": "shop"
+  },
+  {
+   "id": "py:module-group:shop/management",
+   "kind": "module-group",
+   "label": "management",
+   "lang": "py",
+   "level": 1,
+   "meta": {},
+   "parent": "py:module-group:shop",
+   "path": "shop/management"
+  },
+  {
+   "id": "py:module-group:shop/management/commands",
+   "kind": "module-group",
+   "label": "commands",
+   "lang": "py",
+   "level": 1,
+   "meta": {},
+   "parent": "py:module-group:shop/management",
+   "path": "shop/management/commands"
+  },
+  {
+   "endLine": 1,
+   "id": "py:module:accounts/__init__.py",
+   "kind": "module",
+   "label": "__init__.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 0,
+    "loc": 0
+   },
+   "parent": "py:module-group:accounts",
+   "path": "accounts/__init__.py"
+  },
+  {
+   "endLine": 6,
+   "id": "py:module:accounts/middleware.py",
+   "kind": "module",
+   "label": "middleware.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 5
+   },
+   "parent": "py:module-group:accounts",
+   "path": "accounts/middleware.py"
+  },
+  {
+   "endLine": 7,
+   "id": "py:module:accounts/models.py",
+   "kind": "module",
+   "label": "models.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 5
+   },
+   "parent": "py:module-group:accounts",
+   "path": "accounts/models.py"
+  },
+  {
+   "endLine": 8,
+   "id": "py:module:accounts/urls.py",
+   "kind": "module",
+   "label": "urls.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 0,
+    "framework": "django",
+    "loc": 6,
+    "role": "urlconf"
+   },
+   "parent": "py:module-group:accounts",
+   "path": "accounts/urls.py"
+  },
+  {
+   "endLine": 19,
+   "id": "py:module:accounts/views.py",
+   "kind": "module",
+   "label": "views.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 3,
+    "loc": 12
+   },
+   "parent": "py:module-group:accounts",
+   "path": "accounts/views.py"
+  },
+  {
+   "endLine": 1,
+   "id": "py:module:config/__init__.py",
+   "kind": "module",
+   "label": "__init__.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 0,
+    "loc": 0
+   },
+   "parent": "py:module-group:config",
+   "path": "config/__init__.py"
+  },
+  {
+   "endLine": 21,
+   "id": "py:module:config/settings.py",
+   "kind": "module",
+   "label": "settings.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 0,
+    "framework": "django",
+    "loc": 17,
+    "role": "settings"
+   },
+   "parent": "py:module-group:config",
+   "path": "config/settings.py"
+  },
+  {
+   "endLine": 11,
+   "id": "py:module:config/urls.py",
+   "kind": "module",
+   "label": "urls.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 0,
+    "framework": "django",
+    "loc": 9,
+    "role": "urlconf"
+   },
+   "parent": "py:module-group:config",
+   "path": "config/urls.py"
+  },
+  {
+   "endLine": 14,
+   "id": "py:module:manage.py",
+   "kind": "module",
+   "label": "manage.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 9
+   },
+   "parent": "py:module-group:.",
+   "path": "manage.py"
+  },
+  {
+   "endLine": 1,
+   "id": "py:module:shop/__init__.py",
+   "kind": "module",
+   "label": "__init__.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 0,
+    "loc": 0
+   },
+   "parent": "py:module-group:shop",
+   "path": "shop/__init__.py"
+  },
+  {
+   "endLine": 8,
+   "id": "py:module:shop/apps.py",
+   "kind": "module",
+   "label": "apps.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 5
+   },
+   "parent": "py:module-group:shop",
+   "path": "shop/apps.py"
+  },
+  {
+   "endLine": 8,
+   "id": "py:module:shop/legacy_urls.py",
+   "kind": "module",
+   "label": "legacy_urls.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 0,
+    "framework": "django",
+    "loc": 6,
+    "role": "urlconf"
+   },
+   "parent": "py:module-group:shop",
+   "path": "shop/legacy_urls.py"
+  },
+  {
+   "endLine": 1,
+   "id": "py:module:shop/management/__init__.py",
+   "kind": "module",
+   "label": "__init__.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 0,
+    "loc": 0
+   },
+   "parent": "py:module-group:shop/management",
+   "path": "shop/management/__init__.py"
+  },
+  {
+   "endLine": 1,
+   "id": "py:module:shop/management/commands/__init__.py",
+   "kind": "module",
+   "label": "__init__.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 0,
+    "loc": 0
+   },
+   "parent": "py:module-group:shop/management/commands",
+   "path": "shop/management/commands/__init__.py"
+  },
+  {
+   "endLine": 10,
+   "id": "py:module:shop/management/commands/import_products.py",
+   "kind": "module",
+   "label": "import_products.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 6
+   },
+   "parent": "py:module-group:shop/management/commands",
+   "path": "shop/management/commands/import_products.py"
+  },
+  {
+   "endLine": 30,
+   "id": "py:module:shop/models.py",
+   "kind": "module",
+   "label": "models.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 5,
+    "loc": 18
+   },
+   "parent": "py:module-group:shop",
+   "path": "shop/models.py"
+  },
+  {
+   "endLine": 6,
+   "id": "py:module:shop/permissions.py",
+   "kind": "module",
+   "label": "permissions.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 4
+   },
+   "parent": "py:module-group:shop",
+   "path": "shop/permissions.py"
+  },
+  {
+   "endLine": 17,
+   "id": "py:module:shop/serializers.py",
+   "kind": "module",
+   "label": "serializers.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 2,
+    "loc": 11
+   },
+   "parent": "py:module-group:shop",
+   "path": "shop/serializers.py"
+  },
+  {
+   "endLine": 10,
+   "id": "py:module:shop/signals.py",
+   "kind": "module",
+   "label": "signals.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 7
+   },
+   "parent": "py:module-group:shop",
+   "path": "shop/signals.py"
+  },
+  {
+   "endLine": 13,
+   "id": "py:module:shop/urls.py",
+   "kind": "module",
+   "label": "urls.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 0,
+    "framework": "django",
+    "loc": 10,
+    "role": "urlconf"
+   },
+   "parent": "py:module-group:shop",
+   "path": "shop/urls.py"
+  },
+  {
+   "endLine": 35,
+   "id": "py:module:shop/views.py",
+   "kind": "module",
+   "label": "views.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 4,
+    "loc": 24
+   },
+   "parent": "py:module-group:shop",
+   "path": "shop/views.py"
+  },
+  {
+   "id": "py:project:.",
+   "kind": "project",
+   "label": "06-django-drf",
+   "lang": "py",
+   "level": 0,
+   "meta": {},
+   "parent": null,
+   "path": "."
+  },
+  {
+   "id": "py:route-group:accounts/urls.py",
+   "kind": "route-group",
+   "label": "urls (accounts)",
+   "lang": "py",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "framework": "django",
+    "role": "urlconf"
+   },
+   "parent": "py:module:accounts/urls.py",
+   "path": "accounts/urls.py"
+  },
+  {
+   "id": "py:route-group:config/urls.py",
+   "kind": "route-group",
+   "label": "urls (config)",
+   "lang": "py",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "framework": "django",
+    "role": "urlconf"
+   },
+   "parent": "py:module:config/urls.py",
+   "path": "config/urls.py"
+  },
+  {
+   "id": "py:route-group:shop/legacy_urls.py",
+   "kind": "route-group",
+   "label": "urls (shop)",
+   "lang": "py",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "framework": "django",
+    "role": "urlconf"
+   },
+   "parent": "py:module:shop/legacy_urls.py",
+   "path": "shop/legacy_urls.py"
+  },
+  {
+   "id": "py:route-group:shop/urls.py",
+   "kind": "route-group",
+   "label": "urls (shop)",
+   "lang": "py",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "framework": "django",
+    "role": "urlconf"
+   },
+   "parent": "py:module:shop/urls.py",
+   "path": "shop/urls.py"
+  },
+  {
+   "id": "py:route-group:shop/urls.py#router",
+   "kind": "route-group",
+   "label": "router (drf router, urls.py)",
+   "lang": "py",
+   "level": 3,
+   "line": 6,
+   "meta": {
+    "framework": "drf",
+    "role": "router"
+   },
+   "parent": "py:module:shop/urls.py",
+   "path": "shop/urls.py"
+  }
+ ],
+ "projects": [
+  {
+   "frameworks": [
+    "django",
+    "drf"
+   ],
+   "id": "py:project:.",
+   "lang": "py",
+   "root": "."
+  }
+ ],
+ "repoRoot": "<root>",
+ "stats": {
+  "django.apps": 2,
+  "django.endpoints": 5,
+  "django.externalIncludes": 1,
+  "django.ormUses": 8,
+  "drf.endpoints": 9,
+  "edges.calls": 3,
+  "edges.handles": 15,
+  "edges.imports": 12,
+  "edges.middleware-chain": 21,
+  "edges.model-relation": 4,
+  "edges.mounts": 4,
+  "edges.reads-env": 3,
+  "edges.reads-model": 6,
+  "edges.serializes": 4,
+  "edges.writes-model": 2,
+  "http.externalMiddleware": 35,
+  "nodes.class": 16,
+  "nodes.endpoint": 14,
+  "nodes.env-var": 3,
+  "nodes.function": 5,
+  "nodes.method": 8,
+  "nodes.module": 21,
+  "nodes.module-group": 6,
+  "nodes.project": 1,
+  "nodes.route-group": 5,
+  "nodes.script": 1,
+  "py.callsDynamic": 14,
+  "py.callsExternal": 37,
+  "py.callsResolved": 2,
+  "py.externalImports": 29
+ },
+ "version": 1,
+ "warnings": []
+}

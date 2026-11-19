@@ -1,0 +1,1064 @@
+{
+ "edges": [
+  {
+   "evidence": [
+    {
+     "line": 13,
+     "path": "src/app.ts"
+    }
+   ],
+   "id": "handles:ts:endpoint:src/app.ts#GET /->ts:function:src/app.ts#GET /",
+   "kind": "handles",
+   "source": "ts:endpoint:src/app.ts#GET /",
+   "target": "ts:function:src/app.ts#GET /",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 11,
+     "path": "src/app.ts"
+    }
+   ],
+   "id": "handles:ts:endpoint:src/app.ts#GET /health->ts:function:src/app.ts#GET /health",
+   "kind": "handles",
+   "source": "ts:endpoint:src/app.ts#GET /health",
+   "target": "ts:function:src/app.ts#GET /health",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 5,
+     "path": "src/routes/admin.ts"
+    }
+   ],
+   "id": "handles:ts:endpoint:src/routes/admin.ts#DELETE /:id->ts:function:src/handlers/users.ts#deleteUser",
+   "kind": "handles",
+   "source": "ts:endpoint:src/routes/admin.ts#DELETE /:id",
+   "target": "ts:function:src/handlers/users.ts#deleteUser",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 7,
+     "path": "src/routes/users.ts"
+    }
+   ],
+   "id": "handles:ts:endpoint:src/routes/users.ts#GET /->ts:function:src/handlers/users.ts#listUsers",
+   "kind": "handles",
+   "source": "ts:endpoint:src/routes/users.ts#GET /",
+   "target": "ts:function:src/handlers/users.ts#listUsers",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "src/routes/users.ts"
+    }
+   ],
+   "id": "handles:ts:endpoint:src/routes/users.ts#GET /:id->ts:function:src/handlers/users.ts#getUser",
+   "kind": "handles",
+   "source": "ts:endpoint:src/routes/users.ts#GET /:id",
+   "target": "ts:function:src/handlers/users.ts#getUser",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 9,
+     "path": "src/routes/users.ts"
+    }
+   ],
+   "id": "handles:ts:endpoint:src/routes/users.ts#POST /->ts:function:src/handlers/users.ts#createUser",
+   "kind": "handles",
+   "source": "ts:endpoint:src/routes/users.ts#POST /",
+   "target": "ts:function:src/handlers/users.ts#createUser",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 2,
+     "path": "src/app.ts"
+    }
+   ],
+   "id": "imports:ts:module:src/app.ts->ts:module:src/hooks.ts",
+   "kind": "imports",
+   "source": "ts:module:src/app.ts",
+   "target": "ts:module:src/hooks.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "src/app.ts"
+    }
+   ],
+   "id": "imports:ts:module:src/app.ts->ts:module:src/plugins/auth.ts",
+   "kind": "imports",
+   "source": "ts:module:src/app.ts",
+   "target": "ts:module:src/plugins/auth.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 4,
+     "path": "src/app.ts"
+    }
+   ],
+   "id": "imports:ts:module:src/app.ts->ts:module:src/routes/users.ts",
+   "kind": "imports",
+   "source": "ts:module:src/app.ts",
+   "target": "ts:module:src/routes/users.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 2,
+     "path": "src/routes/admin.ts"
+    }
+   ],
+   "id": "imports:ts:module:src/routes/admin.ts->ts:module:src/handlers/users.ts",
+   "kind": "imports",
+   "source": "ts:module:src/routes/admin.ts",
+   "target": "ts:module:src/handlers/users.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 2,
+     "path": "src/routes/users.ts"
+    }
+   ],
+   "id": "imports:ts:module:src/routes/users.ts->ts:module:src/handlers/users.ts",
+   "kind": "imports",
+   "source": "ts:module:src/routes/users.ts",
+   "target": "ts:module:src/handlers/users.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "src/routes/users.ts"
+    }
+   ],
+   "id": "imports:ts:module:src/routes/users.ts->ts:module:src/routes/admin.ts",
+   "kind": "imports",
+   "source": "ts:module:src/routes/users.ts",
+   "target": "ts:module:src/routes/admin.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "src/server.ts"
+    }
+   ],
+   "id": "imports:ts:module:src/server.ts->ts:module:src/app.ts",
+   "kind": "imports",
+   "source": "ts:module:src/server.ts",
+   "target": "ts:module:src/app.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 7,
+     "path": "src/app.ts"
+    }
+   ],
+   "id": "middleware-chain:ts:endpoint:src/app.ts#GET /->ts:function:src/hooks.ts#logRequest",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 0
+   },
+   "source": "ts:endpoint:src/app.ts#GET /",
+   "target": "ts:function:src/hooks.ts#logRequest",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 7,
+     "path": "src/app.ts"
+    }
+   ],
+   "id": "middleware-chain:ts:endpoint:src/app.ts#GET /health->ts:function:src/hooks.ts#logRequest",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 0
+   },
+   "source": "ts:endpoint:src/app.ts#GET /health",
+   "target": "ts:function:src/hooks.ts#logRequest",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "src/routes/users.ts"
+    }
+   ],
+   "id": "middleware-chain:ts:endpoint:src/routes/admin.ts#DELETE /:id->ts:function:src/handlers/users.ts#requireUser",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 1
+   },
+   "source": "ts:endpoint:src/routes/admin.ts#DELETE /:id",
+   "target": "ts:function:src/handlers/users.ts#requireUser",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 7,
+     "path": "src/app.ts"
+    }
+   ],
+   "id": "middleware-chain:ts:endpoint:src/routes/admin.ts#DELETE /:id->ts:function:src/hooks.ts#logRequest",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 0
+   },
+   "source": "ts:endpoint:src/routes/admin.ts#DELETE /:id",
+   "target": "ts:function:src/hooks.ts#logRequest",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "src/routes/users.ts"
+    }
+   ],
+   "id": "middleware-chain:ts:endpoint:src/routes/users.ts#GET /->ts:function:src/handlers/users.ts#requireUser",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 1
+   },
+   "source": "ts:endpoint:src/routes/users.ts#GET /",
+   "target": "ts:function:src/handlers/users.ts#requireUser",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 7,
+     "path": "src/app.ts"
+    }
+   ],
+   "id": "middleware-chain:ts:endpoint:src/routes/users.ts#GET /->ts:function:src/hooks.ts#logRequest",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 0
+   },
+   "source": "ts:endpoint:src/routes/users.ts#GET /",
+   "target": "ts:function:src/hooks.ts#logRequest",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "src/routes/users.ts"
+    }
+   ],
+   "id": "middleware-chain:ts:endpoint:src/routes/users.ts#GET /:id->ts:function:src/handlers/users.ts#checkOwner",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 2
+   },
+   "source": "ts:endpoint:src/routes/users.ts#GET /:id",
+   "target": "ts:function:src/handlers/users.ts#checkOwner",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "src/routes/users.ts"
+    }
+   ],
+   "id": "middleware-chain:ts:endpoint:src/routes/users.ts#GET /:id->ts:function:src/handlers/users.ts#requireUser",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 1
+   },
+   "source": "ts:endpoint:src/routes/users.ts#GET /:id",
+   "target": "ts:function:src/handlers/users.ts#requireUser",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 7,
+     "path": "src/app.ts"
+    }
+   ],
+   "id": "middleware-chain:ts:endpoint:src/routes/users.ts#GET /:id->ts:function:src/hooks.ts#logRequest",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 0
+   },
+   "source": "ts:endpoint:src/routes/users.ts#GET /:id",
+   "target": "ts:function:src/hooks.ts#logRequest",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "src/routes/users.ts"
+    }
+   ],
+   "id": "middleware-chain:ts:endpoint:src/routes/users.ts#POST /->ts:function:src/handlers/users.ts#requireUser",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 1
+   },
+   "source": "ts:endpoint:src/routes/users.ts#POST /",
+   "target": "ts:function:src/handlers/users.ts#requireUser",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 7,
+     "path": "src/app.ts"
+    }
+   ],
+   "id": "middleware-chain:ts:endpoint:src/routes/users.ts#POST /->ts:function:src/hooks.ts#logRequest",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 0
+   },
+   "source": "ts:endpoint:src/routes/users.ts#POST /",
+   "target": "ts:function:src/hooks.ts#logRequest",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 10,
+     "path": "src/app.ts"
+    }
+   ],
+   "id": "mounts:ts:route-group:src/app.ts#app->ts:route-group:src/app.ts#plugin",
+   "kind": "mounts",
+   "meta": {
+    "prefix": "/sys"
+   },
+   "source": "ts:route-group:src/app.ts#app",
+   "target": "ts:route-group:src/app.ts#plugin",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "src/app.ts"
+    }
+   ],
+   "id": "mounts:ts:route-group:src/app.ts#app->ts:route-group:src/plugins/auth.ts#authPlugin",
+   "kind": "mounts",
+   "source": "ts:route-group:src/app.ts#app",
+   "target": "ts:route-group:src/plugins/auth.ts#authPlugin",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 9,
+     "path": "src/app.ts"
+    }
+   ],
+   "id": "mounts:ts:route-group:src/app.ts#app->ts:route-group:src/routes/users.ts#usersRoutes",
+   "kind": "mounts",
+   "meta": {
+    "prefix": "/users"
+   },
+   "source": "ts:route-group:src/app.ts#app",
+   "target": "ts:route-group:src/routes/users.ts#usersRoutes",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 10,
+     "path": "src/routes/users.ts"
+    }
+   ],
+   "id": "mounts:ts:route-group:src/routes/users.ts#usersRoutes->ts:route-group:src/routes/admin.ts#adminRoutes",
+   "kind": "mounts",
+   "meta": {
+    "prefix": "/admin"
+   },
+   "source": "ts:route-group:src/routes/users.ts#usersRoutes",
+   "target": "ts:route-group:src/routes/admin.ts#adminRoutes",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "src/server.ts"
+    }
+   ],
+   "id": "reads-env:ts:module:src/server.ts->config:env-var:PORT",
+   "kind": "reads-env",
+   "source": "ts:module:src/server.ts",
+   "target": "config:env-var:PORT",
+   "weight": 1
+  }
+ ],
+ "nodes": [
+  {
+   "id": "config:env-var:PORT",
+   "kind": "env-var",
+   "label": "PORT",
+   "lang": "config",
+   "level": 3,
+   "meta": {},
+   "parent": null
+  },
+  {
+   "id": "config:script:package.json#dev",
+   "kind": "script",
+   "label": "dev",
+   "lang": "config",
+   "level": 3,
+   "line": 5,
+   "meta": {
+    "role": "npm-script",
+    "signature": "tsx watch src/server.ts"
+   },
+   "parent": "ts:project:.",
+   "path": "package.json"
+  },
+  {
+   "id": "ts:endpoint:src/app.ts#GET /",
+   "kind": "endpoint",
+   "label": "GET /",
+   "lang": "ts",
+   "level": 3,
+   "line": 13,
+   "meta": {
+    "framework": "fastify",
+    "http": {
+     "fullPath": "/",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/"
+    }
+   },
+   "parent": "ts:route-group:src/app.ts#app",
+   "path": "src/app.ts"
+  },
+  {
+   "id": "ts:endpoint:src/app.ts#GET /health",
+   "kind": "endpoint",
+   "label": "GET /sys/health",
+   "lang": "ts",
+   "level": 3,
+   "line": 11,
+   "meta": {
+    "framework": "fastify",
+    "http": {
+     "fullPath": "/sys/health",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/health"
+    }
+   },
+   "parent": "ts:route-group:src/app.ts#plugin",
+   "path": "src/app.ts"
+  },
+  {
+   "id": "ts:endpoint:src/routes/admin.ts#DELETE /:id",
+   "kind": "endpoint",
+   "label": "DELETE /users/admin/:id",
+   "lang": "ts",
+   "level": 3,
+   "line": 5,
+   "meta": {
+    "framework": "fastify",
+    "http": {
+     "fullPath": "/users/admin/:id",
+     "methods": [
+      "DELETE"
+     ],
+     "pathTemplate": "/:id"
+    }
+   },
+   "parent": "ts:route-group:src/routes/admin.ts#adminRoutes",
+   "path": "src/routes/admin.ts"
+  },
+  {
+   "id": "ts:endpoint:src/routes/users.ts#GET /",
+   "kind": "endpoint",
+   "label": "GET /users",
+   "lang": "ts",
+   "level": 3,
+   "line": 7,
+   "meta": {
+    "framework": "fastify",
+    "http": {
+     "fullPath": "/users",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/"
+    }
+   },
+   "parent": "ts:route-group:src/routes/users.ts#usersRoutes",
+   "path": "src/routes/users.ts"
+  },
+  {
+   "id": "ts:endpoint:src/routes/users.ts#GET /:id",
+   "kind": "endpoint",
+   "label": "GET /users/:id",
+   "lang": "ts",
+   "level": 3,
+   "line": 8,
+   "meta": {
+    "framework": "fastify",
+    "http": {
+     "fullPath": "/users/:id",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/:id"
+    }
+   },
+   "parent": "ts:route-group:src/routes/users.ts#usersRoutes",
+   "path": "src/routes/users.ts"
+  },
+  {
+   "id": "ts:endpoint:src/routes/users.ts#POST /",
+   "kind": "endpoint",
+   "label": "POST /users",
+   "lang": "ts",
+   "level": 3,
+   "line": 9,
+   "meta": {
+    "framework": "fastify",
+    "http": {
+     "fullPath": "/users",
+     "methods": [
+      "POST"
+     ],
+     "pathTemplate": "/"
+    }
+   },
+   "parent": "ts:route-group:src/routes/users.ts#usersRoutes",
+   "path": "src/routes/users.ts"
+  },
+  {
+   "endLine": 13,
+   "id": "ts:function:src/app.ts#GET /",
+   "kind": "function",
+   "label": "GET /",
+   "lang": "ts",
+   "level": 3,
+   "line": 13,
+   "meta": {
+    "complexity": 1,
+    "loc": 1,
+    "role": "route-handler",
+    "signature": "async GET /()"
+   },
+   "parent": "ts:module:src/app.ts",
+   "path": "src/app.ts"
+  },
+  {
+   "endLine": 11,
+   "id": "ts:function:src/app.ts#GET /health",
+   "kind": "function",
+   "label": "GET /health",
+   "lang": "ts",
+   "level": 3,
+   "line": 11,
+   "meta": {
+    "complexity": 1,
+    "loc": 1,
+    "role": "route-handler",
+    "signature": "async GET /health()"
+   },
+   "parent": "ts:module:src/app.ts",
+   "path": "src/app.ts"
+  },
+  {
+   "endLine": 12,
+   "id": "ts:function:src/app.ts#plugin",
+   "kind": "function",
+   "label": "plugin",
+   "lang": "ts",
+   "level": 3,
+   "line": 10,
+   "meta": {
+    "complexity": 1,
+    "loc": 3,
+    "role": "plugin",
+    "signature": "async plugin(instance)"
+   },
+   "parent": "ts:module:src/app.ts",
+   "path": "src/app.ts"
+  },
+  {
+   "endLine": 7,
+   "id": "ts:function:src/handlers/users.ts#checkOwner",
+   "kind": "function",
+   "label": "checkOwner",
+   "lang": "ts",
+   "level": 3,
+   "line": 7,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 1,
+    "signature": "async checkOwner(_req: FastifyRequest)"
+   },
+   "parent": "ts:module:src/handlers/users.ts",
+   "path": "src/handlers/users.ts"
+  },
+  {
+   "endLine": 19,
+   "id": "ts:function:src/handlers/users.ts#createUser",
+   "kind": "function",
+   "label": "createUser",
+   "lang": "ts",
+   "level": 3,
+   "line": 17,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "async createUser()"
+   },
+   "parent": "ts:module:src/handlers/users.ts",
+   "path": "src/handlers/users.ts"
+  },
+  {
+   "endLine": 23,
+   "id": "ts:function:src/handlers/users.ts#deleteUser",
+   "kind": "function",
+   "label": "deleteUser",
+   "lang": "ts",
+   "level": 3,
+   "line": 21,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "async deleteUser(_req: FastifyRequest, reply: FastifyReply)"
+   },
+   "parent": "ts:module:src/handlers/users.ts",
+   "path": "src/handlers/users.ts"
+  },
+  {
+   "endLine": 15,
+   "id": "ts:function:src/handlers/users.ts#getUser",
+   "kind": "function",
+   "label": "getUser",
+   "lang": "ts",
+   "level": 3,
+   "line": 13,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "async getUser(req: FastifyRequest<{ Params: { id: string } }>)"
+   },
+   "parent": "ts:module:src/handlers/users.ts",
+   "path": "src/handlers/users.ts"
+  },
+  {
+   "endLine": 11,
+   "id": "ts:function:src/handlers/users.ts#listUsers",
+   "kind": "function",
+   "label": "listUsers",
+   "lang": "ts",
+   "level": 3,
+   "line": 9,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "async listUsers()"
+   },
+   "parent": "ts:module:src/handlers/users.ts",
+   "path": "src/handlers/users.ts"
+  },
+  {
+   "endLine": 5,
+   "id": "ts:function:src/handlers/users.ts#requireUser",
+   "kind": "function",
+   "label": "requireUser",
+   "lang": "ts",
+   "level": 3,
+   "line": 3,
+   "meta": {
+    "complexity": 2,
+    "exported": true,
+    "loc": 3,
+    "signature": "async requireUser(req: FastifyRequest, reply: FastifyReply)"
+   },
+   "parent": "ts:module:src/handlers/users.ts",
+   "path": "src/handlers/users.ts"
+  },
+  {
+   "endLine": 5,
+   "id": "ts:function:src/hooks.ts#logRequest",
+   "kind": "function",
+   "label": "logRequest",
+   "lang": "ts",
+   "level": 3,
+   "line": 3,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "async logRequest(req: FastifyRequest)"
+   },
+   "parent": "ts:module:src/hooks.ts",
+   "path": "src/hooks.ts"
+  },
+  {
+   "endLine": 5,
+   "id": "ts:function:src/plugins/auth.ts#authPlugin",
+   "kind": "function",
+   "label": "authPlugin",
+   "lang": "ts",
+   "level": 3,
+   "line": 3,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "async authPlugin(app)"
+   },
+   "parent": "ts:module:src/plugins/auth.ts",
+   "path": "src/plugins/auth.ts"
+  },
+  {
+   "endLine": 6,
+   "id": "ts:function:src/routes/admin.ts#adminRoutes",
+   "kind": "function",
+   "label": "adminRoutes",
+   "lang": "ts",
+   "level": 3,
+   "line": 4,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "async adminRoutes(app: FastifyInstance)"
+   },
+   "parent": "ts:module:src/routes/admin.ts",
+   "path": "src/routes/admin.ts"
+  },
+  {
+   "endLine": 11,
+   "id": "ts:function:src/routes/users.ts#usersRoutes",
+   "kind": "function",
+   "label": "usersRoutes",
+   "lang": "ts",
+   "level": 3,
+   "line": 5,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 7,
+    "signature": "async usersRoutes(app: FastifyInstance)"
+   },
+   "parent": "ts:module:src/routes/users.ts",
+   "path": "src/routes/users.ts"
+  },
+  {
+   "id": "ts:module-group:.",
+   "kind": "module-group",
+   "label": "fastify-fixture",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:project:.",
+   "path": "."
+  },
+  {
+   "id": "ts:module-group:src",
+   "kind": "module-group",
+   "label": "src",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:.",
+   "path": "src"
+  },
+  {
+   "id": "ts:module-group:src/handlers",
+   "kind": "module-group",
+   "label": "handlers",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:src",
+   "path": "src/handlers"
+  },
+  {
+   "id": "ts:module-group:src/plugins",
+   "kind": "module-group",
+   "label": "plugins",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:src",
+   "path": "src/plugins"
+  },
+  {
+   "id": "ts:module-group:src/routes",
+   "kind": "module-group",
+   "label": "routes",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:src",
+   "path": "src/routes"
+  },
+  {
+   "endLine": 16,
+   "id": "ts:module:src/app.ts",
+   "kind": "module",
+   "label": "app.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 13
+   },
+   "parent": "ts:module-group:src",
+   "path": "src/app.ts"
+  },
+  {
+   "endLine": 24,
+   "id": "ts:module:src/handlers/users.ts",
+   "kind": "module",
+   "label": "users.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 6,
+    "loc": 17
+   },
+   "parent": "ts:module-group:src/handlers",
+   "path": "src/handlers/users.ts"
+  },
+  {
+   "endLine": 6,
+   "id": "ts:module:src/hooks.ts",
+   "kind": "module",
+   "label": "hooks.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 4
+   },
+   "parent": "ts:module-group:src",
+   "path": "src/hooks.ts"
+  },
+  {
+   "endLine": 6,
+   "id": "ts:module:src/plugins/auth.ts",
+   "kind": "module",
+   "label": "auth.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 4
+   },
+   "parent": "ts:module-group:src/plugins",
+   "path": "src/plugins/auth.ts"
+  },
+  {
+   "endLine": 7,
+   "id": "ts:module:src/routes/admin.ts",
+   "kind": "module",
+   "label": "admin.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 5
+   },
+   "parent": "ts:module-group:src/routes",
+   "path": "src/routes/admin.ts"
+  },
+  {
+   "endLine": 12,
+   "id": "ts:module:src/routes/users.ts",
+   "kind": "module",
+   "label": "users.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 10
+   },
+   "parent": "ts:module-group:src/routes",
+   "path": "src/routes/users.ts"
+  },
+  {
+   "endLine": 4,
+   "id": "ts:module:src/server.ts",
+   "kind": "module",
+   "label": "server.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 0,
+    "loc": 2
+   },
+   "parent": "ts:module-group:src",
+   "path": "src/server.ts"
+  },
+  {
+   "id": "ts:project:.",
+   "kind": "project",
+   "label": "fastify-fixture",
+   "lang": "ts",
+   "level": 0,
+   "meta": {},
+   "parent": null,
+   "path": "."
+  },
+  {
+   "id": "ts:route-group:src/app.ts#app",
+   "kind": "route-group",
+   "label": "app (fastify app, app.ts)",
+   "lang": "ts",
+   "level": 3,
+   "line": 6,
+   "meta": {
+    "framework": "fastify",
+    "role": "app"
+   },
+   "parent": "ts:module:src/app.ts",
+   "path": "src/app.ts"
+  },
+  {
+   "id": "ts:route-group:src/app.ts#plugin",
+   "kind": "route-group",
+   "label": "plugin (fastify plugin, app.ts)",
+   "lang": "ts",
+   "level": 3,
+   "line": 10,
+   "meta": {
+    "framework": "fastify",
+    "role": "plugin"
+   },
+   "parent": "ts:module:src/app.ts",
+   "path": "src/app.ts"
+  },
+  {
+   "id": "ts:route-group:src/plugins/auth.ts#authPlugin",
+   "kind": "route-group",
+   "label": "authPlugin (fastify plugin, auth.ts)",
+   "lang": "ts",
+   "level": 3,
+   "line": 3,
+   "meta": {
+    "framework": "fastify",
+    "role": "plugin"
+   },
+   "parent": "ts:module:src/plugins/auth.ts",
+   "path": "src/plugins/auth.ts"
+  },
+  {
+   "id": "ts:route-group:src/routes/admin.ts#adminRoutes",
+   "kind": "route-group",
+   "label": "adminRoutes (fastify plugin, admin.ts)",
+   "lang": "ts",
+   "level": 3,
+   "line": 4,
+   "meta": {
+    "framework": "fastify",
+    "role": "plugin"
+   },
+   "parent": "ts:module:src/routes/admin.ts",
+   "path": "src/routes/admin.ts"
+  },
+  {
+   "id": "ts:route-group:src/routes/users.ts#usersRoutes",
+   "kind": "route-group",
+   "label": "usersRoutes (fastify plugin, users.ts)",
+   "lang": "ts",
+   "level": 3,
+   "line": 5,
+   "meta": {
+    "framework": "fastify",
+    "role": "plugin"
+   },
+   "parent": "ts:module:src/routes/users.ts",
+   "path": "src/routes/users.ts"
+  }
+ ],
+ "projects": [
+  {
+   "frameworks": [
+    "fastify"
+   ],
+   "id": "ts:project:.",
+   "lang": "ts",
+   "root": "."
+  }
+ ],
+ "repoRoot": "<root>",
+ "stats": {
+  "edges.handles": 6,
+  "edges.imports": 7,
+  "edges.middleware-chain": 11,
+  "edges.mounts": 4,
+  "edges.reads-env": 1,
+  "fastify.endpoints": 6,
+  "nodes.endpoint": 6,
+  "nodes.env-var": 1,
+  "nodes.function": 13,
+  "nodes.module": 7,
+  "nodes.module-group": 5,
+  "nodes.project": 1,
+  "nodes.route-group": 5,
+  "nodes.script": 1,
+  "ts.callsExternal": 3,
+  "ts.callsUnresolved": 19,
+  "ts.externalImports": 2,
+  "ts.typeOnlyImports": 4
+ },
+ "version": 1,
+ "warnings": [
+  {
+   "code": "ts-unresolved-call",
+   "count": 19,
+   "message": "Calls dropped: callee type unknown (untyped JS, or dependencies/types not installed)",
+   "path": "src/app.ts"
+  }
+ ]
+}

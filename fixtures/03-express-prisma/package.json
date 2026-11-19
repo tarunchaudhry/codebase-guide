@@ -1,0 +1,7 @@
+{
+  "name": "express-prisma-fixture",
+  "private": true,
+  "scripts": { "dev": "tsx watch src/server.ts", "migrate": "prisma migrate dev" },
+  "dependencies": { "express": "5.1.0", "@prisma/client": "6.17.0" },
+  "devDependencies": { "prisma": "6.17.0" }
+}

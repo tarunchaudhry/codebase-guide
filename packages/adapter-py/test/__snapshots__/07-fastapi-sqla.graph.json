@@ -1,0 +1,1800 @@
+{
+ "edges": [
+  {
+   "evidence": [
+    {
+     "line": 22,
+     "path": "app/routers/users.py"
+    }
+   ],
+   "id": "calls:py:function:app/routers/users.py#create_user->py:class:app/models.py#User",
+   "kind": "calls",
+   "source": "py:function:app/routers/users.py#create_user",
+   "target": "py:class:app/models.py#User",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 24,
+     "path": "app/main.py"
+    }
+   ],
+   "id": "handles:py:endpoint:app/main.py#health->py:function:app/main.py#health",
+   "kind": "handles",
+   "source": "py:endpoint:app/main.py#health",
+   "target": "py:function:app/main.py#health",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 17,
+     "path": "app/routers/items.py"
+    }
+   ],
+   "id": "handles:py:endpoint:app/routers/items.py#get_item->py:function:app/routers/items.py#get_item",
+   "kind": "handles",
+   "source": "py:endpoint:app/routers/items.py#get_item",
+   "target": "py:function:app/routers/items.py#get_item",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 12,
+     "path": "app/routers/items.py"
+    }
+   ],
+   "id": "handles:py:endpoint:app/routers/items.py#list_items->py:function:app/routers/items.py#list_items",
+   "kind": "handles",
+   "source": "py:endpoint:app/routers/items.py#list_items",
+   "target": "py:function:app/routers/items.py#list_items",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 20,
+     "path": "app/routers/users.py"
+    }
+   ],
+   "id": "handles:py:endpoint:app/routers/users.py#create_user->py:function:app/routers/users.py#create_user",
+   "kind": "handles",
+   "source": "py:endpoint:app/routers/users.py#create_user",
+   "target": "py:function:app/routers/users.py#create_user",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 31,
+     "path": "app/routers/users.py"
+    }
+   ],
+   "id": "handles:py:endpoint:app/routers/users.py#delete_user->py:function:app/routers/users.py#delete_user",
+   "kind": "handles",
+   "source": "py:endpoint:app/routers/users.py#delete_user",
+   "target": "py:function:app/routers/users.py#delete_user",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 15,
+     "path": "app/routers/users.py"
+    }
+   ],
+   "id": "handles:py:endpoint:app/routers/users.py#list_users->py:function:app/routers/users.py#list_users",
+   "kind": "handles",
+   "source": "py:endpoint:app/routers/users.py#list_users",
+   "target": "py:function:app/routers/users.py#list_users",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 26,
+     "path": "app/routers/users.py"
+    }
+   ],
+   "id": "handles:py:endpoint:app/routers/users.py#me->py:function:app/routers/users.py#me",
+   "kind": "handles",
+   "source": "py:endpoint:app/routers/users.py#me",
+   "target": "py:function:app/routers/users.py#me",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "app/deps.py"
+    }
+   ],
+   "id": "imports:py:module:app/deps.py->py:module:app/db.py",
+   "kind": "imports",
+   "source": "py:module:app/deps.py",
+   "target": "py:module:app/db.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 9,
+     "path": "app/deps.py"
+    }
+   ],
+   "id": "imports:py:module:app/deps.py->py:module:app/models.py",
+   "kind": "imports",
+   "source": "py:module:app/deps.py",
+   "target": "py:module:app/models.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 5,
+     "path": "app/main.py"
+    }
+   ],
+   "id": "imports:py:module:app/main.py->py:module:app/deps.py",
+   "kind": "imports",
+   "source": "py:module:app/main.py",
+   "target": "py:module:app/deps.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "app/main.py"
+    }
+   ],
+   "id": "imports:py:module:app/main.py->py:module:app/middleware.py",
+   "kind": "imports",
+   "source": "py:module:app/main.py",
+   "target": "py:module:app/middleware.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 7,
+     "path": "app/main.py"
+    }
+   ],
+   "id": "imports:py:module:app/main.py->py:module:app/routers/items.py",
+   "kind": "imports",
+   "source": "py:module:app/main.py",
+   "target": "py:module:app/routers/items.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 7,
+     "path": "app/main.py"
+    }
+   ],
+   "id": "imports:py:module:app/main.py->py:module:app/routers/users.py",
+   "kind": "imports",
+   "source": "py:module:app/main.py",
+   "target": "py:module:app/routers/users.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 4,
+     "path": "app/models.py"
+    }
+   ],
+   "id": "imports:py:module:app/models.py->py:module:app/db.py",
+   "kind": "imports",
+   "source": "py:module:app/models.py",
+   "target": "py:module:app/db.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 5,
+     "path": "app/routers/items.py"
+    }
+   ],
+   "id": "imports:py:module:app/routers/items.py->py:module:app/db.py",
+   "kind": "imports",
+   "source": "py:module:app/routers/items.py",
+   "target": "py:module:app/db.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "app/routers/items.py"
+    }
+   ],
+   "id": "imports:py:module:app/routers/items.py->py:module:app/models.py",
+   "kind": "imports",
+   "source": "py:module:app/routers/items.py",
+   "target": "py:module:app/models.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 7,
+     "path": "app/routers/items.py"
+    }
+   ],
+   "id": "imports:py:module:app/routers/items.py->py:module:app/schemas.py",
+   "kind": "imports",
+   "source": "py:module:app/routers/items.py",
+   "target": "py:module:app/schemas.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 7,
+     "path": "app/routers/users.py"
+    }
+   ],
+   "id": "imports:py:module:app/routers/users.py->py:module:app/db.py",
+   "kind": "imports",
+   "source": "py:module:app/routers/users.py",
+   "target": "py:module:app/db.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "app/routers/users.py"
+    }
+   ],
+   "id": "imports:py:module:app/routers/users.py->py:module:app/deps.py",
+   "kind": "imports",
+   "source": "py:module:app/routers/users.py",
+   "target": "py:module:app/deps.py",
+   "weight": 2
+  },
+  {
+   "evidence": [
+    {
+     "line": 9,
+     "path": "app/routers/users.py"
+    }
+   ],
+   "id": "imports:py:module:app/routers/users.py->py:module:app/models.py",
+   "kind": "imports",
+   "source": "py:module:app/routers/users.py",
+   "target": "py:module:app/models.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 10,
+     "path": "app/routers/users.py"
+    }
+   ],
+   "id": "imports:py:module:app/routers/users.py->py:module:app/schemas.py",
+   "kind": "imports",
+   "source": "py:module:app/routers/users.py",
+   "target": "py:module:app/schemas.py",
+   "weight": 2
+  },
+  {
+   "evidence": [
+    {
+     "line": 21,
+     "path": "app/main.py"
+    }
+   ],
+   "id": "injects:py:endpoint:app/routers/items.py#get_item->py:function:app/deps.py#verify_api_key",
+   "kind": "injects",
+   "source": "py:endpoint:app/routers/items.py#get_item",
+   "target": "py:function:app/deps.py#verify_api_key",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 21,
+     "path": "app/main.py"
+    }
+   ],
+   "id": "injects:py:endpoint:app/routers/items.py#list_items->py:function:app/deps.py#verify_api_key",
+   "kind": "injects",
+   "source": "py:endpoint:app/routers/items.py#list_items",
+   "target": "py:function:app/deps.py#verify_api_key",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 31,
+     "path": "app/routers/users.py"
+    }
+   ],
+   "id": "injects:py:endpoint:app/routers/users.py#delete_user->py:function:app/deps.py#require_admin",
+   "kind": "injects",
+   "source": "py:endpoint:app/routers/users.py#delete_user",
+   "target": "py:function:app/deps.py#require_admin",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 14,
+     "path": "app/deps.py"
+    }
+   ],
+   "id": "injects:py:function:app/deps.py#get_current_user->py:function:app/db.py#get_db",
+   "kind": "injects",
+   "source": "py:function:app/deps.py#get_current_user",
+   "target": "py:function:app/db.py#get_db",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 21,
+     "path": "app/deps.py"
+    }
+   ],
+   "id": "injects:py:function:app/deps.py#require_admin->py:function:app/deps.py#get_current_user",
+   "kind": "injects",
+   "source": "py:function:app/deps.py#require_admin",
+   "target": "py:function:app/deps.py#get_current_user",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 18,
+     "path": "app/routers/items.py"
+    }
+   ],
+   "id": "injects:py:function:app/routers/items.py#get_item->py:function:app/db.py#get_db",
+   "kind": "injects",
+   "source": "py:function:app/routers/items.py#get_item",
+   "target": "py:function:app/db.py#get_db",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 13,
+     "path": "app/routers/items.py"
+    }
+   ],
+   "id": "injects:py:function:app/routers/items.py#list_items->py:function:app/db.py#get_db",
+   "kind": "injects",
+   "source": "py:function:app/routers/items.py#list_items",
+   "target": "py:function:app/db.py#get_db",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 21,
+     "path": "app/routers/users.py"
+    }
+   ],
+   "id": "injects:py:function:app/routers/users.py#create_user->py:function:app/db.py#get_db",
+   "kind": "injects",
+   "source": "py:function:app/routers/users.py#create_user",
+   "target": "py:function:app/db.py#get_db",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 32,
+     "path": "app/routers/users.py"
+    }
+   ],
+   "id": "injects:py:function:app/routers/users.py#delete_user->py:function:app/db.py#get_db",
+   "kind": "injects",
+   "source": "py:function:app/routers/users.py#delete_user",
+   "target": "py:function:app/db.py#get_db",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 16,
+     "path": "app/routers/users.py"
+    }
+   ],
+   "id": "injects:py:function:app/routers/users.py#list_users->py:function:app/db.py#get_db",
+   "kind": "injects",
+   "source": "py:function:app/routers/users.py#list_users",
+   "target": "py:function:app/db.py#get_db",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 27,
+     "path": "app/routers/users.py"
+    }
+   ],
+   "id": "injects:py:function:app/routers/users.py#me->py:function:app/deps.py#get_current_user",
+   "kind": "injects",
+   "source": "py:function:app/routers/users.py#me",
+   "target": "py:function:app/deps.py#get_current_user",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 10,
+     "path": "app/main.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:app/main.py#health->py:class:app/middleware.py#TimingMiddleware",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 1
+   },
+   "source": "py:endpoint:app/main.py#health",
+   "target": "py:class:app/middleware.py#TimingMiddleware",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 13,
+     "path": "app/main.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:app/main.py#health->py:function:app/main.py#add_request_id",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 0
+   },
+   "source": "py:endpoint:app/main.py#health",
+   "target": "py:function:app/main.py#add_request_id",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 10,
+     "path": "app/main.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:app/routers/items.py#get_item->py:class:app/middleware.py#TimingMiddleware",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 1
+   },
+   "source": "py:endpoint:app/routers/items.py#get_item",
+   "target": "py:class:app/middleware.py#TimingMiddleware",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 13,
+     "path": "app/main.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:app/routers/items.py#get_item->py:function:app/main.py#add_request_id",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 0
+   },
+   "source": "py:endpoint:app/routers/items.py#get_item",
+   "target": "py:function:app/main.py#add_request_id",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 10,
+     "path": "app/main.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:app/routers/items.py#list_items->py:class:app/middleware.py#TimingMiddleware",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 1
+   },
+   "source": "py:endpoint:app/routers/items.py#list_items",
+   "target": "py:class:app/middleware.py#TimingMiddleware",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 13,
+     "path": "app/main.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:app/routers/items.py#list_items->py:function:app/main.py#add_request_id",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 0
+   },
+   "source": "py:endpoint:app/routers/items.py#list_items",
+   "target": "py:function:app/main.py#add_request_id",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 10,
+     "path": "app/main.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:app/routers/users.py#create_user->py:class:app/middleware.py#TimingMiddleware",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 1
+   },
+   "source": "py:endpoint:app/routers/users.py#create_user",
+   "target": "py:class:app/middleware.py#TimingMiddleware",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 13,
+     "path": "app/main.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:app/routers/users.py#create_user->py:function:app/main.py#add_request_id",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 0
+   },
+   "source": "py:endpoint:app/routers/users.py#create_user",
+   "target": "py:function:app/main.py#add_request_id",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 10,
+     "path": "app/main.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:app/routers/users.py#delete_user->py:class:app/middleware.py#TimingMiddleware",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 1
+   },
+   "source": "py:endpoint:app/routers/users.py#delete_user",
+   "target": "py:class:app/middleware.py#TimingMiddleware",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 13,
+     "path": "app/main.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:app/routers/users.py#delete_user->py:function:app/main.py#add_request_id",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 0
+   },
+   "source": "py:endpoint:app/routers/users.py#delete_user",
+   "target": "py:function:app/main.py#add_request_id",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 10,
+     "path": "app/main.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:app/routers/users.py#list_users->py:class:app/middleware.py#TimingMiddleware",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 1
+   },
+   "source": "py:endpoint:app/routers/users.py#list_users",
+   "target": "py:class:app/middleware.py#TimingMiddleware",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 13,
+     "path": "app/main.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:app/routers/users.py#list_users->py:function:app/main.py#add_request_id",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 0
+   },
+   "source": "py:endpoint:app/routers/users.py#list_users",
+   "target": "py:function:app/main.py#add_request_id",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 10,
+     "path": "app/main.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:app/routers/users.py#me->py:class:app/middleware.py#TimingMiddleware",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 1
+   },
+   "source": "py:endpoint:app/routers/users.py#me",
+   "target": "py:class:app/middleware.py#TimingMiddleware",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 13,
+     "path": "app/main.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:app/routers/users.py#me->py:function:app/main.py#add_request_id",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 0
+   },
+   "source": "py:endpoint:app/routers/users.py#me",
+   "target": "py:function:app/main.py#add_request_id",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 20,
+     "path": "app/models.py"
+    },
+    {
+     "line": 21,
+     "path": "app/models.py"
+    }
+   ],
+   "id": "model-relation:py:class:app/models.py#Item->py:class:app/models.py#User",
+   "kind": "model-relation",
+   "source": "py:class:app/models.py#Item",
+   "target": "py:class:app/models.py#User",
+   "weight": 2
+  },
+  {
+   "evidence": [
+    {
+     "line": 12,
+     "path": "app/models.py"
+    }
+   ],
+   "id": "model-relation:py:class:app/models.py#User->py:class:app/models.py#Item",
+   "kind": "model-relation",
+   "source": "py:class:app/models.py#User",
+   "target": "py:class:app/models.py#Item",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 21,
+     "path": "app/main.py"
+    }
+   ],
+   "id": "mounts:py:route-group:app/main.py#app->py:route-group:app/routers/items.py#router",
+   "kind": "mounts",
+   "meta": {
+    "prefix": "/api"
+   },
+   "source": "py:route-group:app/main.py#app",
+   "target": "py:route-group:app/routers/items.py#router",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 20,
+     "path": "app/main.py"
+    }
+   ],
+   "id": "mounts:py:route-group:app/main.py#app->py:route-group:app/routers/users.py#router",
+   "kind": "mounts",
+   "meta": {
+    "prefix": "/api"
+   },
+   "source": "py:route-group:app/main.py#app",
+   "target": "py:route-group:app/routers/users.py#router",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 28,
+     "path": "app/deps.py"
+    }
+   ],
+   "id": "reads-env:py:function:app/deps.py#verify_api_key->config:env-var:API_KEY",
+   "kind": "reads-env",
+   "source": "py:function:app/deps.py#verify_api_key",
+   "target": "config:env-var:API_KEY",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "app/db.py"
+    }
+   ],
+   "id": "reads-env:py:module:app/db.py->config:env-var:DATABASE_URL",
+   "kind": "reads-env",
+   "source": "py:module:app/db.py",
+   "target": "config:env-var:DATABASE_URL",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 15,
+     "path": "app/deps.py"
+    }
+   ],
+   "id": "reads-model:py:function:app/deps.py#get_current_user->py:class:app/models.py#User",
+   "inferred": true,
+   "kind": "reads-model",
+   "source": "py:function:app/deps.py#get_current_user",
+   "target": "py:class:app/models.py#User",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 19,
+     "path": "app/routers/items.py"
+    }
+   ],
+   "id": "reads-model:py:function:app/routers/items.py#get_item->py:class:app/models.py#Item",
+   "inferred": true,
+   "kind": "reads-model",
+   "source": "py:function:app/routers/items.py#get_item",
+   "target": "py:class:app/models.py#Item",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 14,
+     "path": "app/routers/items.py"
+    }
+   ],
+   "id": "reads-model:py:function:app/routers/items.py#list_items->py:class:app/models.py#Item",
+   "kind": "reads-model",
+   "source": "py:function:app/routers/items.py#list_items",
+   "target": "py:class:app/models.py#Item",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 17,
+     "path": "app/routers/users.py"
+    }
+   ],
+   "id": "reads-model:py:function:app/routers/users.py#list_users->py:class:app/models.py#User",
+   "inferred": true,
+   "kind": "reads-model",
+   "source": "py:function:app/routers/users.py#list_users",
+   "target": "py:class:app/models.py#User",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 17,
+     "path": "app/routers/items.py"
+    }
+   ],
+   "id": "validates:py:endpoint:app/routers/items.py#get_item->py:class:app/schemas.py#ItemOut",
+   "kind": "validates",
+   "source": "py:endpoint:app/routers/items.py#get_item",
+   "target": "py:class:app/schemas.py#ItemOut",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 12,
+     "path": "app/routers/items.py"
+    }
+   ],
+   "id": "validates:py:endpoint:app/routers/items.py#list_items->py:class:app/schemas.py#ItemOut",
+   "kind": "validates",
+   "source": "py:endpoint:app/routers/items.py#list_items",
+   "target": "py:class:app/schemas.py#ItemOut",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 20,
+     "path": "app/routers/users.py"
+    }
+   ],
+   "id": "validates:py:endpoint:app/routers/users.py#create_user->py:class:app/schemas.py#UserOut",
+   "kind": "validates",
+   "source": "py:endpoint:app/routers/users.py#create_user",
+   "target": "py:class:app/schemas.py#UserOut",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 15,
+     "path": "app/routers/users.py"
+    }
+   ],
+   "id": "validates:py:endpoint:app/routers/users.py#list_users->py:class:app/schemas.py#UserOut",
+   "kind": "validates",
+   "source": "py:endpoint:app/routers/users.py#list_users",
+   "target": "py:class:app/schemas.py#UserOut",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 26,
+     "path": "app/routers/users.py"
+    }
+   ],
+   "id": "validates:py:endpoint:app/routers/users.py#me->py:class:app/schemas.py#UserOut",
+   "kind": "validates",
+   "source": "py:endpoint:app/routers/users.py#me",
+   "target": "py:class:app/schemas.py#UserOut",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 21,
+     "path": "app/routers/users.py"
+    }
+   ],
+   "id": "validates:py:function:app/routers/users.py#create_user->py:class:app/schemas.py#UserCreate",
+   "kind": "validates",
+   "source": "py:function:app/routers/users.py#create_user",
+   "target": "py:class:app/schemas.py#UserCreate",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 22,
+     "path": "app/routers/users.py"
+    }
+   ],
+   "id": "writes-model:py:function:app/routers/users.py#create_user->py:class:app/models.py#User",
+   "inferred": true,
+   "kind": "writes-model",
+   "source": "py:function:app/routers/users.py#create_user",
+   "target": "py:class:app/models.py#User",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 33,
+     "path": "app/routers/users.py"
+    }
+   ],
+   "id": "writes-model:py:function:app/routers/users.py#delete_user->py:class:app/models.py#User",
+   "kind": "writes-model",
+   "source": "py:function:app/routers/users.py#delete_user",
+   "target": "py:class:app/models.py#User",
+   "weight": 1
+  }
+ ],
+ "nodes": [
+  {
+   "id": "config:env-var:API_KEY",
+   "kind": "env-var",
+   "label": "API_KEY",
+   "lang": "config",
+   "level": 3,
+   "meta": {},
+   "parent": null
+  },
+  {
+   "id": "config:env-var:DATABASE_URL",
+   "kind": "env-var",
+   "label": "DATABASE_URL",
+   "lang": "config",
+   "level": 3,
+   "meta": {},
+   "parent": null
+  },
+  {
+   "id": "config:script:pyproject.toml#serve",
+   "kind": "script",
+   "label": "serve",
+   "lang": "config",
+   "level": 3,
+   "line": 8,
+   "meta": {
+    "role": "pyproject-script",
+    "signature": "app.main:run"
+   },
+   "parent": "py:project:.",
+   "path": "pyproject.toml"
+  },
+  {
+   "endLine": 11,
+   "id": "py:class:app/db.py#Base",
+   "kind": "class",
+   "label": "Base",
+   "lang": "py",
+   "level": 3,
+   "line": 10,
+   "meta": {
+    "exported": true,
+    "loc": 2,
+    "signature": "class Base(DeclarativeBase)"
+   },
+   "parent": "py:module:app/db.py",
+   "path": "app/db.py"
+  },
+  {
+   "endLine": 11,
+   "id": "py:class:app/middleware.py#TimingMiddleware",
+   "kind": "class",
+   "label": "TimingMiddleware",
+   "lang": "py",
+   "level": 3,
+   "line": 6,
+   "meta": {
+    "exported": true,
+    "loc": 6,
+    "signature": "class TimingMiddleware(BaseHTTPMiddleware)"
+   },
+   "parent": "py:module:app/middleware.py",
+   "path": "app/middleware.py"
+  },
+  {
+   "endLine": 21,
+   "id": "py:class:app/models.py#Item",
+   "kind": "class",
+   "label": "Item",
+   "lang": "py",
+   "level": 3,
+   "line": 15,
+   "meta": {
+    "exported": true,
+    "fields": [
+     {
+      "name": "id",
+      "type": "int"
+     },
+     {
+      "name": "title",
+      "type": "String"
+     },
+     {
+      "name": "owner_id",
+      "relation": "fk (users.id)",
+      "type": "int"
+     },
+     {
+      "name": "owner",
+      "relation": "relationship",
+      "type": "User"
+     }
+    ],
+    "framework": "sqlalchemy",
+    "loc": 7,
+    "role": "model",
+    "signature": "class Item(Base)"
+   },
+   "parent": "py:module:app/models.py",
+   "path": "app/models.py"
+  },
+  {
+   "endLine": 12,
+   "id": "py:class:app/models.py#User",
+   "kind": "class",
+   "label": "User",
+   "lang": "py",
+   "level": 3,
+   "line": 7,
+   "meta": {
+    "exported": true,
+    "fields": [
+     {
+      "name": "id",
+      "type": "int"
+     },
+     {
+      "name": "email",
+      "type": "str"
+     },
+     {
+      "name": "items",
+      "relation": "many",
+      "type": "list[Item]"
+     }
+    ],
+    "framework": "sqlalchemy",
+    "loc": 6,
+    "role": "model",
+    "signature": "class User(Base)"
+   },
+   "parent": "py:module:app/models.py",
+   "path": "app/models.py"
+  },
+  {
+   "endLine": 15,
+   "id": "py:class:app/schemas.py#ItemOut",
+   "kind": "class",
+   "label": "ItemOut",
+   "lang": "py",
+   "level": 3,
+   "line": 13,
+   "meta": {
+    "exported": true,
+    "fields": [
+     {
+      "name": "id",
+      "type": "int"
+     },
+     {
+      "name": "title",
+      "type": "str"
+     }
+    ],
+    "framework": "pydantic",
+    "loc": 3,
+    "role": "schema",
+    "signature": "class ItemOut(BaseModel)"
+   },
+   "parent": "py:module:app/schemas.py",
+   "path": "app/schemas.py"
+  },
+  {
+   "endLine": 5,
+   "id": "py:class:app/schemas.py#UserCreate",
+   "kind": "class",
+   "label": "UserCreate",
+   "lang": "py",
+   "level": 3,
+   "line": 4,
+   "meta": {
+    "exported": true,
+    "fields": [
+     {
+      "name": "email",
+      "type": "str"
+     }
+    ],
+    "framework": "pydantic",
+    "loc": 2,
+    "role": "schema",
+    "signature": "class UserCreate(BaseModel)"
+   },
+   "parent": "py:module:app/schemas.py",
+   "path": "app/schemas.py"
+  },
+  {
+   "endLine": 10,
+   "id": "py:class:app/schemas.py#UserOut",
+   "kind": "class",
+   "label": "UserOut",
+   "lang": "py",
+   "level": 3,
+   "line": 8,
+   "meta": {
+    "exported": true,
+    "fields": [
+     {
+      "name": "id",
+      "type": "int"
+     },
+     {
+      "name": "email",
+      "type": "str"
+     }
+    ],
+    "framework": "pydantic",
+    "loc": 3,
+    "role": "schema",
+    "signature": "class UserOut(BaseModel)"
+   },
+   "parent": "py:module:app/schemas.py",
+   "path": "app/schemas.py"
+  },
+  {
+   "id": "py:endpoint:app/main.py#health",
+   "kind": "endpoint",
+   "label": "GET /health",
+   "lang": "py",
+   "level": 3,
+   "line": 24,
+   "meta": {
+    "framework": "fastapi",
+    "http": {
+     "fullPath": "/health",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/health"
+    }
+   },
+   "parent": "py:route-group:app/main.py#app",
+   "path": "app/main.py"
+  },
+  {
+   "id": "py:endpoint:app/routers/items.py#get_item",
+   "kind": "endpoint",
+   "label": "GET /api/items/{item_id}",
+   "lang": "py",
+   "level": 3,
+   "line": 17,
+   "meta": {
+    "framework": "fastapi",
+    "http": {
+     "fullPath": "/api/items/{item_id}",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/items/{item_id}"
+    }
+   },
+   "parent": "py:route-group:app/routers/items.py#router",
+   "path": "app/routers/items.py"
+  },
+  {
+   "id": "py:endpoint:app/routers/items.py#list_items",
+   "kind": "endpoint",
+   "label": "GET /api/items/",
+   "lang": "py",
+   "level": 3,
+   "line": 12,
+   "meta": {
+    "framework": "fastapi",
+    "http": {
+     "fullPath": "/api/items/",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/items/"
+    }
+   },
+   "parent": "py:route-group:app/routers/items.py#router",
+   "path": "app/routers/items.py"
+  },
+  {
+   "id": "py:endpoint:app/routers/users.py#create_user",
+   "kind": "endpoint",
+   "label": "POST /api/users/",
+   "lang": "py",
+   "level": 3,
+   "line": 20,
+   "meta": {
+    "framework": "fastapi",
+    "http": {
+     "fullPath": "/api/users/",
+     "methods": [
+      "POST"
+     ],
+     "pathTemplate": "/users/"
+    }
+   },
+   "parent": "py:route-group:app/routers/users.py#router",
+   "path": "app/routers/users.py"
+  },
+  {
+   "id": "py:endpoint:app/routers/users.py#delete_user",
+   "kind": "endpoint",
+   "label": "DELETE /api/users/{user_id}",
+   "lang": "py",
+   "level": 3,
+   "line": 31,
+   "meta": {
+    "framework": "fastapi",
+    "http": {
+     "fullPath": "/api/users/{user_id}",
+     "methods": [
+      "DELETE"
+     ],
+     "pathTemplate": "/users/{user_id}"
+    }
+   },
+   "parent": "py:route-group:app/routers/users.py#router",
+   "path": "app/routers/users.py"
+  },
+  {
+   "id": "py:endpoint:app/routers/users.py#list_users",
+   "kind": "endpoint",
+   "label": "GET /api/users/",
+   "lang": "py",
+   "level": 3,
+   "line": 15,
+   "meta": {
+    "framework": "fastapi",
+    "http": {
+     "fullPath": "/api/users/",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/users/"
+    }
+   },
+   "parent": "py:route-group:app/routers/users.py#router",
+   "path": "app/routers/users.py"
+  },
+  {
+   "id": "py:endpoint:app/routers/users.py#me",
+   "kind": "endpoint",
+   "label": "GET /api/users/me",
+   "lang": "py",
+   "level": 3,
+   "line": 26,
+   "meta": {
+    "framework": "fastapi",
+    "http": {
+     "fullPath": "/api/users/me",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/users/me"
+    }
+   },
+   "parent": "py:route-group:app/routers/users.py#router",
+   "path": "app/routers/users.py"
+  },
+  {
+   "endLine": 19,
+   "id": "py:function:app/db.py#get_db",
+   "kind": "function",
+   "label": "get_db",
+   "lang": "py",
+   "level": 3,
+   "line": 14,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 6,
+    "signature": "def get_db()"
+   },
+   "parent": "py:module:app/db.py",
+   "path": "app/db.py"
+  },
+  {
+   "endLine": 18,
+   "id": "py:function:app/deps.py#get_current_user",
+   "kind": "function",
+   "label": "get_current_user",
+   "lang": "py",
+   "level": 3,
+   "line": 14,
+   "meta": {
+    "complexity": 2,
+    "exported": true,
+    "loc": 5,
+    "signature": "def get_current_user(db: Session=Depends(get_db), token: str=Depends(oauth2_scheme)) -> User"
+   },
+   "parent": "py:module:app/deps.py",
+   "path": "app/deps.py"
+  },
+  {
+   "endLine": 24,
+   "id": "py:function:app/deps.py#require_admin",
+   "kind": "function",
+   "label": "require_admin",
+   "lang": "py",
+   "level": 3,
+   "line": 21,
+   "meta": {
+    "complexity": 2,
+    "exported": true,
+    "loc": 4,
+    "signature": "def require_admin(user: User=Depends(get_current_user)) -> User"
+   },
+   "parent": "py:module:app/deps.py",
+   "path": "app/deps.py"
+  },
+  {
+   "endLine": 29,
+   "id": "py:function:app/deps.py#verify_api_key",
+   "kind": "function",
+   "label": "verify_api_key",
+   "lang": "py",
+   "level": 3,
+   "line": 27,
+   "meta": {
+    "complexity": 2,
+    "exported": true,
+    "loc": 3,
+    "signature": "def verify_api_key(x_api_key: Annotated[str, Header()]) -> None"
+   },
+   "parent": "py:module:app/deps.py",
+   "path": "app/deps.py"
+  },
+  {
+   "endLine": 17,
+   "id": "py:function:app/main.py#add_request_id",
+   "kind": "function",
+   "label": "add_request_id",
+   "lang": "py",
+   "level": 3,
+   "line": 14,
+   "meta": {
+    "complexity": 1,
+    "decorators": [
+     "app.middleware"
+    ],
+    "exported": true,
+    "loc": 4,
+    "signature": "async def add_request_id(request, call_next)"
+   },
+   "parent": "py:module:app/main.py",
+   "path": "app/main.py"
+  },
+  {
+   "endLine": 26,
+   "id": "py:function:app/main.py#health",
+   "kind": "function",
+   "label": "health",
+   "lang": "py",
+   "level": 3,
+   "line": 25,
+   "meta": {
+    "complexity": 1,
+    "decorators": [
+     "app.get"
+    ],
+    "exported": true,
+    "loc": 2,
+    "signature": "def health()"
+   },
+   "parent": "py:module:app/main.py",
+   "path": "app/main.py"
+  },
+  {
+   "endLine": 32,
+   "id": "py:function:app/main.py#run",
+   "kind": "function",
+   "label": "run",
+   "lang": "py",
+   "level": 3,
+   "line": 29,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 4,
+    "signature": "def run()"
+   },
+   "parent": "py:module:app/main.py",
+   "path": "app/main.py"
+  },
+  {
+   "endLine": 19,
+   "id": "py:function:app/routers/items.py#get_item",
+   "kind": "function",
+   "label": "get_item",
+   "lang": "py",
+   "level": 3,
+   "line": 18,
+   "meta": {
+    "complexity": 1,
+    "decorators": [
+     "router.get"
+    ],
+    "exported": true,
+    "loc": 2,
+    "signature": "def get_item(item_id: int, db: Session=Depends(get_db))"
+   },
+   "parent": "py:module:app/routers/items.py",
+   "path": "app/routers/items.py"
+  },
+  {
+   "endLine": 14,
+   "id": "py:function:app/routers/items.py#list_items",
+   "kind": "function",
+   "label": "list_items",
+   "lang": "py",
+   "level": 3,
+   "line": 13,
+   "meta": {
+    "complexity": 1,
+    "decorators": [
+     "router.get"
+    ],
+    "exported": true,
+    "loc": 2,
+    "signature": "def list_items(db: Session=Depends(get_db))"
+   },
+   "parent": "py:module:app/routers/items.py",
+   "path": "app/routers/items.py"
+  },
+  {
+   "endLine": 23,
+   "id": "py:function:app/routers/users.py#create_user",
+   "kind": "function",
+   "label": "create_user",
+   "lang": "py",
+   "level": 3,
+   "line": 21,
+   "meta": {
+    "complexity": 1,
+    "decorators": [
+     "router.post"
+    ],
+    "exported": true,
+    "loc": 3,
+    "signature": "def create_user(body: UserCreate, db: Annotated[Session, Depends(get_db)])"
+   },
+   "parent": "py:module:app/routers/users.py",
+   "path": "app/routers/users.py"
+  },
+  {
+   "endLine": 33,
+   "id": "py:function:app/routers/users.py#delete_user",
+   "kind": "function",
+   "label": "delete_user",
+   "lang": "py",
+   "level": 3,
+   "line": 32,
+   "meta": {
+    "complexity": 1,
+    "decorators": [
+     "router.delete"
+    ],
+    "exported": true,
+    "loc": 2,
+    "signature": "def delete_user(user_id: int, db: Session=Depends(get_db))"
+   },
+   "parent": "py:module:app/routers/users.py",
+   "path": "app/routers/users.py"
+  },
+  {
+   "endLine": 17,
+   "id": "py:function:app/routers/users.py#list_users",
+   "kind": "function",
+   "label": "list_users",
+   "lang": "py",
+   "level": 3,
+   "line": 16,
+   "meta": {
+    "complexity": 1,
+    "decorators": [
+     "router.get"
+    ],
+    "exported": true,
+    "loc": 2,
+    "signature": "def list_users(db: Session=Depends(get_db))"
+   },
+   "parent": "py:module:app/routers/users.py",
+   "path": "app/routers/users.py"
+  },
+  {
+   "endLine": 28,
+   "id": "py:function:app/routers/users.py#me",
+   "kind": "function",
+   "label": "me",
+   "lang": "py",
+   "level": 3,
+   "line": 27,
+   "meta": {
+    "complexity": 1,
+    "decorators": [
+     "router.get"
+    ],
+    "exported": true,
+    "loc": 2,
+    "signature": "def me(user: User=Depends(get_current_user))"
+   },
+   "parent": "py:module:app/routers/users.py",
+   "path": "app/routers/users.py"
+  },
+  {
+   "endLine": 11,
+   "id": "py:method:app/middleware.py#TimingMiddleware.dispatch",
+   "kind": "method",
+   "label": "TimingMiddleware.dispatch",
+   "lang": "py",
+   "level": 3,
+   "line": 7,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 5,
+    "signature": "async def dispatch(self, request, call_next)"
+   },
+   "parent": "py:class:app/middleware.py#TimingMiddleware",
+   "path": "app/middleware.py"
+  },
+  {
+   "id": "py:module-group:.",
+   "kind": "module-group",
+   "label": "inventory-api",
+   "lang": "py",
+   "level": 1,
+   "meta": {},
+   "parent": "py:project:.",
+   "path": "."
+  },
+  {
+   "id": "py:module-group:app",
+   "kind": "module-group",
+   "label": "app",
+   "lang": "py",
+   "level": 1,
+   "meta": {},
+   "parent": "py:module-group:.",
+   "path": "app"
+  },
+  {
+   "id": "py:module-group:app/routers",
+   "kind": "module-group",
+   "label": "routers",
+   "lang": "py",
+   "level": 1,
+   "meta": {},
+   "parent": "py:module-group:app",
+   "path": "app/routers"
+  },
+  {
+   "endLine": 1,
+   "id": "py:module:app/__init__.py",
+   "kind": "module",
+   "label": "__init__.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 0,
+    "loc": 0
+   },
+   "parent": "py:module-group:app",
+   "path": "app/__init__.py"
+  },
+  {
+   "endLine": 19,
+   "id": "py:module:app/db.py",
+   "kind": "module",
+   "label": "db.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 2,
+    "loc": 13
+   },
+   "parent": "py:module-group:app",
+   "path": "app/db.py"
+  },
+  {
+   "endLine": 29,
+   "id": "py:module:app/deps.py",
+   "kind": "module",
+   "label": "deps.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 3,
+    "loc": 20
+   },
+   "parent": "py:module-group:app",
+   "path": "app/deps.py"
+  },
+  {
+   "endLine": 32,
+   "id": "py:module:app/main.py",
+   "kind": "module",
+   "label": "main.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 3,
+    "loc": 20
+   },
+   "parent": "py:module-group:app",
+   "path": "app/main.py"
+  },
+  {
+   "endLine": 11,
+   "id": "py:module:app/middleware.py",
+   "kind": "module",
+   "label": "middleware.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 8
+   },
+   "parent": "py:module-group:app",
+   "path": "app/middleware.py"
+  },
+  {
+   "endLine": 21,
+   "id": "py:module:app/models.py",
+   "kind": "module",
+   "label": "models.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 2,
+    "loc": 14
+   },
+   "parent": "py:module-group:app",
+   "path": "app/models.py"
+  },
+  {
+   "endLine": 1,
+   "id": "py:module:app/routers/__init__.py",
+   "kind": "module",
+   "label": "__init__.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 0,
+    "loc": 0
+   },
+   "parent": "py:module-group:app/routers",
+   "path": "app/routers/__init__.py"
+  },
+  {
+   "endLine": 19,
+   "id": "py:module:app/routers/items.py",
+   "kind": "module",
+   "label": "items.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 2,
+    "loc": 13
+   },
+   "parent": "py:module-group:app/routers",
+   "path": "app/routers/items.py"
+  },
+  {
+   "endLine": 33,
+   "id": "py:module:app/routers/users.py",
+   "kind": "module",
+   "label": "users.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 4,
+    "loc": 22
+   },
+   "parent": "py:module-group:app/routers",
+   "path": "app/routers/users.py"
+  },
+  {
+   "endLine": 15,
+   "id": "py:module:app/schemas.py",
+   "kind": "module",
+   "label": "schemas.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 3,
+    "loc": 9
+   },
+   "parent": "py:module-group:app",
+   "path": "app/schemas.py"
+  },
+  {
+   "id": "py:project:.",
+   "kind": "project",
+   "label": "inventory-api",
+   "lang": "py",
+   "level": 0,
+   "meta": {},
+   "parent": null,
+   "path": "."
+  },
+  {
+   "id": "py:route-group:app/main.py#app",
+   "kind": "route-group",
+   "label": "app (fastapi app, main.py)",
+   "lang": "py",
+   "level": 3,
+   "line": 9,
+   "meta": {
+    "framework": "fastapi",
+    "role": "app"
+   },
+   "parent": "py:module:app/main.py",
+   "path": "app/main.py"
+  },
+  {
+   "id": "py:route-group:app/routers/items.py#router",
+   "kind": "route-group",
+   "label": "router (fastapi router, items.py)",
+   "lang": "py",
+   "level": 3,
+   "line": 9,
+   "meta": {
+    "framework": "fastapi",
+    "role": "router"
+   },
+   "parent": "py:module:app/routers/items.py",
+   "path": "app/routers/items.py"
+  },
+  {
+   "id": "py:route-group:app/routers/users.py#router",
+   "kind": "route-group",
+   "label": "router (fastapi router, users.py)",
+   "lang": "py",
+   "level": 3,
+   "line": 12,
+   "meta": {
+    "framework": "fastapi",
+    "role": "router"
+   },
+   "parent": "py:module:app/routers/users.py",
+   "path": "app/routers/users.py"
+  }
+ ],
+ "projects": [
+  {
+   "frameworks": [
+    "fastapi",
+    "pydantic",
+    "sqlalchemy"
+   ],
+   "id": "py:project:.",
+   "lang": "py",
+   "root": "."
+  }
+ ],
+ "repoRoot": "<root>",
+ "stats": {
+  "edges.calls": 1,
+  "edges.handles": 7,
+  "edges.imports": 14,
+  "edges.injects": 11,
+  "edges.middleware-chain": 14,
+  "edges.model-relation": 2,
+  "edges.mounts": 2,
+  "edges.reads-env": 2,
+  "edges.reads-model": 4,
+  "edges.validates": 6,
+  "edges.writes-model": 2,
+  "fastapi.endpoints": 7,
+  "nodes.class": 7,
+  "nodes.endpoint": 7,
+  "nodes.env-var": 2,
+  "nodes.function": 13,
+  "nodes.method": 1,
+  "nodes.module": 10,
+  "nodes.module-group": 3,
+  "nodes.project": 1,
+  "nodes.route-group": 3,
+  "nodes.script": 1,
+  "py.callsDynamic": 28,
+  "py.callsExternal": 40,
+  "py.callsResolved": 1,
+  "py.externalImports": 33,
+  "sqlalchemy.ormUses": 6
+ },
+ "version": 1,
+ "warnings": []
+}

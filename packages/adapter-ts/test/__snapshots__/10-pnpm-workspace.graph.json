@@ -1,0 +1,1325 @@
+{
+ "edges": [
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "apps/api/src/handlers.js"
+    }
+   ],
+   "id": "calls:js:function:apps/api/src/handlers.js#getOrder->js:function:apps/api/src/db.js#query",
+   "kind": "calls",
+   "source": "js:function:apps/api/src/handlers.js#getOrder",
+   "target": "js:function:apps/api/src/db.js#query",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 5,
+     "path": "apps/api/src/handlers.js"
+    }
+   ],
+   "id": "calls:js:function:apps/api/src/handlers.js#listOrders->js:function:apps/api/src/db.js#query",
+   "kind": "calls",
+   "source": "js:function:apps/api/src/handlers.js#listOrders",
+   "target": "js:function:apps/api/src/db.js#query",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "apps/api/src/server.js"
+    }
+   ],
+   "id": "calls:js:function:apps/api/src/server.js#start->js:function:apps/api/src/handlers.js#listOrders",
+   "kind": "calls",
+   "source": "js:function:apps/api/src/server.js#start",
+   "target": "js:function:apps/api/src/handlers.js#listOrders",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 9,
+     "path": "apps/api/src/server.js"
+    }
+   ],
+   "id": "calls:js:function:apps/api/src/server.js#start->ts:function:packages/shared/src/format.ts#formatPrice",
+   "kind": "calls",
+   "source": "js:function:apps/api/src/server.js#start",
+   "target": "ts:function:packages/shared/src/format.ts#formatPrice",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 5,
+     "path": "apps/web/src/hooks/useFormatted.ts"
+    }
+   ],
+   "id": "calls:ts:function:apps/web/src/hooks/useFormatted.ts#useFormatted->ts:function:packages/shared/src/format.ts#formatPrice",
+   "kind": "calls",
+   "source": "ts:function:apps/web/src/hooks/useFormatted.ts#useFormatted",
+   "target": "ts:function:packages/shared/src/format.ts#formatPrice",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 5,
+     "path": "apps/web/src/hooks/useFormatted.ts"
+    }
+   ],
+   "id": "calls:ts:function:apps/web/src/hooks/useFormatted.ts#useFormatted->ts:function:packages/shared/src/money.ts#toCents",
+   "kind": "calls",
+   "source": "ts:function:apps/web/src/hooks/useFormatted.ts#useFormatted",
+   "target": "ts:function:packages/shared/src/money.ts#toCents",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 12,
+     "path": "apps/web/src/lib/totals.ts"
+    }
+   ],
+   "id": "calls:ts:function:apps/web/src/lib/totals.ts#emptyCart->ts:class:apps/web/src/lib/cart.ts#Cart",
+   "kind": "calls",
+   "source": "ts:function:apps/web/src/lib/totals.ts#emptyCart",
+   "target": "ts:class:apps/web/src/lib/cart.ts#Cart",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "apps/web/src/lib/cart.ts"
+    }
+   ],
+   "id": "calls:ts:method:apps/web/src/lib/cart.ts#Cart.add->ts:method:apps/web/src/lib/cart.ts#Cart.total",
+   "kind": "calls",
+   "source": "ts:method:apps/web/src/lib/cart.ts#Cart.add",
+   "target": "ts:method:apps/web/src/lib/cart.ts#Cart.total",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 12,
+     "path": "apps/web/src/lib/cart.ts"
+    }
+   ],
+   "id": "calls:ts:method:apps/web/src/lib/cart.ts#Cart.total->ts:function:apps/web/src/lib/totals.ts#total",
+   "kind": "calls",
+   "source": "ts:method:apps/web/src/lib/cart.ts#Cart.total",
+   "target": "ts:function:apps/web/src/lib/totals.ts#total",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "apps/web/src/lib/cart.test.ts"
+    }
+   ],
+   "id": "calls:ts:module:apps/web/src/lib/cart.test.ts->ts:class:apps/web/src/lib/cart.ts#Cart",
+   "kind": "calls",
+   "source": "ts:module:apps/web/src/lib/cart.test.ts",
+   "target": "ts:class:apps/web/src/lib/cart.ts#Cart",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 4,
+     "path": "apps/web/src/lib/cart.test.ts"
+    }
+   ],
+   "id": "calls:ts:module:apps/web/src/lib/cart.test.ts->ts:method:apps/web/src/lib/cart.ts#Cart.add",
+   "kind": "calls",
+   "source": "ts:module:apps/web/src/lib/cart.test.ts",
+   "target": "ts:method:apps/web/src/lib/cart.ts#Cart.add",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "packages/shared/src/__tests__/format.test.ts"
+    }
+   ],
+   "id": "calls:ts:module:packages/shared/src/__tests__/format.test.ts->ts:function:packages/shared/src/format.ts#formatPrice",
+   "kind": "calls",
+   "source": "ts:module:packages/shared/src/__tests__/format.test.ts",
+   "target": "ts:function:packages/shared/src/format.ts#formatPrice",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 4,
+     "path": "apps/web/src/App.tsx"
+    }
+   ],
+   "id": "dynamic-imports:ts:module:apps/web/src/App.tsx->ts:module:apps/web/src/pages/Settings.tsx",
+   "kind": "dynamic-imports",
+   "source": "ts:module:apps/web/src/App.tsx",
+   "target": "ts:module:apps/web/src/pages/Settings.tsx",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "apps/api/src/handlers.js"
+    }
+   ],
+   "id": "imports:js:module:apps/api/src/handlers.js->js:module:apps/api/src/db.js",
+   "kind": "imports",
+   "source": "js:module:apps/api/src/handlers.js",
+   "target": "js:module:apps/api/src/db.js",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 2,
+     "path": "apps/api/src/server.js"
+    }
+   ],
+   "id": "imports:js:module:apps/api/src/server.js->js:module:apps/api/src/handlers.js",
+   "kind": "imports",
+   "source": "js:module:apps/api/src/server.js",
+   "target": "js:module:apps/api/src/handlers.js",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "apps/api/src/server.js"
+    }
+   ],
+   "id": "imports:js:module:apps/api/src/server.js->ts:module:packages/shared/src/index.ts",
+   "kind": "imports",
+   "source": "js:module:apps/api/src/server.js",
+   "target": "ts:module:packages/shared/src/index.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "apps/web/src/App.tsx"
+    }
+   ],
+   "id": "imports:ts:module:apps/web/src/App.tsx->ts:module:apps/web/src/components/PriceTag.tsx",
+   "kind": "imports",
+   "source": "ts:module:apps/web/src/App.tsx",
+   "target": "ts:module:apps/web/src/components/PriceTag.tsx",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "apps/web/src/components/PriceTag.tsx"
+    }
+   ],
+   "id": "imports:ts:module:apps/web/src/components/PriceTag.tsx->ts:module:apps/web/src/hooks/useFormatted.ts",
+   "kind": "imports",
+   "source": "ts:module:apps/web/src/components/PriceTag.tsx",
+   "target": "ts:module:apps/web/src/hooks/useFormatted.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "apps/web/src/hooks/useFormatted.ts"
+    }
+   ],
+   "id": "imports:ts:module:apps/web/src/hooks/useFormatted.ts->ts:module:packages/shared/src/index.ts",
+   "kind": "imports",
+   "source": "ts:module:apps/web/src/hooks/useFormatted.ts",
+   "target": "ts:module:packages/shared/src/index.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 2,
+     "path": "apps/web/src/hooks/useFormatted.ts"
+    }
+   ],
+   "id": "imports:ts:module:apps/web/src/hooks/useFormatted.ts->ts:module:packages/shared/src/money.ts",
+   "kind": "imports",
+   "source": "ts:module:apps/web/src/hooks/useFormatted.ts",
+   "target": "ts:module:packages/shared/src/money.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "apps/web/src/lib/cart.test.ts"
+    }
+   ],
+   "id": "imports:ts:module:apps/web/src/lib/cart.test.ts->ts:module:apps/web/src/lib/cart.ts",
+   "kind": "imports",
+   "source": "ts:module:apps/web/src/lib/cart.test.ts",
+   "target": "ts:module:apps/web/src/lib/cart.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "apps/web/src/lib/cart.ts"
+    }
+   ],
+   "id": "imports:ts:module:apps/web/src/lib/cart.ts->ts:module:apps/web/src/lib/totals.ts",
+   "kind": "imports",
+   "source": "ts:module:apps/web/src/lib/cart.ts",
+   "target": "ts:module:apps/web/src/lib/totals.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "apps/web/src/lib/totals.ts"
+    }
+   ],
+   "id": "imports:ts:module:apps/web/src/lib/totals.ts->ts:module:apps/web/src/lib/cart.ts",
+   "kind": "imports",
+   "source": "ts:module:apps/web/src/lib/totals.ts",
+   "target": "ts:module:apps/web/src/lib/cart.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "packages/shared/src/__tests__/format.test.ts"
+    }
+   ],
+   "id": "imports:ts:module:packages/shared/src/__tests__/format.test.ts->ts:module:packages/shared/src/format.ts",
+   "kind": "imports",
+   "source": "ts:module:packages/shared/src/__tests__/format.test.ts",
+   "target": "ts:module:packages/shared/src/format.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "packages/shared/src/index.ts"
+    }
+   ],
+   "id": "imports:ts:module:packages/shared/src/index.ts->ts:module:packages/shared/src/format.ts",
+   "kind": "imports",
+   "source": "ts:module:packages/shared/src/index.ts",
+   "target": "ts:module:packages/shared/src/format.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 2,
+     "path": "packages/shared/src/index.ts"
+    }
+   ],
+   "id": "imports:ts:module:packages/shared/src/index.ts->ts:module:packages/shared/src/strings.ts",
+   "kind": "imports",
+   "source": "ts:module:packages/shared/src/index.ts",
+   "target": "ts:module:packages/shared/src/strings.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 7,
+     "path": "apps/api/src/server.js"
+    }
+   ],
+   "id": "reads-env:js:function:apps/api/src/server.js#start->config:env-var:PLUGIN_PATH",
+   "kind": "reads-env",
+   "source": "js:function:apps/api/src/server.js#start",
+   "target": "config:env-var:PLUGIN_PATH",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "apps/api/src/db.js"
+    }
+   ],
+   "id": "reads-env:js:module:apps/api/src/db.js->config:env-var:DATABASE_URL",
+   "kind": "reads-env",
+   "source": "js:module:apps/api/src/db.js",
+   "target": "config:env-var:DATABASE_URL",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 4,
+     "path": "apps/api/src/server.js"
+    }
+   ],
+   "id": "reads-env:js:module:apps/api/src/server.js->config:env-var:PORT",
+   "kind": "reads-env",
+   "source": "js:module:apps/api/src/server.js",
+   "target": "config:env-var:PORT",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 7,
+     "path": "apps/web/src/App.tsx"
+    }
+   ],
+   "id": "reads-env:ts:component:apps/web/src/App.tsx#App->config:env-var:VITE_API_URL",
+   "kind": "reads-env",
+   "source": "ts:component:apps/web/src/App.tsx#App",
+   "target": "config:env-var:VITE_API_URL",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "packages/shared/src/format.ts"
+    }
+   ],
+   "id": "reads-env:ts:function:packages/shared/src/format.ts#formatPrice->config:env-var:DEFAULT_LOCALE",
+   "kind": "reads-env",
+   "source": "ts:function:packages/shared/src/format.ts#formatPrice",
+   "target": "config:env-var:DEFAULT_LOCALE",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 11,
+     "path": "apps/web/src/App.tsx"
+    }
+   ],
+   "id": "renders:ts:component:apps/web/src/App.tsx#App->ts:component:apps/web/src/components/PriceTag.tsx#PriceTag",
+   "kind": "renders",
+   "source": "ts:component:apps/web/src/App.tsx#App",
+   "target": "ts:component:apps/web/src/components/PriceTag.tsx#PriceTag",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "apps/web/src/lib/cart.test.ts"
+    }
+   ],
+   "id": "tests:ts:module:apps/web/src/lib/cart.test.ts->ts:module:apps/web/src/lib/cart.ts",
+   "kind": "tests",
+   "source": "ts:module:apps/web/src/lib/cart.test.ts",
+   "target": "ts:module:apps/web/src/lib/cart.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "packages/shared/src/__tests__/format.test.ts"
+    }
+   ],
+   "id": "tests:ts:module:packages/shared/src/__tests__/format.test.ts->ts:module:packages/shared/src/format.ts",
+   "kind": "tests",
+   "source": "ts:module:packages/shared/src/__tests__/format.test.ts",
+   "target": "ts:module:packages/shared/src/format.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 4,
+     "path": "apps/web/src/components/PriceTag.tsx"
+    }
+   ],
+   "id": "uses-hook:ts:component:apps/web/src/components/PriceTag.tsx#PriceTag->ts:function:apps/web/src/hooks/useFormatted.ts#useFormatted",
+   "kind": "uses-hook",
+   "source": "ts:component:apps/web/src/components/PriceTag.tsx#PriceTag",
+   "target": "ts:function:apps/web/src/hooks/useFormatted.ts#useFormatted",
+   "weight": 1
+  }
+ ],
+ "nodes": [
+  {
+   "id": "config:env-var:DATABASE_URL",
+   "kind": "env-var",
+   "label": "DATABASE_URL",
+   "lang": "config",
+   "level": 3,
+   "meta": {},
+   "parent": null
+  },
+  {
+   "id": "config:env-var:DEFAULT_LOCALE",
+   "kind": "env-var",
+   "label": "DEFAULT_LOCALE",
+   "lang": "config",
+   "level": 3,
+   "meta": {},
+   "parent": null
+  },
+  {
+   "id": "config:env-var:PLUGIN_PATH",
+   "kind": "env-var",
+   "label": "PLUGIN_PATH",
+   "lang": "config",
+   "level": 3,
+   "meta": {},
+   "parent": null
+  },
+  {
+   "id": "config:env-var:PORT",
+   "kind": "env-var",
+   "label": "PORT",
+   "lang": "config",
+   "level": 3,
+   "meta": {},
+   "parent": null
+  },
+  {
+   "id": "config:env-var:VITE_API_URL",
+   "kind": "env-var",
+   "label": "VITE_API_URL",
+   "lang": "config",
+   "level": 3,
+   "meta": {},
+   "parent": null
+  },
+  {
+   "id": "config:script:apps/api/package.json#start",
+   "kind": "script",
+   "label": "start",
+   "lang": "config",
+   "level": 3,
+   "line": 5,
+   "meta": {
+    "role": "npm-script",
+    "signature": "node src/server.js"
+   },
+   "parent": "js:project:apps/api",
+   "path": "apps/api/package.json"
+  },
+  {
+   "id": "config:script:apps/web/package.json#build",
+   "kind": "script",
+   "label": "build",
+   "lang": "config",
+   "level": 3,
+   "line": 6,
+   "meta": {
+    "role": "npm-script",
+    "signature": "vite build"
+   },
+   "parent": "ts:project:apps/web",
+   "path": "apps/web/package.json"
+  },
+  {
+   "id": "config:script:apps/web/package.json#dev",
+   "kind": "script",
+   "label": "dev",
+   "lang": "config",
+   "level": 3,
+   "line": 5,
+   "meta": {
+    "role": "npm-script",
+    "signature": "vite"
+   },
+   "parent": "ts:project:apps/web",
+   "path": "apps/web/package.json"
+  },
+  {
+   "id": "config:script:apps/web/package.json#test",
+   "kind": "script",
+   "label": "test",
+   "lang": "config",
+   "level": 3,
+   "line": 7,
+   "meta": {
+    "role": "npm-script",
+    "signature": "vitest run"
+   },
+   "parent": "ts:project:apps/web",
+   "path": "apps/web/package.json"
+  },
+  {
+   "id": "config:script:package.json#dev",
+   "kind": "script",
+   "label": "dev",
+   "lang": "config",
+   "level": 3,
+   "line": 5,
+   "meta": {
+    "role": "npm-script",
+    "signature": "turbo run dev"
+   },
+   "parent": "config:workspace:.",
+   "path": "package.json"
+  },
+  {
+   "id": "config:script:package.json#test",
+   "kind": "script",
+   "label": "test",
+   "lang": "config",
+   "level": 3,
+   "line": 6,
+   "meta": {
+    "role": "npm-script",
+    "signature": "turbo run test"
+   },
+   "parent": "config:workspace:.",
+   "path": "package.json"
+  },
+  {
+   "id": "config:workspace:.",
+   "kind": "workspace",
+   "label": "acme",
+   "lang": "config",
+   "level": 0,
+   "meta": {
+    "framework": "pnpm+turbo"
+   },
+   "parent": null,
+   "path": "."
+  },
+  {
+   "endLine": 5,
+   "id": "js:function:apps/api/src/db.js#query",
+   "kind": "function",
+   "label": "query",
+   "lang": "js",
+   "level": 3,
+   "line": 3,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "query(sql)"
+   },
+   "parent": "js:module:apps/api/src/db.js",
+   "path": "apps/api/src/db.js"
+  },
+  {
+   "endLine": 8,
+   "id": "js:function:apps/api/src/handlers.js#getOrder",
+   "kind": "function",
+   "label": "getOrder",
+   "lang": "js",
+   "level": 3,
+   "line": 8,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 1,
+    "signature": "async getOrder(id)"
+   },
+   "parent": "js:module:apps/api/src/handlers.js",
+   "path": "apps/api/src/handlers.js"
+  },
+  {
+   "endLine": 6,
+   "id": "js:function:apps/api/src/handlers.js#listOrders",
+   "kind": "function",
+   "label": "listOrders",
+   "lang": "js",
+   "level": 3,
+   "line": 4,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "listOrders()"
+   },
+   "parent": "js:module:apps/api/src/handlers.js",
+   "path": "apps/api/src/handlers.js"
+  },
+  {
+   "endLine": 10,
+   "id": "js:function:apps/api/src/server.js#start",
+   "kind": "function",
+   "label": "start",
+   "lang": "js",
+   "level": 3,
+   "line": 6,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 5,
+    "signature": "start()"
+   },
+   "parent": "js:module:apps/api/src/server.js",
+   "path": "apps/api/src/server.js"
+  },
+  {
+   "id": "js:module-group:apps/api",
+   "kind": "module-group",
+   "label": "@acme/api",
+   "lang": "js",
+   "level": 1,
+   "meta": {},
+   "parent": "js:project:apps/api",
+   "path": "apps/api"
+  },
+  {
+   "id": "js:module-group:apps/api/src",
+   "kind": "module-group",
+   "label": "src",
+   "lang": "js",
+   "level": 1,
+   "meta": {},
+   "parent": "js:module-group:apps/api",
+   "path": "apps/api/src"
+  },
+  {
+   "endLine": 8,
+   "id": "js:module:apps/api/src/db.js",
+   "kind": "module",
+   "label": "db.js",
+   "lang": "js",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 5
+   },
+   "parent": "js:module-group:apps/api/src",
+   "path": "apps/api/src/db.js"
+  },
+  {
+   "endLine": 9,
+   "id": "js:module:apps/api/src/handlers.js",
+   "kind": "module",
+   "label": "handlers.js",
+   "lang": "js",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 2,
+    "loc": 6
+   },
+   "parent": "js:module-group:apps/api/src",
+   "path": "apps/api/src/handlers.js"
+  },
+  {
+   "endLine": 13,
+   "id": "js:module:apps/api/src/server.js",
+   "kind": "module",
+   "label": "server.js",
+   "lang": "js",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 9
+   },
+   "parent": "js:module-group:apps/api/src",
+   "path": "apps/api/src/server.js"
+  },
+  {
+   "id": "js:project:apps/api",
+   "kind": "project",
+   "label": "@acme/api",
+   "lang": "js",
+   "level": 0,
+   "meta": {},
+   "parent": "config:workspace:.",
+   "path": "apps/api"
+  },
+  {
+   "endLine": 14,
+   "id": "ts:class:apps/web/src/lib/cart.ts#Cart",
+   "kind": "class",
+   "label": "Cart",
+   "lang": "ts",
+   "level": 3,
+   "line": 3,
+   "meta": {
+    "exported": true,
+    "loc": 12
+   },
+   "parent": "ts:module:apps/web/src/lib/cart.ts",
+   "path": "apps/web/src/lib/cart.ts"
+  },
+  {
+   "endLine": 14,
+   "id": "ts:component:apps/web/src/App.tsx#App",
+   "kind": "component",
+   "label": "App",
+   "lang": "ts",
+   "level": 3,
+   "line": 6,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 9,
+    "signature": "App()"
+   },
+   "parent": "ts:module:apps/web/src/App.tsx",
+   "path": "apps/web/src/App.tsx"
+  },
+  {
+   "endLine": 6,
+   "id": "ts:component:apps/web/src/components/PriceTag.tsx#PriceTag",
+   "kind": "component",
+   "label": "PriceTag",
+   "lang": "ts",
+   "level": 3,
+   "line": 3,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 4,
+    "signature": "PriceTag({ cents }: { cents: number })"
+   },
+   "parent": "ts:module:apps/web/src/components/PriceTag.tsx",
+   "path": "apps/web/src/components/PriceTag.tsx"
+  },
+  {
+   "endLine": 3,
+   "id": "ts:component:apps/web/src/pages/Settings.tsx#Settings",
+   "kind": "component",
+   "label": "Settings",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "Settings()"
+   },
+   "parent": "ts:module:apps/web/src/pages/Settings.tsx",
+   "path": "apps/web/src/pages/Settings.tsx"
+  },
+  {
+   "endLine": 4,
+   "id": "ts:function:apps/web/src/App.tsx#loadSettings",
+   "kind": "function",
+   "label": "loadSettings",
+   "lang": "ts",
+   "level": 3,
+   "line": 4,
+   "meta": {
+    "complexity": 1,
+    "loc": 1,
+    "signature": "loadSettings()"
+   },
+   "parent": "ts:module:apps/web/src/App.tsx",
+   "path": "apps/web/src/App.tsx"
+  },
+  {
+   "endLine": 6,
+   "id": "ts:function:apps/web/src/hooks/useFormatted.ts#useFormatted",
+   "kind": "function",
+   "label": "useFormatted",
+   "lang": "ts",
+   "level": 3,
+   "line": 4,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "useFormatted(cents: number): string"
+   },
+   "parent": "ts:module:apps/web/src/hooks/useFormatted.ts",
+   "path": "apps/web/src/hooks/useFormatted.ts"
+  },
+  {
+   "endLine": 13,
+   "id": "ts:function:apps/web/src/lib/totals.ts#emptyCart",
+   "kind": "function",
+   "label": "emptyCart",
+   "lang": "ts",
+   "level": 3,
+   "line": 11,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "emptyCart(): Cart"
+   },
+   "parent": "ts:module:apps/web/src/lib/totals.ts",
+   "path": "apps/web/src/lib/totals.ts"
+  },
+  {
+   "endLine": 9,
+   "id": "ts:function:apps/web/src/lib/totals.ts#total",
+   "kind": "function",
+   "label": "total",
+   "lang": "ts",
+   "level": 3,
+   "line": 3,
+   "meta": {
+    "complexity": 3,
+    "exported": true,
+    "loc": 7,
+    "signature": "total(cart: Cart): number"
+   },
+   "parent": "ts:module:apps/web/src/lib/totals.ts",
+   "path": "apps/web/src/lib/totals.ts"
+  },
+  {
+   "endLine": 5,
+   "id": "ts:function:packages/shared/src/format.ts#formatPrice",
+   "kind": "function",
+   "label": "formatPrice",
+   "lang": "ts",
+   "level": 3,
+   "line": 2,
+   "meta": {
+    "complexity": 2,
+    "doc": "Format an amount in cents as a currency string.",
+    "exported": true,
+    "loc": 4,
+    "signature": "formatPrice(cents: number, currency = 'USD'): string"
+   },
+   "parent": "ts:module:packages/shared/src/format.ts",
+   "path": "packages/shared/src/format.ts"
+  },
+  {
+   "endLine": 3,
+   "id": "ts:function:packages/shared/src/money.ts#toCents",
+   "kind": "function",
+   "label": "toCents",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "toCents(amount: number): number"
+   },
+   "parent": "ts:module:packages/shared/src/money.ts",
+   "path": "packages/shared/src/money.ts"
+  },
+  {
+   "endLine": 1,
+   "id": "ts:function:packages/shared/src/strings.ts#slugify",
+   "kind": "function",
+   "label": "slugify",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 1,
+    "signature": "slugify(s: string): string"
+   },
+   "parent": "ts:module:packages/shared/src/strings.ts",
+   "path": "packages/shared/src/strings.ts"
+  },
+  {
+   "endLine": 3,
+   "id": "ts:function:packages/shared/src/strings.ts#unusedHelper",
+   "kind": "function",
+   "label": "unusedHelper",
+   "lang": "ts",
+   "level": 3,
+   "line": 3,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 1,
+    "signature": "unusedHelper(): void"
+   },
+   "parent": "ts:module:packages/shared/src/strings.ts",
+   "path": "packages/shared/src/strings.ts"
+  },
+  {
+   "endLine": 9,
+   "id": "ts:method:apps/web/src/lib/cart.ts#Cart.add",
+   "kind": "method",
+   "label": "Cart.add",
+   "lang": "ts",
+   "level": 3,
+   "line": 6,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 4,
+    "signature": "add(cents: number): number"
+   },
+   "parent": "ts:class:apps/web/src/lib/cart.ts#Cart",
+   "path": "apps/web/src/lib/cart.ts"
+  },
+  {
+   "endLine": 13,
+   "id": "ts:method:apps/web/src/lib/cart.ts#Cart.total",
+   "kind": "method",
+   "label": "Cart.total",
+   "lang": "ts",
+   "level": 3,
+   "line": 11,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "total(): number"
+   },
+   "parent": "ts:class:apps/web/src/lib/cart.ts#Cart",
+   "path": "apps/web/src/lib/cart.ts"
+  },
+  {
+   "id": "ts:module-group:apps/web",
+   "kind": "module-group",
+   "label": "@acme/web",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:project:apps/web",
+   "path": "apps/web"
+  },
+  {
+   "id": "ts:module-group:apps/web/src",
+   "kind": "module-group",
+   "label": "src",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:apps/web",
+   "path": "apps/web/src"
+  },
+  {
+   "id": "ts:module-group:apps/web/src/components",
+   "kind": "module-group",
+   "label": "components",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:apps/web/src",
+   "path": "apps/web/src/components"
+  },
+  {
+   "id": "ts:module-group:apps/web/src/hooks",
+   "kind": "module-group",
+   "label": "hooks",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:apps/web/src",
+   "path": "apps/web/src/hooks"
+  },
+  {
+   "id": "ts:module-group:apps/web/src/lib",
+   "kind": "module-group",
+   "label": "lib",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:apps/web/src",
+   "path": "apps/web/src/lib"
+  },
+  {
+   "id": "ts:module-group:apps/web/src/pages",
+   "kind": "module-group",
+   "label": "pages",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:apps/web/src",
+   "path": "apps/web/src/pages"
+  },
+  {
+   "id": "ts:module-group:packages/shared",
+   "kind": "module-group",
+   "label": "@acme/shared",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:project:packages/shared",
+   "path": "packages/shared"
+  },
+  {
+   "id": "ts:module-group:packages/shared/src",
+   "kind": "module-group",
+   "label": "src",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:packages/shared",
+   "path": "packages/shared/src"
+  },
+  {
+   "id": "ts:module-group:packages/shared/src/__tests__",
+   "kind": "module-group",
+   "label": "__tests__",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:packages/shared/src",
+   "path": "packages/shared/src/__tests__"
+  },
+  {
+   "endLine": 15,
+   "id": "ts:module:apps/web/src/App.tsx",
+   "kind": "module",
+   "label": "App.tsx",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 12
+   },
+   "parent": "ts:module-group:apps/web/src",
+   "path": "apps/web/src/App.tsx"
+  },
+  {
+   "endLine": 7,
+   "id": "ts:module:apps/web/src/components/PriceTag.tsx",
+   "kind": "module",
+   "label": "PriceTag.tsx",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 5
+   },
+   "parent": "ts:module-group:apps/web/src/components",
+   "path": "apps/web/src/components/PriceTag.tsx"
+  },
+  {
+   "endLine": 7,
+   "id": "ts:module:apps/web/src/hooks/useFormatted.ts",
+   "kind": "module",
+   "label": "useFormatted.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 5
+   },
+   "parent": "ts:module-group:apps/web/src/hooks",
+   "path": "apps/web/src/hooks/useFormatted.ts"
+  },
+  {
+   "endLine": 5,
+   "id": "ts:module:apps/web/src/lib/cart.test.ts",
+   "kind": "module",
+   "label": "cart.test.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 0,
+    "loc": 3,
+    "role": "test"
+   },
+   "parent": "ts:module-group:apps/web/src/lib",
+   "path": "apps/web/src/lib/cart.test.ts"
+  },
+  {
+   "endLine": 15,
+   "id": "ts:module:apps/web/src/lib/cart.ts",
+   "kind": "module",
+   "label": "cart.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 11
+   },
+   "parent": "ts:module-group:apps/web/src/lib",
+   "path": "apps/web/src/lib/cart.ts"
+  },
+  {
+   "endLine": 14,
+   "id": "ts:module:apps/web/src/lib/totals.ts",
+   "kind": "module",
+   "label": "totals.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 2,
+    "loc": 11
+   },
+   "parent": "ts:module-group:apps/web/src/lib",
+   "path": "apps/web/src/lib/totals.ts"
+  },
+  {
+   "endLine": 4,
+   "id": "ts:module:apps/web/src/pages/Settings.tsx",
+   "kind": "module",
+   "label": "Settings.tsx",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 3
+   },
+   "parent": "ts:module-group:apps/web/src/pages",
+   "path": "apps/web/src/pages/Settings.tsx"
+  },
+  {
+   "endLine": 4,
+   "id": "ts:module:packages/shared/src/__tests__/format.test.ts",
+   "kind": "module",
+   "label": "format.test.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 0,
+    "loc": 2,
+    "role": "test"
+   },
+   "parent": "ts:module-group:packages/shared/src/__tests__",
+   "path": "packages/shared/src/__tests__/format.test.ts"
+  },
+  {
+   "endLine": 6,
+   "id": "ts:module:packages/shared/src/format.ts",
+   "kind": "module",
+   "label": "format.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 5
+   },
+   "parent": "ts:module-group:packages/shared/src",
+   "path": "packages/shared/src/format.ts"
+  },
+  {
+   "endLine": 3,
+   "id": "ts:module:packages/shared/src/index.ts",
+   "kind": "module",
+   "label": "index.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 2,
+    "loc": 2
+   },
+   "parent": "ts:module-group:packages/shared/src",
+   "path": "packages/shared/src/index.ts"
+  },
+  {
+   "endLine": 4,
+   "id": "ts:module:packages/shared/src/money.ts",
+   "kind": "module",
+   "label": "money.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 3
+   },
+   "parent": "ts:module-group:packages/shared/src",
+   "path": "packages/shared/src/money.ts"
+  },
+  {
+   "endLine": 4,
+   "id": "ts:module:packages/shared/src/strings.ts",
+   "kind": "module",
+   "label": "strings.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 2,
+    "loc": 2
+   },
+   "parent": "ts:module-group:packages/shared/src",
+   "path": "packages/shared/src/strings.ts"
+  },
+  {
+   "id": "ts:project:apps/web",
+   "kind": "project",
+   "label": "@acme/web",
+   "lang": "ts",
+   "level": 0,
+   "meta": {},
+   "parent": "config:workspace:.",
+   "path": "apps/web"
+  },
+  {
+   "id": "ts:project:packages/shared",
+   "kind": "project",
+   "label": "@acme/shared",
+   "lang": "ts",
+   "level": 0,
+   "meta": {},
+   "parent": "config:workspace:.",
+   "path": "packages/shared"
+  }
+ ],
+ "projects": [
+  {
+   "frameworks": [],
+   "id": "js:project:apps/api",
+   "lang": "js",
+   "root": "apps/api"
+  },
+  {
+   "frameworks": [],
+   "id": "ts:project:apps/web",
+   "lang": "ts",
+   "root": "apps/web"
+  },
+  {
+   "frameworks": [],
+   "id": "ts:project:packages/shared",
+   "lang": "ts",
+   "root": "packages/shared"
+  }
+ ],
+ "repoRoot": "<root>",
+ "stats": {
+  "edges.calls": 12,
+  "edges.dynamic-imports": 1,
+  "edges.imports": 13,
+  "edges.reads-env": 5,
+  "edges.renders": 1,
+  "edges.tests": 2,
+  "edges.uses-hook": 1,
+  "nodes.class": 1,
+  "nodes.component": 3,
+  "nodes.env-var": 5,
+  "nodes.function": 12,
+  "nodes.method": 2,
+  "nodes.module": 15,
+  "nodes.module-group": 11,
+  "nodes.project": 3,
+  "nodes.script": 6,
+  "nodes.workspace": 1,
+  "ts.assetImports": 1,
+  "ts.callsExternal": 9,
+  "ts.callsResolved": 13
+ },
+ "version": 1,
+ "warnings": [
+  {
+   "code": "ts-dynamic-require",
+   "count": 1,
+   "message": "require() with a non-literal specifier (not linked)",
+   "path": "apps/api/src/server.js"
+  }
+ ]
+}

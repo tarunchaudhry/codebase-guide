@@ -1,0 +1,1591 @@
+{
+ "edges": [
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "src/main.ts"
+    }
+   ],
+   "id": "calls:ts:function:src/main.ts#bootstrap->ts:class:src/common/throttle.guard.ts#ThrottleGuard",
+   "kind": "calls",
+   "source": "ts:function:src/main.ts#bootstrap",
+   "target": "ts:class:src/common/throttle.guard.ts#ThrottleGuard",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 11,
+     "path": "src/orders/orders.controller.ts"
+    }
+   ],
+   "id": "calls:ts:method:src/orders/orders.controller.ts#OrdersController.list->ts:method:src/orders/orders.service.ts#OrdersService.list",
+   "kind": "calls",
+   "source": "ts:method:src/orders/orders.controller.ts#OrdersController.list",
+   "target": "ts:method:src/orders/orders.service.ts#OrdersService.list",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 9,
+     "path": "src/orders/orders.service.ts"
+    }
+   ],
+   "id": "calls:ts:method:src/orders/orders.service.ts#OrdersService.list->ts:method:src/users/users.service.ts#UsersService.findAll",
+   "kind": "calls",
+   "source": "ts:method:src/orders/orders.service.ts#OrdersService.list",
+   "target": "ts:method:src/users/users.service.ts#UsersService.findAll",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 24,
+     "path": "src/users/users.controller.ts"
+    }
+   ],
+   "id": "calls:ts:method:src/users/users.controller.ts#UsersController.create->ts:method:src/users/users.service.ts#UsersService.create",
+   "kind": "calls",
+   "source": "ts:method:src/users/users.controller.ts#UsersController.create",
+   "target": "ts:method:src/users/users.service.ts#UsersService.create",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 13,
+     "path": "src/users/users.controller.ts"
+    }
+   ],
+   "id": "calls:ts:method:src/users/users.controller.ts#UsersController.findAll->ts:method:src/users/users.service.ts#UsersService.findAll",
+   "kind": "calls",
+   "source": "ts:method:src/users/users.controller.ts#UsersController.findAll",
+   "target": "ts:method:src/users/users.service.ts#UsersService.findAll",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 18,
+     "path": "src/users/users.controller.ts"
+    }
+   ],
+   "id": "calls:ts:method:src/users/users.controller.ts#UsersController.findOne->ts:method:src/users/users.service.ts#UsersService.findOne",
+   "kind": "calls",
+   "source": "ts:method:src/users/users.controller.ts#UsersController.findOne",
+   "target": "ts:method:src/users/users.service.ts#UsersService.findOne",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 14,
+     "path": "src/users/users.service.ts"
+    }
+   ],
+   "id": "calls:ts:method:src/users/users.service.ts#UsersService.findOne->ts:method:src/users/users.service.ts#UsersService.findAll",
+   "kind": "calls",
+   "source": "ts:method:src/users/users.service.ts#UsersService.findOne",
+   "target": "ts:method:src/users/users.service.ts#UsersService.findAll",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 12,
+     "path": "src/main.ts"
+    }
+   ],
+   "id": "calls:ts:module:src/main.ts->ts:function:src/main.ts#bootstrap",
+   "kind": "calls",
+   "source": "ts:module:src/main.ts",
+   "target": "ts:function:src/main.ts#bootstrap",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 9,
+     "path": "src/orders/orders.controller.ts"
+    }
+   ],
+   "id": "handles:ts:endpoint:src/orders/orders.controller.ts#OrdersController.list->ts:method:src/orders/orders.controller.ts#OrdersController.list",
+   "kind": "handles",
+   "source": "ts:endpoint:src/orders/orders.controller.ts#OrdersController.list",
+   "target": "ts:method:src/orders/orders.controller.ts#OrdersController.list",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 14,
+     "path": "src/orders/orders.controller.ts"
+    }
+   ],
+   "id": "handles:ts:endpoint:src/orders/orders.controller.ts#OrdersController.remove->ts:method:src/orders/orders.controller.ts#OrdersController.remove",
+   "kind": "handles",
+   "source": "ts:endpoint:src/orders/orders.controller.ts#OrdersController.remove",
+   "target": "ts:method:src/orders/orders.controller.ts#OrdersController.remove",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 21,
+     "path": "src/users/users.controller.ts"
+    }
+   ],
+   "id": "handles:ts:endpoint:src/users/users.controller.ts#UsersController.create->ts:method:src/users/users.controller.ts#UsersController.create",
+   "kind": "handles",
+   "source": "ts:endpoint:src/users/users.controller.ts#UsersController.create",
+   "target": "ts:method:src/users/users.controller.ts#UsersController.create",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 11,
+     "path": "src/users/users.controller.ts"
+    }
+   ],
+   "id": "handles:ts:endpoint:src/users/users.controller.ts#UsersController.findAll->ts:method:src/users/users.controller.ts#UsersController.findAll",
+   "kind": "handles",
+   "source": "ts:endpoint:src/users/users.controller.ts#UsersController.findAll",
+   "target": "ts:method:src/users/users.controller.ts#UsersController.findAll",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 16,
+     "path": "src/users/users.controller.ts"
+    }
+   ],
+   "id": "handles:ts:endpoint:src/users/users.controller.ts#UsersController.findOne->ts:method:src/users/users.controller.ts#UsersController.findOne",
+   "kind": "handles",
+   "source": "ts:endpoint:src/users/users.controller.ts#UsersController.findOne",
+   "target": "ts:method:src/users/users.controller.ts#UsersController.findOne",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 2,
+     "path": "src/app.module.ts"
+    }
+   ],
+   "id": "imports:ts:module:src/app.module.ts->ts:module:src/orders/orders.module.ts",
+   "kind": "imports",
+   "source": "ts:module:src/app.module.ts",
+   "target": "ts:module:src/orders/orders.module.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "src/app.module.ts"
+    }
+   ],
+   "id": "imports:ts:module:src/app.module.ts->ts:module:src/users/users.module.ts",
+   "kind": "imports",
+   "source": "ts:module:src/app.module.ts",
+   "target": "ts:module:src/users/users.module.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 2,
+     "path": "src/main.ts"
+    }
+   ],
+   "id": "imports:ts:module:src/main.ts->ts:module:src/app.module.ts",
+   "kind": "imports",
+   "source": "ts:module:src/main.ts",
+   "target": "ts:module:src/app.module.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "src/main.ts"
+    }
+   ],
+   "id": "imports:ts:module:src/main.ts->ts:module:src/common/throttle.guard.ts",
+   "kind": "imports",
+   "source": "ts:module:src/main.ts",
+   "target": "ts:module:src/common/throttle.guard.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 2,
+     "path": "src/orders/orders.controller.ts"
+    }
+   ],
+   "id": "imports:ts:module:src/orders/orders.controller.ts->ts:module:src/common/auth.guard.ts",
+   "kind": "imports",
+   "source": "ts:module:src/orders/orders.controller.ts",
+   "target": "ts:module:src/common/auth.guard.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "src/orders/orders.controller.ts"
+    }
+   ],
+   "id": "imports:ts:module:src/orders/orders.controller.ts->ts:module:src/orders/orders.service.ts",
+   "kind": "imports",
+   "source": "ts:module:src/orders/orders.controller.ts",
+   "target": "ts:module:src/orders/orders.service.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "src/orders/orders.module.ts"
+    }
+   ],
+   "id": "imports:ts:module:src/orders/orders.module.ts->ts:module:src/orders/orders.controller.ts",
+   "kind": "imports",
+   "source": "ts:module:src/orders/orders.module.ts",
+   "target": "ts:module:src/orders/orders.controller.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 4,
+     "path": "src/orders/orders.module.ts"
+    }
+   ],
+   "id": "imports:ts:module:src/orders/orders.module.ts->ts:module:src/orders/orders.service.ts",
+   "kind": "imports",
+   "source": "ts:module:src/orders/orders.module.ts",
+   "target": "ts:module:src/orders/orders.service.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 2,
+     "path": "src/orders/orders.module.ts"
+    }
+   ],
+   "id": "imports:ts:module:src/orders/orders.module.ts->ts:module:src/users/users.module.ts",
+   "kind": "imports",
+   "source": "ts:module:src/orders/orders.module.ts",
+   "target": "ts:module:src/users/users.module.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 2,
+     "path": "src/orders/orders.service.ts"
+    }
+   ],
+   "id": "imports:ts:module:src/orders/orders.service.ts->ts:module:src/users/users.service.ts",
+   "kind": "imports",
+   "source": "ts:module:src/orders/orders.service.ts",
+   "target": "ts:module:src/users/users.service.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 2,
+     "path": "src/users/users.controller.ts"
+    }
+   ],
+   "id": "imports:ts:module:src/users/users.controller.ts->ts:module:src/common/auth.guard.ts",
+   "kind": "imports",
+   "source": "ts:module:src/users/users.controller.ts",
+   "target": "ts:module:src/common/auth.guard.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "src/users/users.controller.ts"
+    }
+   ],
+   "id": "imports:ts:module:src/users/users.controller.ts->ts:module:src/common/logging.interceptor.ts",
+   "kind": "imports",
+   "source": "ts:module:src/users/users.controller.ts",
+   "target": "ts:module:src/common/logging.interceptor.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 4,
+     "path": "src/users/users.controller.ts"
+    }
+   ],
+   "id": "imports:ts:module:src/users/users.controller.ts->ts:module:src/users/users.service.ts",
+   "kind": "imports",
+   "source": "ts:module:src/users/users.controller.ts",
+   "target": "ts:module:src/users/users.service.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 2,
+     "path": "src/users/users.module.ts"
+    }
+   ],
+   "id": "imports:ts:module:src/users/users.module.ts->ts:module:src/users/users.controller.ts",
+   "kind": "imports",
+   "source": "ts:module:src/users/users.module.ts",
+   "target": "ts:module:src/users/users.controller.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "src/users/users.module.ts"
+    }
+   ],
+   "id": "imports:ts:module:src/users/users.module.ts->ts:module:src/users/users.service.ts",
+   "kind": "imports",
+   "source": "ts:module:src/users/users.module.ts",
+   "target": "ts:module:src/users/users.service.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 7,
+     "path": "src/orders/orders.controller.ts"
+    }
+   ],
+   "id": "injects:ts:class:src/orders/orders.controller.ts#OrdersController->ts:class:src/orders/orders.service.ts#OrdersService",
+   "kind": "injects",
+   "source": "ts:class:src/orders/orders.controller.ts#OrdersController",
+   "target": "ts:class:src/orders/orders.service.ts#OrdersService",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "src/orders/orders.service.ts"
+    }
+   ],
+   "id": "injects:ts:class:src/orders/orders.service.ts#OrdersService->ts:class:src/users/users.service.ts#UsersService",
+   "kind": "injects",
+   "source": "ts:class:src/orders/orders.service.ts#OrdersService",
+   "target": "ts:class:src/users/users.service.ts#UsersService",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 9,
+     "path": "src/users/users.controller.ts"
+    }
+   ],
+   "id": "injects:ts:class:src/users/users.controller.ts#UsersController->ts:class:src/users/users.service.ts#UsersService",
+   "kind": "injects",
+   "source": "ts:class:src/users/users.controller.ts#UsersController",
+   "target": "ts:class:src/users/users.service.ts#UsersService",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "src/main.ts"
+    }
+   ],
+   "id": "middleware-chain:ts:endpoint:src/orders/orders.controller.ts#OrdersController.list->ts:class:src/common/throttle.guard.ts#ThrottleGuard",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 0
+   },
+   "source": "ts:endpoint:src/orders/orders.controller.ts#OrdersController.list",
+   "target": "ts:class:src/common/throttle.guard.ts#ThrottleGuard",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 14,
+     "path": "src/orders/orders.controller.ts"
+    }
+   ],
+   "id": "middleware-chain:ts:endpoint:src/orders/orders.controller.ts#OrdersController.remove->ts:class:src/common/auth.guard.ts#AuthGuard",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 1
+   },
+   "source": "ts:endpoint:src/orders/orders.controller.ts#OrdersController.remove",
+   "target": "ts:class:src/common/auth.guard.ts#AuthGuard",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "src/main.ts"
+    }
+   ],
+   "id": "middleware-chain:ts:endpoint:src/orders/orders.controller.ts#OrdersController.remove->ts:class:src/common/throttle.guard.ts#ThrottleGuard",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 0
+   },
+   "source": "ts:endpoint:src/orders/orders.controller.ts#OrdersController.remove",
+   "target": "ts:class:src/common/throttle.guard.ts#ThrottleGuard",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "src/users/users.controller.ts"
+    }
+   ],
+   "id": "middleware-chain:ts:endpoint:src/users/users.controller.ts#UsersController.create->ts:class:src/common/auth.guard.ts#AuthGuard",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 1
+   },
+   "source": "ts:endpoint:src/users/users.controller.ts#UsersController.create",
+   "target": "ts:class:src/common/auth.guard.ts#AuthGuard",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 21,
+     "path": "src/users/users.controller.ts"
+    }
+   ],
+   "id": "middleware-chain:ts:endpoint:src/users/users.controller.ts#UsersController.create->ts:class:src/common/logging.interceptor.ts#LoggingInterceptor",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 2
+   },
+   "source": "ts:endpoint:src/users/users.controller.ts#UsersController.create",
+   "target": "ts:class:src/common/logging.interceptor.ts#LoggingInterceptor",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "src/main.ts"
+    }
+   ],
+   "id": "middleware-chain:ts:endpoint:src/users/users.controller.ts#UsersController.create->ts:class:src/common/throttle.guard.ts#ThrottleGuard",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 0
+   },
+   "source": "ts:endpoint:src/users/users.controller.ts#UsersController.create",
+   "target": "ts:class:src/common/throttle.guard.ts#ThrottleGuard",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "src/users/users.controller.ts"
+    }
+   ],
+   "id": "middleware-chain:ts:endpoint:src/users/users.controller.ts#UsersController.findAll->ts:class:src/common/auth.guard.ts#AuthGuard",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 1
+   },
+   "source": "ts:endpoint:src/users/users.controller.ts#UsersController.findAll",
+   "target": "ts:class:src/common/auth.guard.ts#AuthGuard",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "src/main.ts"
+    }
+   ],
+   "id": "middleware-chain:ts:endpoint:src/users/users.controller.ts#UsersController.findAll->ts:class:src/common/throttle.guard.ts#ThrottleGuard",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 0
+   },
+   "source": "ts:endpoint:src/users/users.controller.ts#UsersController.findAll",
+   "target": "ts:class:src/common/throttle.guard.ts#ThrottleGuard",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "src/users/users.controller.ts"
+    }
+   ],
+   "id": "middleware-chain:ts:endpoint:src/users/users.controller.ts#UsersController.findOne->ts:class:src/common/auth.guard.ts#AuthGuard",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 1
+   },
+   "source": "ts:endpoint:src/users/users.controller.ts#UsersController.findOne",
+   "target": "ts:class:src/common/auth.guard.ts#AuthGuard",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "src/main.ts"
+    }
+   ],
+   "id": "middleware-chain:ts:endpoint:src/users/users.controller.ts#UsersController.findOne->ts:class:src/common/throttle.guard.ts#ThrottleGuard",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 0
+   },
+   "source": "ts:endpoint:src/users/users.controller.ts#UsersController.findOne",
+   "target": "ts:class:src/common/throttle.guard.ts#ThrottleGuard",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 5,
+     "path": "src/app.module.ts"
+    }
+   ],
+   "id": "mounts:ts:class:src/app.module.ts#AppModule->ts:class:src/orders/orders.module.ts#OrdersModule",
+   "kind": "mounts",
+   "source": "ts:class:src/app.module.ts#AppModule",
+   "target": "ts:class:src/orders/orders.module.ts#OrdersModule",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 5,
+     "path": "src/app.module.ts"
+    }
+   ],
+   "id": "mounts:ts:class:src/app.module.ts#AppModule->ts:class:src/users/users.module.ts#UsersModule",
+   "kind": "mounts",
+   "source": "ts:class:src/app.module.ts#AppModule",
+   "target": "ts:class:src/users/users.module.ts#UsersModule",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "src/orders/orders.module.ts"
+    }
+   ],
+   "id": "mounts:ts:class:src/orders/orders.module.ts#OrdersModule->ts:class:src/orders/orders.controller.ts#OrdersController",
+   "kind": "mounts",
+   "source": "ts:class:src/orders/orders.module.ts#OrdersModule",
+   "target": "ts:class:src/orders/orders.controller.ts#OrdersController",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "src/orders/orders.module.ts"
+    }
+   ],
+   "id": "mounts:ts:class:src/orders/orders.module.ts#OrdersModule->ts:class:src/orders/orders.service.ts#OrdersService",
+   "kind": "mounts",
+   "source": "ts:class:src/orders/orders.module.ts#OrdersModule",
+   "target": "ts:class:src/orders/orders.service.ts#OrdersService",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "src/orders/orders.module.ts"
+    }
+   ],
+   "id": "mounts:ts:class:src/orders/orders.module.ts#OrdersModule->ts:class:src/users/users.module.ts#UsersModule",
+   "kind": "mounts",
+   "source": "ts:class:src/orders/orders.module.ts#OrdersModule",
+   "target": "ts:class:src/users/users.module.ts#UsersModule",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 5,
+     "path": "src/users/users.module.ts"
+    }
+   ],
+   "id": "mounts:ts:class:src/users/users.module.ts#UsersModule->ts:class:src/users/users.controller.ts#UsersController",
+   "kind": "mounts",
+   "source": "ts:class:src/users/users.module.ts#UsersModule",
+   "target": "ts:class:src/users/users.controller.ts#UsersController",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 5,
+     "path": "src/users/users.module.ts"
+    }
+   ],
+   "id": "mounts:ts:class:src/users/users.module.ts#UsersModule->ts:class:src/users/users.service.ts#UsersService",
+   "kind": "mounts",
+   "source": "ts:class:src/users/users.module.ts#UsersModule",
+   "target": "ts:class:src/users/users.service.ts#UsersService",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 9,
+     "path": "src/main.ts"
+    }
+   ],
+   "id": "reads-env:ts:function:src/main.ts#bootstrap->config:env-var:PORT",
+   "kind": "reads-env",
+   "source": "ts:function:src/main.ts#bootstrap",
+   "target": "config:env-var:PORT",
+   "weight": 1
+  }
+ ],
+ "nodes": [
+  {
+   "id": "config:env-var:PORT",
+   "kind": "env-var",
+   "label": "PORT",
+   "lang": "config",
+   "level": 3,
+   "meta": {},
+   "parent": null
+  },
+  {
+   "id": "config:script:package.json#start:dev",
+   "kind": "script",
+   "label": "start:dev",
+   "lang": "config",
+   "level": 3,
+   "line": 4,
+   "meta": {
+    "role": "npm-script",
+    "signature": "nest start --watch"
+   },
+   "parent": "ts:project:.",
+   "path": "package.json"
+  },
+  {
+   "id": "config:script:package.json#test",
+   "kind": "script",
+   "label": "test",
+   "lang": "config",
+   "level": 3,
+   "line": 4,
+   "meta": {
+    "role": "npm-script",
+    "signature": "jest"
+   },
+   "parent": "ts:project:.",
+   "path": "package.json"
+  },
+  {
+   "endLine": 6,
+   "id": "ts:class:src/app.module.ts#AppModule",
+   "kind": "class",
+   "label": "AppModule",
+   "lang": "ts",
+   "level": 3,
+   "line": 5,
+   "meta": {
+    "decorators": [
+     "@nestjs/common.Module"
+    ],
+    "exported": true,
+    "framework": "nest",
+    "loc": 2,
+    "role": "nest-module"
+   },
+   "parent": "ts:module:src/app.module.ts",
+   "path": "src/app.module.ts"
+  },
+  {
+   "endLine": 8,
+   "id": "ts:class:src/common/auth.guard.ts#AuthGuard",
+   "kind": "class",
+   "label": "AuthGuard",
+   "lang": "ts",
+   "level": 3,
+   "line": 3,
+   "meta": {
+    "decorators": [
+     "@nestjs/common.Injectable"
+    ],
+    "exported": true,
+    "framework": "nest",
+    "loc": 6,
+    "role": "provider"
+   },
+   "parent": "ts:module:src/common/auth.guard.ts",
+   "path": "src/common/auth.guard.ts"
+  },
+  {
+   "endLine": 8,
+   "id": "ts:class:src/common/logging.interceptor.ts#LoggingInterceptor",
+   "kind": "class",
+   "label": "LoggingInterceptor",
+   "lang": "ts",
+   "level": 3,
+   "line": 3,
+   "meta": {
+    "decorators": [
+     "@nestjs/common.Injectable"
+    ],
+    "exported": true,
+    "framework": "nest",
+    "loc": 6,
+    "role": "provider"
+   },
+   "parent": "ts:module:src/common/logging.interceptor.ts",
+   "path": "src/common/logging.interceptor.ts"
+  },
+  {
+   "endLine": 8,
+   "id": "ts:class:src/common/throttle.guard.ts#ThrottleGuard",
+   "kind": "class",
+   "label": "ThrottleGuard",
+   "lang": "ts",
+   "level": 3,
+   "line": 3,
+   "meta": {
+    "decorators": [
+     "@nestjs/common.Injectable"
+    ],
+    "exported": true,
+    "framework": "nest",
+    "loc": 6,
+    "role": "provider"
+   },
+   "parent": "ts:module:src/common/throttle.guard.ts",
+   "path": "src/common/throttle.guard.ts"
+  },
+  {
+   "endLine": 19,
+   "id": "ts:class:src/orders/orders.controller.ts#OrdersController",
+   "kind": "class",
+   "label": "OrdersController",
+   "lang": "ts",
+   "level": 3,
+   "line": 5,
+   "meta": {
+    "decorators": [
+     "@nestjs/common.Controller"
+    ],
+    "exported": true,
+    "framework": "nest",
+    "loc": 15,
+    "role": "controller"
+   },
+   "parent": "ts:module:src/orders/orders.controller.ts",
+   "path": "src/orders/orders.controller.ts"
+  },
+  {
+   "endLine": 7,
+   "id": "ts:class:src/orders/orders.module.ts#OrdersModule",
+   "kind": "class",
+   "label": "OrdersModule",
+   "lang": "ts",
+   "level": 3,
+   "line": 6,
+   "meta": {
+    "decorators": [
+     "@nestjs/common.Module"
+    ],
+    "exported": true,
+    "framework": "nest",
+    "loc": 2,
+    "role": "nest-module"
+   },
+   "parent": "ts:module:src/orders/orders.module.ts",
+   "path": "src/orders/orders.module.ts"
+  },
+  {
+   "endLine": 11,
+   "id": "ts:class:src/orders/orders.service.ts#OrdersService",
+   "kind": "class",
+   "label": "OrdersService",
+   "lang": "ts",
+   "level": 3,
+   "line": 4,
+   "meta": {
+    "decorators": [
+     "@nestjs/common.Injectable"
+    ],
+    "exported": true,
+    "framework": "nest",
+    "loc": 8,
+    "role": "provider"
+   },
+   "parent": "ts:module:src/orders/orders.service.ts",
+   "path": "src/orders/orders.service.ts"
+  },
+  {
+   "endLine": 26,
+   "id": "ts:class:src/users/users.controller.ts#UsersController",
+   "kind": "class",
+   "label": "UsersController",
+   "lang": "ts",
+   "level": 3,
+   "line": 6,
+   "meta": {
+    "decorators": [
+     "@nestjs/common.Controller",
+     "@nestjs/common.UseGuards"
+    ],
+    "exported": true,
+    "framework": "nest",
+    "loc": 21,
+    "role": "controller"
+   },
+   "parent": "ts:module:src/users/users.controller.ts",
+   "path": "src/users/users.controller.ts"
+  },
+  {
+   "endLine": 6,
+   "id": "ts:class:src/users/users.module.ts#UsersModule",
+   "kind": "class",
+   "label": "UsersModule",
+   "lang": "ts",
+   "level": 3,
+   "line": 5,
+   "meta": {
+    "decorators": [
+     "@nestjs/common.Module"
+    ],
+    "exported": true,
+    "framework": "nest",
+    "loc": 2,
+    "role": "nest-module"
+   },
+   "parent": "ts:module:src/users/users.module.ts",
+   "path": "src/users/users.module.ts"
+  },
+  {
+   "endLine": 20,
+   "id": "ts:class:src/users/users.service.ts#UsersService",
+   "kind": "class",
+   "label": "UsersService",
+   "lang": "ts",
+   "level": 3,
+   "line": 5,
+   "meta": {
+    "decorators": [
+     "@nestjs/common.Injectable"
+    ],
+    "exported": true,
+    "framework": "nest",
+    "loc": 16,
+    "role": "provider"
+   },
+   "parent": "ts:module:src/users/users.service.ts",
+   "path": "src/users/users.service.ts"
+  },
+  {
+   "id": "ts:endpoint:src/orders/orders.controller.ts#OrdersController.list",
+   "kind": "endpoint",
+   "label": "GET /api/orders",
+   "lang": "ts",
+   "level": 3,
+   "line": 9,
+   "meta": {
+    "framework": "nest",
+    "http": {
+     "fullPath": "/api/orders",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/orders"
+    }
+   },
+   "parent": "ts:class:src/orders/orders.controller.ts#OrdersController",
+   "path": "src/orders/orders.controller.ts"
+  },
+  {
+   "id": "ts:endpoint:src/orders/orders.controller.ts#OrdersController.remove",
+   "kind": "endpoint",
+   "label": "DELETE /api/orders/:id",
+   "lang": "ts",
+   "level": 3,
+   "line": 14,
+   "meta": {
+    "framework": "nest",
+    "http": {
+     "fullPath": "/api/orders/:id",
+     "methods": [
+      "DELETE"
+     ],
+     "pathTemplate": "/orders/:id"
+    }
+   },
+   "parent": "ts:class:src/orders/orders.controller.ts#OrdersController",
+   "path": "src/orders/orders.controller.ts"
+  },
+  {
+   "id": "ts:endpoint:src/users/users.controller.ts#UsersController.create",
+   "kind": "endpoint",
+   "label": "POST /api/users",
+   "lang": "ts",
+   "level": 3,
+   "line": 21,
+   "meta": {
+    "framework": "nest",
+    "http": {
+     "fullPath": "/api/users",
+     "methods": [
+      "POST"
+     ],
+     "pathTemplate": "/users"
+    }
+   },
+   "parent": "ts:class:src/users/users.controller.ts#UsersController",
+   "path": "src/users/users.controller.ts"
+  },
+  {
+   "id": "ts:endpoint:src/users/users.controller.ts#UsersController.findAll",
+   "kind": "endpoint",
+   "label": "GET /api/users",
+   "lang": "ts",
+   "level": 3,
+   "line": 11,
+   "meta": {
+    "framework": "nest",
+    "http": {
+     "fullPath": "/api/users",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/users"
+    }
+   },
+   "parent": "ts:class:src/users/users.controller.ts#UsersController",
+   "path": "src/users/users.controller.ts"
+  },
+  {
+   "id": "ts:endpoint:src/users/users.controller.ts#UsersController.findOne",
+   "kind": "endpoint",
+   "label": "GET /api/users/:id",
+   "lang": "ts",
+   "level": 3,
+   "line": 16,
+   "meta": {
+    "framework": "nest",
+    "http": {
+     "fullPath": "/api/users/:id",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/users/:id"
+    }
+   },
+   "parent": "ts:class:src/users/users.controller.ts#UsersController",
+   "path": "src/users/users.controller.ts"
+  },
+  {
+   "endLine": 10,
+   "id": "ts:function:src/main.ts#bootstrap",
+   "kind": "function",
+   "label": "bootstrap",
+   "lang": "ts",
+   "level": 3,
+   "line": 5,
+   "meta": {
+    "complexity": 2,
+    "loc": 6,
+    "signature": "async bootstrap()"
+   },
+   "parent": "ts:module:src/main.ts",
+   "path": "src/main.ts"
+  },
+  {
+   "endLine": 7,
+   "id": "ts:method:src/common/auth.guard.ts#AuthGuard.canActivate",
+   "kind": "method",
+   "label": "AuthGuard.canActivate",
+   "lang": "ts",
+   "level": 3,
+   "line": 5,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "canActivate(): boolean"
+   },
+   "parent": "ts:class:src/common/auth.guard.ts#AuthGuard",
+   "path": "src/common/auth.guard.ts"
+  },
+  {
+   "endLine": 7,
+   "id": "ts:method:src/common/logging.interceptor.ts#LoggingInterceptor.intercept",
+   "kind": "method",
+   "label": "LoggingInterceptor.intercept",
+   "lang": "ts",
+   "level": 3,
+   "line": 5,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "intercept(_ctx: unknown, next: CallHandler)"
+   },
+   "parent": "ts:class:src/common/logging.interceptor.ts#LoggingInterceptor",
+   "path": "src/common/logging.interceptor.ts"
+  },
+  {
+   "endLine": 7,
+   "id": "ts:method:src/common/throttle.guard.ts#ThrottleGuard.canActivate",
+   "kind": "method",
+   "label": "ThrottleGuard.canActivate",
+   "lang": "ts",
+   "level": 3,
+   "line": 5,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "canActivate(): boolean"
+   },
+   "parent": "ts:class:src/common/throttle.guard.ts#ThrottleGuard",
+   "path": "src/common/throttle.guard.ts"
+  },
+  {
+   "endLine": 7,
+   "id": "ts:method:src/orders/orders.controller.ts#OrdersController.constructor",
+   "kind": "method",
+   "label": "OrdersController.constructor",
+   "lang": "ts",
+   "level": 3,
+   "line": 7,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 1,
+    "signature": "constructor(private readonly orders: OrdersService)"
+   },
+   "parent": "ts:class:src/orders/orders.controller.ts#OrdersController",
+   "path": "src/orders/orders.controller.ts"
+  },
+  {
+   "endLine": 12,
+   "id": "ts:method:src/orders/orders.controller.ts#OrdersController.list",
+   "kind": "method",
+   "label": "OrdersController.list",
+   "lang": "ts",
+   "level": 3,
+   "line": 9,
+   "meta": {
+    "complexity": 1,
+    "decorators": [
+     "@nestjs/common.Get"
+    ],
+    "exported": true,
+    "loc": 4,
+    "signature": "list()"
+   },
+   "parent": "ts:class:src/orders/orders.controller.ts#OrdersController",
+   "path": "src/orders/orders.controller.ts"
+  },
+  {
+   "endLine": 18,
+   "id": "ts:method:src/orders/orders.controller.ts#OrdersController.remove",
+   "kind": "method",
+   "label": "OrdersController.remove",
+   "lang": "ts",
+   "level": 3,
+   "line": 14,
+   "meta": {
+    "complexity": 1,
+    "decorators": [
+     "@nestjs/common.Delete",
+     "@nestjs/common.UseGuards"
+    ],
+    "exported": true,
+    "loc": 5,
+    "signature": "remove(@Param('id') id: string)"
+   },
+   "parent": "ts:class:src/orders/orders.controller.ts#OrdersController",
+   "path": "src/orders/orders.controller.ts"
+  },
+  {
+   "endLine": 6,
+   "id": "ts:method:src/orders/orders.service.ts#OrdersService.constructor",
+   "kind": "method",
+   "label": "OrdersService.constructor",
+   "lang": "ts",
+   "level": 3,
+   "line": 6,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 1,
+    "signature": "constructor(private readonly users: UsersService)"
+   },
+   "parent": "ts:class:src/orders/orders.service.ts#OrdersService",
+   "path": "src/orders/orders.service.ts"
+  },
+  {
+   "endLine": 10,
+   "id": "ts:method:src/orders/orders.service.ts#OrdersService.list",
+   "kind": "method",
+   "label": "OrdersService.list",
+   "lang": "ts",
+   "level": 3,
+   "line": 8,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "list()"
+   },
+   "parent": "ts:class:src/orders/orders.service.ts#OrdersService",
+   "path": "src/orders/orders.service.ts"
+  },
+  {
+   "endLine": 9,
+   "id": "ts:method:src/users/users.controller.ts#UsersController.constructor",
+   "kind": "method",
+   "label": "UsersController.constructor",
+   "lang": "ts",
+   "level": 3,
+   "line": 9,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 1,
+    "signature": "constructor(private readonly users: UsersService)"
+   },
+   "parent": "ts:class:src/users/users.controller.ts#UsersController",
+   "path": "src/users/users.controller.ts"
+  },
+  {
+   "endLine": 25,
+   "id": "ts:method:src/users/users.controller.ts#UsersController.create",
+   "kind": "method",
+   "label": "UsersController.create",
+   "lang": "ts",
+   "level": 3,
+   "line": 21,
+   "meta": {
+    "complexity": 1,
+    "decorators": [
+     "@nestjs/common.Post",
+     "@nestjs/common.UseInterceptors"
+    ],
+    "exported": true,
+    "loc": 5,
+    "signature": "create(@Body() dto: CreateUserDto)"
+   },
+   "parent": "ts:class:src/users/users.controller.ts#UsersController",
+   "path": "src/users/users.controller.ts"
+  },
+  {
+   "endLine": 14,
+   "id": "ts:method:src/users/users.controller.ts#UsersController.findAll",
+   "kind": "method",
+   "label": "UsersController.findAll",
+   "lang": "ts",
+   "level": 3,
+   "line": 11,
+   "meta": {
+    "complexity": 1,
+    "decorators": [
+     "@nestjs/common.Get"
+    ],
+    "exported": true,
+    "loc": 4,
+    "signature": "findAll()"
+   },
+   "parent": "ts:class:src/users/users.controller.ts#UsersController",
+   "path": "src/users/users.controller.ts"
+  },
+  {
+   "endLine": 19,
+   "id": "ts:method:src/users/users.controller.ts#UsersController.findOne",
+   "kind": "method",
+   "label": "UsersController.findOne",
+   "lang": "ts",
+   "level": 3,
+   "line": 16,
+   "meta": {
+    "complexity": 1,
+    "decorators": [
+     "@nestjs/common.Get"
+    ],
+    "exported": true,
+    "loc": 4,
+    "signature": "findOne(@Param('id') id: string)"
+   },
+   "parent": "ts:class:src/users/users.controller.ts#UsersController",
+   "path": "src/users/users.controller.ts"
+  },
+  {
+   "endLine": 7,
+   "id": "ts:method:src/users/users.service.ts#UsersService.constructor",
+   "kind": "method",
+   "label": "UsersService.constructor",
+   "lang": "ts",
+   "level": 3,
+   "line": 7,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 1,
+    "signature": "constructor(@Inject('CONFIG') private readonly config: Record<string, string>)"
+   },
+   "parent": "ts:class:src/users/users.service.ts#UsersService",
+   "path": "src/users/users.service.ts"
+  },
+  {
+   "endLine": 19,
+   "id": "ts:method:src/users/users.service.ts#UsersService.create",
+   "kind": "method",
+   "label": "UsersService.create",
+   "lang": "ts",
+   "level": 3,
+   "line": 17,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "create(dto: CreateUserDto)"
+   },
+   "parent": "ts:class:src/users/users.service.ts#UsersService",
+   "path": "src/users/users.service.ts"
+  },
+  {
+   "endLine": 11,
+   "id": "ts:method:src/users/users.service.ts#UsersService.findAll",
+   "kind": "method",
+   "label": "UsersService.findAll",
+   "lang": "ts",
+   "level": 3,
+   "line": 9,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "findAll()"
+   },
+   "parent": "ts:class:src/users/users.service.ts#UsersService",
+   "path": "src/users/users.service.ts"
+  },
+  {
+   "endLine": 15,
+   "id": "ts:method:src/users/users.service.ts#UsersService.findOne",
+   "kind": "method",
+   "label": "UsersService.findOne",
+   "lang": "ts",
+   "level": 3,
+   "line": 13,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "findOne(id: string)"
+   },
+   "parent": "ts:class:src/users/users.service.ts#UsersService",
+   "path": "src/users/users.service.ts"
+  },
+  {
+   "id": "ts:module-group:.",
+   "kind": "module-group",
+   "label": "nest-fixture",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:project:.",
+   "path": "."
+  },
+  {
+   "id": "ts:module-group:src",
+   "kind": "module-group",
+   "label": "src",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:.",
+   "path": "src"
+  },
+  {
+   "id": "ts:module-group:src/common",
+   "kind": "module-group",
+   "label": "common",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:src",
+   "path": "src/common"
+  },
+  {
+   "id": "ts:module-group:src/orders",
+   "kind": "module-group",
+   "label": "orders",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:src",
+   "path": "src/orders"
+  },
+  {
+   "id": "ts:module-group:src/users",
+   "kind": "module-group",
+   "label": "users",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:src",
+   "path": "src/users"
+  },
+  {
+   "endLine": 7,
+   "id": "ts:module:src/app.module.ts",
+   "kind": "module",
+   "label": "app.module.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 5
+   },
+   "parent": "ts:module-group:src",
+   "path": "src/app.module.ts"
+  },
+  {
+   "endLine": 9,
+   "id": "ts:module:src/common/auth.guard.ts",
+   "kind": "module",
+   "label": "auth.guard.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 7
+   },
+   "parent": "ts:module-group:src/common",
+   "path": "src/common/auth.guard.ts"
+  },
+  {
+   "endLine": 9,
+   "id": "ts:module:src/common/logging.interceptor.ts",
+   "kind": "module",
+   "label": "logging.interceptor.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 7
+   },
+   "parent": "ts:module-group:src/common",
+   "path": "src/common/logging.interceptor.ts"
+  },
+  {
+   "endLine": 9,
+   "id": "ts:module:src/common/throttle.guard.ts",
+   "kind": "module",
+   "label": "throttle.guard.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 7
+   },
+   "parent": "ts:module-group:src/common",
+   "path": "src/common/throttle.guard.ts"
+  },
+  {
+   "endLine": 13,
+   "id": "ts:module:src/main.ts",
+   "kind": "module",
+   "label": "main.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 0,
+    "loc": 10
+   },
+   "parent": "ts:module-group:src",
+   "path": "src/main.ts"
+  },
+  {
+   "endLine": 20,
+   "id": "ts:module:src/orders/orders.controller.ts",
+   "kind": "module",
+   "label": "orders.controller.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 16
+   },
+   "parent": "ts:module-group:src/orders",
+   "path": "src/orders/orders.controller.ts"
+  },
+  {
+   "endLine": 8,
+   "id": "ts:module:src/orders/orders.module.ts",
+   "kind": "module",
+   "label": "orders.module.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 6
+   },
+   "parent": "ts:module-group:src/orders",
+   "path": "src/orders/orders.module.ts"
+  },
+  {
+   "endLine": 12,
+   "id": "ts:module:src/orders/orders.service.ts",
+   "kind": "module",
+   "label": "orders.service.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 9
+   },
+   "parent": "ts:module-group:src/orders",
+   "path": "src/orders/orders.service.ts"
+  },
+  {
+   "endLine": 27,
+   "id": "ts:module:src/users/users.controller.ts",
+   "kind": "module",
+   "label": "users.controller.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 22
+   },
+   "parent": "ts:module-group:src/users",
+   "path": "src/users/users.controller.ts"
+  },
+  {
+   "endLine": 7,
+   "id": "ts:module:src/users/users.module.ts",
+   "kind": "module",
+   "label": "users.module.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 5
+   },
+   "parent": "ts:module-group:src/users",
+   "path": "src/users/users.module.ts"
+  },
+  {
+   "endLine": 21,
+   "id": "ts:module:src/users/users.service.ts",
+   "kind": "module",
+   "label": "users.service.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 2,
+    "loc": 15
+   },
+   "parent": "ts:module-group:src/users",
+   "path": "src/users/users.service.ts"
+  },
+  {
+   "id": "ts:project:.",
+   "kind": "project",
+   "label": "nest-fixture",
+   "lang": "ts",
+   "level": 0,
+   "meta": {},
+   "parent": null,
+   "path": "."
+  }
+ ],
+ "projects": [
+  {
+   "frameworks": [
+    "nest"
+   ],
+   "id": "ts:project:.",
+   "lang": "ts",
+   "root": "."
+  }
+ ],
+ "repoRoot": "<root>",
+ "stats": {
+  "edges.calls": 8,
+  "edges.handles": 5,
+  "edges.imports": 15,
+  "edges.injects": 3,
+  "edges.middleware-chain": 10,
+  "edges.mounts": 7,
+  "edges.reads-env": 1,
+  "nest.endpoints": 5,
+  "nest.tokenInjections": 1,
+  "nodes.class": 10,
+  "nodes.endpoint": 5,
+  "nodes.env-var": 1,
+  "nodes.function": 1,
+  "nodes.method": 16,
+  "nodes.module": 11,
+  "nodes.module-group": 5,
+  "nodes.project": 1,
+  "nodes.script": 2,
+  "ts.callsExternal": 26,
+  "ts.callsResolved": 8,
+  "ts.callsUnresolved": 4,
+  "ts.externalImports": 11
+ },
+ "version": 1,
+ "warnings": [
+  {
+   "code": "nest-token-injection",
+   "count": 1,
+   "message": "Constructor injections by string token (target unknown statically)",
+   "path": "src/users/users.service.ts"
+  },
+  {
+   "code": "ts-unresolved-call",
+   "count": 4,
+   "message": "Calls dropped: callee type unknown (untyped JS, or dependencies/types not installed)",
+   "path": "src/common/logging.interceptor.ts"
+  }
+ ]
+}

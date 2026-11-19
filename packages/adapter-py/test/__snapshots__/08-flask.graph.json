@@ -1,0 +1,939 @@
+{
+ "edges": [
+  {
+   "evidence": [
+    {
+     "line": 16,
+     "path": "blog/api/posts.py"
+    }
+   ],
+   "id": "calls:py:function:blog/api/posts.py#create_post->py:class:blog/models.py#Post",
+   "kind": "calls",
+   "source": "py:function:blog/api/posts.py#create_post",
+   "target": "py:class:blog/models.py#Post",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 30,
+     "path": "blog/api/posts.py"
+    }
+   ],
+   "id": "handles:py:endpoint:blog/api/posts.py#PostView->py:class:blog/api/posts.py#PostView",
+   "kind": "handles",
+   "source": "py:endpoint:blog/api/posts.py#PostView",
+   "target": "py:class:blog/api/posts.py#PostView",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 14,
+     "path": "blog/api/posts.py"
+    }
+   ],
+   "id": "handles:py:endpoint:blog/api/posts.py#create_post->py:function:blog/api/posts.py#create_post",
+   "kind": "handles",
+   "source": "py:endpoint:blog/api/posts.py#create_post",
+   "target": "py:function:blog/api/posts.py#create_post",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 9,
+     "path": "blog/api/posts.py"
+    }
+   ],
+   "id": "handles:py:endpoint:blog/api/posts.py#list_posts->py:function:blog/api/posts.py#list_posts",
+   "kind": "handles",
+   "source": "py:endpoint:blog/api/posts.py#list_posts",
+   "target": "py:function:blog/api/posts.py#list_posts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 14,
+     "path": "blog/auth.py"
+    }
+   ],
+   "id": "handles:py:endpoint:blog/auth.py#login->py:function:blog/auth.py#login",
+   "kind": "handles",
+   "source": "py:endpoint:blog/auth.py#login",
+   "target": "py:function:blog/auth.py#login",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "blog/__init__.py"
+    }
+   ],
+   "id": "imports:py:module:blog/__init__.py->py:module:blog/api/__init__.py",
+   "kind": "imports",
+   "source": "py:module:blog/__init__.py",
+   "target": "py:module:blog/api/__init__.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 4,
+     "path": "blog/__init__.py"
+    }
+   ],
+   "id": "imports:py:module:blog/__init__.py->py:module:blog/auth.py",
+   "kind": "imports",
+   "source": "py:module:blog/__init__.py",
+   "target": "py:module:blog/auth.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 5,
+     "path": "blog/__init__.py"
+    }
+   ],
+   "id": "imports:py:module:blog/__init__.py->py:module:blog/extensions.py",
+   "kind": "imports",
+   "source": "py:module:blog/__init__.py",
+   "target": "py:module:blog/extensions.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "blog/__init__.py"
+    }
+   ],
+   "id": "imports:py:module:blog/__init__.py->py:module:blog/hooks.py",
+   "kind": "imports",
+   "source": "py:module:blog/__init__.py",
+   "target": "py:module:blog/hooks.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 5,
+     "path": "blog/api/__init__.py"
+    }
+   ],
+   "id": "imports:py:module:blog/api/__init__.py->py:module:blog/api/posts.py",
+   "kind": "imports",
+   "source": "py:module:blog/api/__init__.py",
+   "target": "py:module:blog/api/posts.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "blog/api/posts.py"
+    }
+   ],
+   "id": "imports:py:module:blog/api/posts.py->py:module:blog/api/__init__.py",
+   "kind": "imports",
+   "source": "py:module:blog/api/posts.py",
+   "target": "py:module:blog/api/__init__.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 4,
+     "path": "blog/api/posts.py"
+    }
+   ],
+   "id": "imports:py:module:blog/api/posts.py->py:module:blog/extensions.py",
+   "kind": "imports",
+   "source": "py:module:blog/api/posts.py",
+   "target": "py:module:blog/extensions.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 5,
+     "path": "blog/api/posts.py"
+    }
+   ],
+   "id": "imports:py:module:blog/api/posts.py->py:module:blog/models.py",
+   "kind": "imports",
+   "source": "py:module:blog/api/posts.py",
+   "target": "py:module:blog/models.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "blog/auth.py"
+    }
+   ],
+   "id": "imports:py:module:blog/auth.py->py:module:blog/models.py",
+   "kind": "imports",
+   "source": "py:module:blog/auth.py",
+   "target": "py:module:blog/models.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "blog/models.py"
+    }
+   ],
+   "id": "imports:py:module:blog/models.py->py:module:blog/extensions.py",
+   "kind": "imports",
+   "source": "py:module:blog/models.py",
+   "target": "py:module:blog/extensions.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 13,
+     "path": "blog/__init__.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:blog/api/posts.py#PostView->py:function:blog/hooks.py#load_user",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 0
+   },
+   "source": "py:endpoint:blog/api/posts.py#PostView",
+   "target": "py:function:blog/hooks.py#load_user",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 13,
+     "path": "blog/__init__.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:blog/api/posts.py#create_post->py:function:blog/hooks.py#load_user",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 0
+   },
+   "source": "py:endpoint:blog/api/posts.py#create_post",
+   "target": "py:function:blog/hooks.py#load_user",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 13,
+     "path": "blog/__init__.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:blog/api/posts.py#list_posts->py:function:blog/hooks.py#load_user",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 0
+   },
+   "source": "py:endpoint:blog/api/posts.py#list_posts",
+   "target": "py:function:blog/hooks.py#load_user",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 9,
+     "path": "blog/auth.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:blog/auth.py#login->py:function:blog/auth.py#check_csrf",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 1
+   },
+   "source": "py:endpoint:blog/auth.py#login",
+   "target": "py:function:blog/auth.py#check_csrf",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 13,
+     "path": "blog/__init__.py"
+    }
+   ],
+   "id": "middleware-chain:py:endpoint:blog/auth.py#login->py:function:blog/hooks.py#load_user",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 0
+   },
+   "source": "py:endpoint:blog/auth.py#login",
+   "target": "py:function:blog/hooks.py#load_user",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 13,
+     "path": "blog/models.py"
+    }
+   ],
+   "id": "model-relation:py:class:blog/models.py#Post->py:class:blog/models.py#User",
+   "kind": "model-relation",
+   "source": "py:class:blog/models.py#Post",
+   "target": "py:class:blog/models.py#User",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 7,
+     "path": "blog/models.py"
+    }
+   ],
+   "id": "model-relation:py:class:blog/models.py#User->py:class:blog/models.py#Post",
+   "kind": "model-relation",
+   "source": "py:class:blog/models.py#User",
+   "target": "py:class:blog/models.py#Post",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 15,
+     "path": "blog/__init__.py"
+    }
+   ],
+   "id": "mounts:py:route-group:blog/__init__.py#app->py:route-group:blog/api/__init__.py#api_bp",
+   "kind": "mounts",
+   "meta": {
+    "prefix": "/api/v1"
+   },
+   "source": "py:route-group:blog/__init__.py#app",
+   "target": "py:route-group:blog/api/__init__.py#api_bp",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 14,
+     "path": "blog/__init__.py"
+    }
+   ],
+   "id": "mounts:py:route-group:blog/__init__.py#app->py:route-group:blog/auth.py#auth_bp",
+   "kind": "mounts",
+   "source": "py:route-group:blog/__init__.py#app",
+   "target": "py:route-group:blog/auth.py#auth_bp",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 11,
+     "path": "blog/api/posts.py"
+    }
+   ],
+   "id": "reads-model:py:function:blog/api/posts.py#list_posts->py:class:blog/models.py#Post",
+   "kind": "reads-model",
+   "source": "py:function:blog/api/posts.py#list_posts",
+   "target": "py:class:blog/models.py#Post",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 16,
+     "path": "blog/auth.py"
+    }
+   ],
+   "id": "reads-model:py:function:blog/auth.py#login->py:class:blog/models.py#User",
+   "kind": "reads-model",
+   "source": "py:function:blog/auth.py#login",
+   "target": "py:class:blog/models.py#User",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 23,
+     "path": "blog/api/posts.py"
+    }
+   ],
+   "id": "reads-model:py:method:blog/api/posts.py#PostView.get->py:class:blog/models.py#Post",
+   "kind": "reads-model",
+   "source": "py:method:blog/api/posts.py#PostView.get",
+   "target": "py:class:blog/models.py#Post",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 16,
+     "path": "blog/api/posts.py"
+    }
+   ],
+   "id": "writes-model:py:function:blog/api/posts.py#create_post->py:class:blog/models.py#Post",
+   "inferred": true,
+   "kind": "writes-model",
+   "source": "py:function:blog/api/posts.py#create_post",
+   "target": "py:class:blog/models.py#Post",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 26,
+     "path": "blog/api/posts.py"
+    }
+   ],
+   "id": "writes-model:py:method:blog/api/posts.py#PostView.delete->py:class:blog/models.py#Post",
+   "kind": "writes-model",
+   "source": "py:method:blog/api/posts.py#PostView.delete",
+   "target": "py:class:blog/models.py#Post",
+   "weight": 1
+  }
+ ],
+ "nodes": [
+  {
+   "endLine": 27,
+   "id": "py:class:blog/api/posts.py#PostView",
+   "kind": "class",
+   "label": "PostView",
+   "lang": "py",
+   "level": 3,
+   "line": 21,
+   "meta": {
+    "exported": true,
+    "loc": 7,
+    "signature": "class PostView(MethodView)"
+   },
+   "parent": "py:module:blog/api/posts.py",
+   "path": "blog/api/posts.py"
+  },
+  {
+   "endLine": 13,
+   "id": "py:class:blog/models.py#Post",
+   "kind": "class",
+   "label": "Post",
+   "lang": "py",
+   "level": 3,
+   "line": 10,
+   "meta": {
+    "exported": true,
+    "fields": [
+     {
+      "name": "id",
+      "type": "Integer"
+     },
+     {
+      "name": "title",
+      "type": "String"
+     },
+     {
+      "name": "user_id",
+      "relation": "fk (user.id)",
+      "type": "Integer"
+     }
+    ],
+    "framework": "sqlalchemy",
+    "loc": 4,
+    "role": "model",
+    "signature": "class Post(db.Model)"
+   },
+   "parent": "py:module:blog/models.py",
+   "path": "blog/models.py"
+  },
+  {
+   "endLine": 7,
+   "id": "py:class:blog/models.py#User",
+   "kind": "class",
+   "label": "User",
+   "lang": "py",
+   "level": 3,
+   "line": 4,
+   "meta": {
+    "exported": true,
+    "fields": [
+     {
+      "name": "id",
+      "type": "Integer"
+     },
+     {
+      "name": "username",
+      "type": "String"
+     },
+     {
+      "name": "posts",
+      "relation": "relationship",
+      "type": "relationship"
+     }
+    ],
+    "framework": "sqlalchemy",
+    "loc": 4,
+    "role": "model",
+    "signature": "class User(db.Model)"
+   },
+   "parent": "py:module:blog/models.py",
+   "path": "blog/models.py"
+  },
+  {
+   "id": "py:endpoint:blog/api/posts.py#PostView",
+   "kind": "endpoint",
+   "label": "DELETE|GET /api/v1/posts/<int:post_id>",
+   "lang": "py",
+   "level": 3,
+   "line": 30,
+   "meta": {
+    "framework": "flask",
+    "http": {
+     "fullPath": "/api/v1/posts/<int:post_id>",
+     "methods": [
+      "DELETE",
+      "GET"
+     ],
+     "pathTemplate": "/ignored-when-registered-with-prefix/posts/<int:post_id>"
+    }
+   },
+   "parent": "py:route-group:blog/api/__init__.py#api_bp",
+   "path": "blog/api/posts.py"
+  },
+  {
+   "id": "py:endpoint:blog/api/posts.py#create_post",
+   "kind": "endpoint",
+   "label": "POST /api/v1/posts",
+   "lang": "py",
+   "level": 3,
+   "line": 14,
+   "meta": {
+    "framework": "flask",
+    "http": {
+     "fullPath": "/api/v1/posts",
+     "methods": [
+      "POST"
+     ],
+     "pathTemplate": "/ignored-when-registered-with-prefix/posts"
+    }
+   },
+   "parent": "py:route-group:blog/api/__init__.py#api_bp",
+   "path": "blog/api/posts.py"
+  },
+  {
+   "id": "py:endpoint:blog/api/posts.py#list_posts",
+   "kind": "endpoint",
+   "label": "GET /api/v1/posts",
+   "lang": "py",
+   "level": 3,
+   "line": 9,
+   "meta": {
+    "framework": "flask",
+    "http": {
+     "fullPath": "/api/v1/posts",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/ignored-when-registered-with-prefix/posts"
+    }
+   },
+   "parent": "py:route-group:blog/api/__init__.py#api_bp",
+   "path": "blog/api/posts.py"
+  },
+  {
+   "id": "py:endpoint:blog/auth.py#login",
+   "kind": "endpoint",
+   "label": "GET|POST /auth/login",
+   "lang": "py",
+   "level": 3,
+   "line": 14,
+   "meta": {
+    "framework": "flask",
+    "http": {
+     "fullPath": "/auth/login",
+     "methods": [
+      "GET",
+      "POST"
+     ],
+     "pathTemplate": "/auth/login"
+    }
+   },
+   "parent": "py:route-group:blog/auth.py#auth_bp",
+   "path": "blog/auth.py"
+  },
+  {
+   "endLine": 16,
+   "id": "py:function:blog/__init__.py#create_app",
+   "kind": "function",
+   "label": "create_app",
+   "lang": "py",
+   "level": 3,
+   "line": 9,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 8,
+    "signature": "def create_app()"
+   },
+   "parent": "py:module:blog/__init__.py",
+   "path": "blog/__init__.py"
+  },
+  {
+   "endLine": 18,
+   "id": "py:function:blog/api/posts.py#create_post",
+   "kind": "function",
+   "label": "create_post",
+   "lang": "py",
+   "level": 3,
+   "line": 15,
+   "meta": {
+    "complexity": 1,
+    "decorators": [
+     "blog.api.api_bp.post"
+    ],
+    "exported": true,
+    "loc": 4,
+    "signature": "def create_post()"
+   },
+   "parent": "py:module:blog/api/posts.py",
+   "path": "blog/api/posts.py"
+  },
+  {
+   "endLine": 11,
+   "id": "py:function:blog/api/posts.py#list_posts",
+   "kind": "function",
+   "label": "list_posts",
+   "lang": "py",
+   "level": 3,
+   "line": 10,
+   "meta": {
+    "complexity": 2,
+    "decorators": [
+     "blog.api.api_bp.get"
+    ],
+    "exported": true,
+    "loc": 2,
+    "signature": "def list_posts()"
+   },
+   "parent": "py:module:blog/api/posts.py",
+   "path": "blog/api/posts.py"
+  },
+  {
+   "endLine": 11,
+   "id": "py:function:blog/auth.py#check_csrf",
+   "kind": "function",
+   "label": "check_csrf",
+   "lang": "py",
+   "level": 3,
+   "line": 9,
+   "meta": {
+    "complexity": 3,
+    "decorators": [
+     "auth_bp.before_request"
+    ],
+    "exported": true,
+    "loc": 3,
+    "signature": "def check_csrf()"
+   },
+   "parent": "py:module:blog/auth.py",
+   "path": "blog/auth.py"
+  },
+  {
+   "endLine": 18,
+   "id": "py:function:blog/auth.py#login",
+   "kind": "function",
+   "label": "login",
+   "lang": "py",
+   "level": 3,
+   "line": 15,
+   "meta": {
+    "complexity": 2,
+    "decorators": [
+     "auth_bp.route"
+    ],
+    "exported": true,
+    "loc": 4,
+    "signature": "def login()"
+   },
+   "parent": "py:module:blog/auth.py",
+   "path": "blog/auth.py"
+  },
+  {
+   "endLine": 5,
+   "id": "py:function:blog/hooks.py#load_user",
+   "kind": "function",
+   "label": "load_user",
+   "lang": "py",
+   "level": 3,
+   "line": 4,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 2,
+    "signature": "def load_user()"
+   },
+   "parent": "py:module:blog/hooks.py",
+   "path": "blog/hooks.py"
+  },
+  {
+   "endLine": 27,
+   "id": "py:method:blog/api/posts.py#PostView.delete",
+   "kind": "method",
+   "label": "PostView.delete",
+   "lang": "py",
+   "level": 3,
+   "line": 25,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "def delete(self, post_id)"
+   },
+   "parent": "py:class:blog/api/posts.py#PostView",
+   "path": "blog/api/posts.py"
+  },
+  {
+   "endLine": 23,
+   "id": "py:method:blog/api/posts.py#PostView.get",
+   "kind": "method",
+   "label": "PostView.get",
+   "lang": "py",
+   "level": 3,
+   "line": 22,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 2,
+    "signature": "def get(self, post_id)"
+   },
+   "parent": "py:class:blog/api/posts.py#PostView",
+   "path": "blog/api/posts.py"
+  },
+  {
+   "id": "py:module-group:.",
+   "kind": "module-group",
+   "label": "08-flask",
+   "lang": "py",
+   "level": 1,
+   "meta": {},
+   "parent": "py:project:.",
+   "path": "."
+  },
+  {
+   "id": "py:module-group:blog",
+   "kind": "module-group",
+   "label": "blog",
+   "lang": "py",
+   "level": 1,
+   "meta": {},
+   "parent": "py:module-group:.",
+   "path": "blog"
+  },
+  {
+   "id": "py:module-group:blog/api",
+   "kind": "module-group",
+   "label": "api",
+   "lang": "py",
+   "level": 1,
+   "meta": {},
+   "parent": "py:module-group:blog",
+   "path": "blog/api"
+  },
+  {
+   "endLine": 16,
+   "id": "py:module:blog/__init__.py",
+   "kind": "module",
+   "label": "__init__.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 13
+   },
+   "parent": "py:module-group:blog",
+   "path": "blog/__init__.py"
+  },
+  {
+   "endLine": 5,
+   "id": "py:module:blog/api/__init__.py",
+   "kind": "module",
+   "label": "__init__.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 0,
+    "loc": 3
+   },
+   "parent": "py:module-group:blog/api",
+   "path": "blog/api/__init__.py"
+  },
+  {
+   "endLine": 30,
+   "id": "py:module:blog/api/posts.py",
+   "kind": "module",
+   "label": "posts.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 3,
+    "loc": 20
+   },
+   "parent": "py:module-group:blog/api",
+   "path": "blog/api/posts.py"
+  },
+  {
+   "endLine": 18,
+   "id": "py:module:blog/auth.py",
+   "kind": "module",
+   "label": "auth.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 2,
+    "loc": 12
+   },
+   "parent": "py:module-group:blog",
+   "path": "blog/auth.py"
+  },
+  {
+   "endLine": 3,
+   "id": "py:module:blog/extensions.py",
+   "kind": "module",
+   "label": "extensions.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 0,
+    "loc": 2
+   },
+   "parent": "py:module-group:blog",
+   "path": "blog/extensions.py"
+  },
+  {
+   "endLine": 5,
+   "id": "py:module:blog/hooks.py",
+   "kind": "module",
+   "label": "hooks.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 3
+   },
+   "parent": "py:module-group:blog",
+   "path": "blog/hooks.py"
+  },
+  {
+   "endLine": 13,
+   "id": "py:module:blog/models.py",
+   "kind": "module",
+   "label": "models.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 2,
+    "loc": 9
+   },
+   "parent": "py:module-group:blog",
+   "path": "blog/models.py"
+  },
+  {
+   "id": "py:project:.",
+   "kind": "project",
+   "label": "08-flask",
+   "lang": "py",
+   "level": 0,
+   "meta": {},
+   "parent": null,
+   "path": "."
+  },
+  {
+   "id": "py:route-group:blog/__init__.py#app",
+   "kind": "route-group",
+   "label": "app (flask app, __init__.py)",
+   "lang": "py",
+   "level": 3,
+   "line": 10,
+   "meta": {
+    "framework": "flask",
+    "role": "app"
+   },
+   "parent": "py:module:blog/__init__.py",
+   "path": "blog/__init__.py"
+  },
+  {
+   "id": "py:route-group:blog/api/__init__.py#api_bp",
+   "kind": "route-group",
+   "label": "api_bp (flask blueprint, __init__.py)",
+   "lang": "py",
+   "level": 3,
+   "line": 3,
+   "meta": {
+    "framework": "flask",
+    "role": "blueprint"
+   },
+   "parent": "py:module:blog/api/__init__.py",
+   "path": "blog/api/__init__.py"
+  },
+  {
+   "id": "py:route-group:blog/auth.py#auth_bp",
+   "kind": "route-group",
+   "label": "auth_bp (flask blueprint, auth.py)",
+   "lang": "py",
+   "level": 3,
+   "line": 5,
+   "meta": {
+    "framework": "flask",
+    "role": "blueprint"
+   },
+   "parent": "py:module:blog/auth.py",
+   "path": "blog/auth.py"
+  }
+ ],
+ "projects": [
+  {
+   "frameworks": [
+    "flask",
+    "sqlalchemy"
+   ],
+   "id": "py:project:.",
+   "lang": "py",
+   "root": "."
+  }
+ ],
+ "repoRoot": "<root>",
+ "stats": {
+  "edges.calls": 1,
+  "edges.handles": 4,
+  "edges.imports": 10,
+  "edges.middleware-chain": 5,
+  "edges.model-relation": 2,
+  "edges.mounts": 2,
+  "edges.reads-model": 3,
+  "edges.writes-model": 2,
+  "flask.endpoints": 4,
+  "nodes.class": 3,
+  "nodes.endpoint": 4,
+  "nodes.function": 6,
+  "nodes.method": 2,
+  "nodes.module": 7,
+  "nodes.module-group": 3,
+  "nodes.project": 1,
+  "nodes.route-group": 3,
+  "py.callsDynamic": 26,
+  "py.callsExternal": 9,
+  "py.callsResolved": 1,
+  "py.externalImports": 11,
+  "sqlalchemy.ormUses": 5
+ },
+ "version": 1,
+ "warnings": []
+}

@@ -1,0 +1,23 @@
+{
+  "name": "codebase-guide-workspace",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.18"
+  },
+  "packageManager": "pnpm@10.24.0",
+  "scripts": {
+    "typecheck": "tsc -p . && tsc -p packages/report",
+    "build": "node build.mjs",
+    "test": "node --test \"packages/*/test/*.test.ts\" && pnpm run test:py",
+    "validate": "claude plugin validate .claude-plugin/plugin.json --strict",
+    "test:py": "cd packages/adapter-py/sidecar && python3 -m unittest discover -s tests"
+  },
+  "devDependencies": {
+    "@types/node": "24.19.1",
+    "ajv": "8.20.0",
+    "esbuild": "0.28.2",
+    "playwright": "1.64.0",
+    "typescript": "6.0.3"
+  }
+}

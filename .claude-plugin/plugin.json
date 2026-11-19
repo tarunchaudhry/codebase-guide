@@ -1,0 +1,9 @@
+{
+  "name": "codebase-guide",
+  "displayName": "Codebase Guide",
+  "description": "Turn a Node/TS/Next.js or Python (Django/FastAPI/Flask) repo into an interactive, evidence-linked onboarding report.",
+  "version": "0.1.0",
+  "author": { "name": "Tarun Chaudhary" },
+  "license": "MIT",
+  "keywords": ["onboarding", "architecture", "static-analysis", "documentation"]
+}

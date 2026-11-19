@@ -1,0 +1,1 @@
+{ "compilerOptions": { "strict": true, "allowJs": true, "module": "nodenext", "moduleResolution": "nodenext", "esModuleInterop": true } }

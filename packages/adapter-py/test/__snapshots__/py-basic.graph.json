@@ -1,0 +1,1098 @@
+{
+ "edges": [
+  {
+   "evidence": [
+    {
+     "line": 5,
+     "path": "src/shop/cli.py"
+    }
+   ],
+   "id": "calls:py:function:src/shop/cli.py#main->py:function:src/shop/services/orders.py#create_order",
+   "kind": "calls",
+   "source": "py:function:src/shop/cli.py#main",
+   "target": "py:function:src/shop/services/orders.py#create_order",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 15,
+     "path": "src/shop/notify.py"
+    }
+   ],
+   "id": "calls:py:function:src/shop/notify.py#notify->py:function:src/shop/notify.py#send",
+   "kind": "calls",
+   "source": "py:function:src/shop/notify.py#notify",
+   "target": "py:function:src/shop/notify.py#send",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 11,
+     "path": "src/shop/services/orders.py"
+    }
+   ],
+   "id": "calls:py:function:src/shop/services/orders.py#create_order->py:class:src/shop/models.py#Item",
+   "kind": "calls",
+   "source": "py:function:src/shop/services/orders.py#create_order",
+   "target": "py:class:src/shop/models.py#Item",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 9,
+     "path": "src/shop/services/orders.py"
+    }
+   ],
+   "id": "calls:py:function:src/shop/services/orders.py#create_order->py:class:src/shop/models.py#Order",
+   "kind": "calls",
+   "source": "py:function:src/shop/services/orders.py#create_order",
+   "target": "py:class:src/shop/models.py#Order",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 12,
+     "path": "src/shop/services/orders.py"
+    }
+   ],
+   "id": "calls:py:function:src/shop/services/orders.py#create_order->py:function:src/shop/notify.py#send",
+   "kind": "calls",
+   "source": "py:function:src/shop/services/orders.py#create_order",
+   "target": "py:function:src/shop/notify.py#send",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 13,
+     "path": "src/shop/services/orders.py"
+    }
+   ],
+   "id": "calls:py:function:src/shop/services/orders.py#create_order->py:function:src/shop/services/helpers.py#helper_fn",
+   "kind": "calls",
+   "source": "py:function:src/shop/services/orders.py#create_order",
+   "target": "py:function:src/shop/services/helpers.py#helper_fn",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 23,
+     "path": "src/shop/services/orders.py"
+    }
+   ],
+   "id": "calls:py:function:src/shop/services/orders.py#late->py:function:src/shop/notify.py#notify",
+   "kind": "calls",
+   "source": "py:function:src/shop/services/orders.py#late",
+   "target": "py:function:src/shop/notify.py#notify",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 5,
+     "path": "tests/test_orders.py"
+    }
+   ],
+   "id": "calls:py:function:tests/test_orders.py#test_create->py:function:src/shop/services/orders.py#create_order",
+   "kind": "calls",
+   "source": "py:function:tests/test_orders.py#test_create",
+   "target": "py:function:src/shop/services/orders.py#create_order",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "src/shop/compat.py"
+    }
+   ],
+   "id": "calls:py:method:src/shop/compat.py#Lock.acquire->py:method:src/shop/compat.py#Lock._raw",
+   "kind": "calls",
+   "source": "py:method:src/shop/compat.py#Lock.acquire",
+   "target": "py:method:src/shop/compat.py#Lock._raw",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 13,
+     "path": "src/shop/compat.py"
+    }
+   ],
+   "id": "calls:py:method:src/shop/compat.py#Lock~2.acquire->py:method:src/shop/compat.py#Lock~2._raw",
+   "kind": "calls",
+   "source": "py:method:src/shop/compat.py#Lock~2.acquire",
+   "target": "py:method:src/shop/compat.py#Lock~2._raw",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "src/shop/models.py"
+    }
+   ],
+   "id": "calls:py:method:src/shop/models.py#Base.save->py:method:src/shop/models.py#Base.validate",
+   "kind": "calls",
+   "source": "py:method:src/shop/models.py#Base.save",
+   "target": "py:method:src/shop/models.py#Base.validate",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 20,
+     "path": "src/shop/models.py"
+    }
+   ],
+   "id": "calls:py:method:src/shop/models.py#Order.submit->py:function:src/shop/notify.py#notify",
+   "kind": "calls",
+   "source": "py:method:src/shop/models.py#Order.submit",
+   "target": "py:function:src/shop/notify.py#notify",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 19,
+     "path": "src/shop/models.py"
+    }
+   ],
+   "id": "calls:py:method:src/shop/models.py#Order.submit->py:method:src/shop/models.py#Base.save",
+   "kind": "calls",
+   "source": "py:method:src/shop/models.py#Order.submit",
+   "target": "py:method:src/shop/models.py#Base.save",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 9,
+     "path": "src/shop/cli.py"
+    }
+   ],
+   "id": "calls:py:module:src/shop/cli.py->py:function:src/shop/cli.py#main",
+   "kind": "calls",
+   "source": "py:module:src/shop/cli.py",
+   "target": "py:function:src/shop/cli.py#main",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 2,
+     "path": "src/shop/__init__.py"
+    }
+   ],
+   "id": "imports:py:module:src/shop/__init__.py->py:module:src/shop/models.py",
+   "kind": "imports",
+   "source": "py:module:src/shop/__init__.py",
+   "target": "py:module:src/shop/models.py",
+   "weight": 2
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "src/shop/cli.py"
+    }
+   ],
+   "id": "imports:py:module:src/shop/cli.py->py:module:src/shop/services/orders.py",
+   "kind": "imports",
+   "source": "py:module:src/shop/cli.py",
+   "target": "py:module:src/shop/services/orders.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "src/shop/models.py"
+    }
+   ],
+   "id": "imports:py:module:src/shop/models.py->py:module:src/shop/notify.py",
+   "kind": "imports",
+   "source": "py:module:src/shop/models.py",
+   "target": "py:module:src/shop/notify.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 2,
+     "path": "src/shop/services/orders.py"
+    }
+   ],
+   "id": "imports:py:module:src/shop/services/orders.py->py:module:src/shop/__init__.py",
+   "kind": "imports",
+   "source": "py:module:src/shop/services/orders.py",
+   "target": "py:module:src/shop/__init__.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "src/shop/services/orders.py"
+    }
+   ],
+   "id": "imports:py:module:src/shop/services/orders.py->py:module:src/shop/models.py",
+   "kind": "imports",
+   "source": "py:module:src/shop/services/orders.py",
+   "target": "py:module:src/shop/models.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "src/shop/services/orders.py"
+    },
+    {
+     "line": 22,
+     "path": "src/shop/services/orders.py"
+    }
+   ],
+   "id": "imports:py:module:src/shop/services/orders.py->py:module:src/shop/notify.py",
+   "kind": "imports",
+   "source": "py:module:src/shop/services/orders.py",
+   "target": "py:module:src/shop/notify.py",
+   "weight": 2
+  },
+  {
+   "evidence": [
+    {
+     "line": 5,
+     "path": "src/shop/services/orders.py"
+    }
+   ],
+   "id": "imports:py:module:src/shop/services/orders.py->py:module:src/shop/services/helpers.py",
+   "kind": "imports",
+   "source": "py:module:src/shop/services/orders.py",
+   "target": "py:module:src/shop/services/helpers.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "tests/test_orders.py"
+    }
+   ],
+   "id": "imports:py:module:tests/test_orders.py->py:module:src/shop/services/orders.py",
+   "kind": "imports",
+   "source": "py:module:tests/test_orders.py",
+   "target": "py:module:src/shop/services/orders.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 13,
+     "path": "src/shop/settings.py"
+    }
+   ],
+   "id": "reads-env:py:class:src/shop/settings.py#Settings->config:env-var:SHOP_DB_URL",
+   "inferred": true,
+   "kind": "reads-env",
+   "source": "py:class:src/shop/settings.py#Settings",
+   "target": "config:env-var:SHOP_DB_URL",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 14,
+     "path": "src/shop/notify.py"
+    }
+   ],
+   "id": "reads-env:py:function:src/shop/notify.py#notify->config:env-var:NOTIFY_TOKEN",
+   "kind": "reads-env",
+   "source": "py:function:src/shop/notify.py#notify",
+   "target": "config:env-var:NOTIFY_TOKEN",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 9,
+     "path": "src/shop/notify.py"
+    }
+   ],
+   "id": "reads-env:py:module:src/shop/notify.py->config:env-var:WEBHOOK_URL",
+   "kind": "reads-env",
+   "source": "py:module:src/shop/notify.py",
+   "target": "config:env-var:WEBHOOK_URL",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "src/shop/settings.py"
+    }
+   ],
+   "id": "reads-env:py:module:src/shop/settings.py->config:env-var:DEBUG",
+   "kind": "reads-env",
+   "source": "py:module:src/shop/settings.py",
+   "target": "config:env-var:DEBUG",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "src/shop/settings.py"
+    }
+   ],
+   "id": "reads-env:py:module:src/shop/settings.py->config:env-var:REDIS_URL",
+   "kind": "reads-env",
+   "source": "py:module:src/shop/settings.py",
+   "target": "config:env-var:REDIS_URL",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 7,
+     "path": "src/shop/settings.py"
+    }
+   ],
+   "id": "reads-env:py:module:src/shop/settings.py->config:env-var:SECRET_KEY",
+   "kind": "reads-env",
+   "source": "py:module:src/shop/settings.py",
+   "target": "config:env-var:SECRET_KEY",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "tests/test_orders.py"
+    }
+   ],
+   "id": "tests:py:module:tests/test_orders.py->py:module:src/shop/services/orders.py",
+   "kind": "tests",
+   "source": "py:module:tests/test_orders.py",
+   "target": "py:module:src/shop/services/orders.py",
+   "weight": 1
+  }
+ ],
+ "nodes": [
+  {
+   "id": "config:env-var:DEBUG",
+   "kind": "env-var",
+   "label": "DEBUG",
+   "lang": "config",
+   "level": 3,
+   "meta": {},
+   "parent": null
+  },
+  {
+   "id": "config:env-var:NOTIFY_TOKEN",
+   "kind": "env-var",
+   "label": "NOTIFY_TOKEN",
+   "lang": "config",
+   "level": 3,
+   "meta": {},
+   "parent": null
+  },
+  {
+   "id": "config:env-var:REDIS_URL",
+   "kind": "env-var",
+   "label": "REDIS_URL",
+   "lang": "config",
+   "level": 3,
+   "meta": {},
+   "parent": null
+  },
+  {
+   "id": "config:env-var:SECRET_KEY",
+   "kind": "env-var",
+   "label": "SECRET_KEY",
+   "lang": "config",
+   "level": 3,
+   "meta": {},
+   "parent": null
+  },
+  {
+   "id": "config:env-var:SHOP_DB_URL",
+   "kind": "env-var",
+   "label": "SHOP_DB_URL",
+   "lang": "config",
+   "level": 3,
+   "meta": {},
+   "parent": null
+  },
+  {
+   "id": "config:env-var:WEBHOOK_URL",
+   "kind": "env-var",
+   "label": "WEBHOOK_URL",
+   "lang": "config",
+   "level": 3,
+   "meta": {},
+   "parent": null
+  },
+  {
+   "id": "config:script:pyproject.toml#shop-cli",
+   "kind": "script",
+   "label": "shop-cli",
+   "lang": "config",
+   "level": 3,
+   "line": 7,
+   "meta": {
+    "role": "pyproject-script",
+    "signature": "shop.cli:main"
+   },
+   "parent": "py:project:.",
+   "path": "pyproject.toml"
+  },
+  {
+   "endLine": 9,
+   "id": "py:class:src/shop/compat.py#Lock",
+   "kind": "class",
+   "label": "Lock",
+   "lang": "py",
+   "level": 3,
+   "line": 4,
+   "meta": {
+    "exported": true,
+    "loc": 6
+   },
+   "parent": "py:module:src/shop/compat.py",
+   "path": "src/shop/compat.py"
+  },
+  {
+   "endLine": 16,
+   "id": "py:class:src/shop/compat.py#Lock~2",
+   "kind": "class",
+   "label": "Lock~2",
+   "lang": "py",
+   "level": 3,
+   "line": 11,
+   "meta": {
+    "loc": 6
+   },
+   "parent": "py:module:src/shop/compat.py",
+   "path": "src/shop/compat.py"
+  },
+  {
+   "endLine": 11,
+   "id": "py:class:src/shop/models.py#Base",
+   "kind": "class",
+   "label": "Base",
+   "lang": "py",
+   "level": 3,
+   "line": 4,
+   "meta": {
+    "doc": "Persistence base class.",
+    "exported": true,
+    "loc": 8
+   },
+   "parent": "py:module:src/shop/models.py",
+   "path": "src/shop/models.py"
+  },
+  {
+   "endLine": 24,
+   "id": "py:class:src/shop/models.py#Item",
+   "kind": "class",
+   "label": "Item",
+   "lang": "py",
+   "level": 3,
+   "line": 23,
+   "meta": {
+    "exported": true,
+    "loc": 2
+   },
+   "parent": "py:module:src/shop/models.py",
+   "path": "src/shop/models.py"
+  },
+  {
+   "endLine": 20,
+   "id": "py:class:src/shop/models.py#Order",
+   "kind": "class",
+   "label": "Order",
+   "lang": "py",
+   "level": 3,
+   "line": 14,
+   "meta": {
+    "exported": true,
+    "loc": 7,
+    "signature": "class Order(Base)"
+   },
+   "parent": "py:module:src/shop/models.py",
+   "path": "src/shop/models.py"
+  },
+  {
+   "endLine": 13,
+   "id": "py:class:src/shop/settings.py#Settings",
+   "kind": "class",
+   "label": "Settings",
+   "lang": "py",
+   "level": 3,
+   "line": 11,
+   "meta": {
+    "exported": true,
+    "framework": "pydantic",
+    "loc": 3,
+    "role": "settings",
+    "signature": "class Settings(BaseSettings)"
+   },
+   "parent": "py:module:src/shop/settings.py",
+   "path": "src/shop/settings.py"
+  },
+  {
+   "endLine": 5,
+   "id": "py:function:src/shop/cli.py#main",
+   "kind": "function",
+   "label": "main",
+   "lang": "py",
+   "level": 3,
+   "line": 4,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 2,
+    "signature": "def main()"
+   },
+   "parent": "py:module:src/shop/cli.py",
+   "path": "src/shop/cli.py"
+  },
+  {
+   "endLine": 15,
+   "id": "py:function:src/shop/notify.py#notify",
+   "kind": "function",
+   "label": "notify",
+   "lang": "py",
+   "level": 3,
+   "line": 12,
+   "meta": {
+    "complexity": 1,
+    "doc": "Send an order notification.",
+    "exported": true,
+    "loc": 4,
+    "signature": "def notify(order: 'Order') -> bool"
+   },
+   "parent": "py:module:src/shop/notify.py",
+   "path": "src/shop/notify.py"
+  },
+  {
+   "endLine": 19,
+   "id": "py:function:src/shop/notify.py#send",
+   "kind": "function",
+   "label": "send",
+   "lang": "py",
+   "level": 3,
+   "line": 18,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 2,
+    "signature": "def send(token)"
+   },
+   "parent": "py:module:src/shop/notify.py",
+   "path": "src/shop/notify.py"
+  },
+  {
+   "endLine": 6,
+   "id": "py:function:src/shop/services/helpers.py#_private",
+   "kind": "function",
+   "label": "_private",
+   "lang": "py",
+   "level": 3,
+   "line": 5,
+   "meta": {
+    "complexity": 1,
+    "loc": 2,
+    "signature": "def _private()"
+   },
+   "parent": "py:module:src/shop/services/helpers.py",
+   "path": "src/shop/services/helpers.py"
+  },
+  {
+   "endLine": 2,
+   "id": "py:function:src/shop/services/helpers.py#helper_fn",
+   "kind": "function",
+   "label": "helper_fn",
+   "lang": "py",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 2,
+    "signature": "def helper_fn()"
+   },
+   "parent": "py:module:src/shop/services/helpers.py",
+   "path": "src/shop/services/helpers.py"
+  },
+  {
+   "endLine": 14,
+   "id": "py:function:src/shop/services/orders.py#create_order",
+   "kind": "function",
+   "label": "create_order",
+   "lang": "py",
+   "level": 3,
+   "line": 8,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 7,
+    "signature": "def create_order(items: list) -> Order"
+   },
+   "parent": "py:module:src/shop/services/orders.py",
+   "path": "src/shop/services/orders.py"
+  },
+  {
+   "endLine": 23,
+   "id": "py:function:src/shop/services/orders.py#late",
+   "kind": "function",
+   "label": "late",
+   "lang": "py",
+   "level": 3,
+   "line": 21,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "def late()"
+   },
+   "parent": "py:module:src/shop/services/orders.py",
+   "path": "src/shop/services/orders.py"
+  },
+  {
+   "endLine": 18,
+   "id": "py:function:src/shop/services/orders.py#shadow",
+   "kind": "function",
+   "label": "shadow",
+   "lang": "py",
+   "level": 3,
+   "line": 17,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 2,
+    "signature": "def shadow(send)"
+   },
+   "parent": "py:module:src/shop/services/orders.py",
+   "path": "src/shop/services/orders.py"
+  },
+  {
+   "endLine": 5,
+   "id": "py:function:tests/test_orders.py#test_create",
+   "kind": "function",
+   "label": "test_create",
+   "lang": "py",
+   "level": 3,
+   "line": 4,
+   "meta": {
+    "complexity": 2,
+    "exported": true,
+    "loc": 2,
+    "role": "test",
+    "signature": "def test_create()"
+   },
+   "parent": "py:module:tests/test_orders.py",
+   "path": "tests/test_orders.py"
+  },
+  {
+   "endLine": 9,
+   "id": "py:method:src/shop/compat.py#Lock._raw",
+   "kind": "method",
+   "label": "Lock._raw",
+   "lang": "py",
+   "level": 3,
+   "line": 8,
+   "meta": {
+    "complexity": 1,
+    "loc": 2,
+    "signature": "def _raw(self)"
+   },
+   "parent": "py:class:src/shop/compat.py#Lock",
+   "path": "src/shop/compat.py"
+  },
+  {
+   "endLine": 6,
+   "id": "py:method:src/shop/compat.py#Lock.acquire",
+   "kind": "method",
+   "label": "Lock.acquire",
+   "lang": "py",
+   "level": 3,
+   "line": 5,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 2,
+    "signature": "def acquire(self)"
+   },
+   "parent": "py:class:src/shop/compat.py#Lock",
+   "path": "src/shop/compat.py"
+  },
+  {
+   "endLine": 16,
+   "id": "py:method:src/shop/compat.py#Lock~2._raw",
+   "kind": "method",
+   "label": "Lock~2._raw",
+   "lang": "py",
+   "level": 3,
+   "line": 15,
+   "meta": {
+    "complexity": 1,
+    "loc": 2,
+    "signature": "def _raw(self)"
+   },
+   "parent": "py:class:src/shop/compat.py#Lock~2",
+   "path": "src/shop/compat.py"
+  },
+  {
+   "endLine": 13,
+   "id": "py:method:src/shop/compat.py#Lock~2.acquire",
+   "kind": "method",
+   "label": "Lock~2.acquire",
+   "lang": "py",
+   "level": 3,
+   "line": 12,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 2,
+    "signature": "def acquire(self)"
+   },
+   "parent": "py:class:src/shop/compat.py#Lock~2",
+   "path": "src/shop/compat.py"
+  },
+  {
+   "endLine": 8,
+   "id": "py:method:src/shop/models.py#Base.save",
+   "kind": "method",
+   "label": "Base.save",
+   "lang": "py",
+   "level": 3,
+   "line": 7,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 2,
+    "signature": "def save(self)"
+   },
+   "parent": "py:class:src/shop/models.py#Base",
+   "path": "src/shop/models.py"
+  },
+  {
+   "endLine": 11,
+   "id": "py:method:src/shop/models.py#Base.validate",
+   "kind": "method",
+   "label": "Base.validate",
+   "lang": "py",
+   "level": 3,
+   "line": 10,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 2,
+    "signature": "def validate(self)"
+   },
+   "parent": "py:class:src/shop/models.py#Base",
+   "path": "src/shop/models.py"
+  },
+  {
+   "endLine": 20,
+   "id": "py:method:src/shop/models.py#Order.submit",
+   "kind": "method",
+   "label": "Order.submit",
+   "lang": "py",
+   "level": 3,
+   "line": 18,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "def submit(self)"
+   },
+   "parent": "py:class:src/shop/models.py#Order",
+   "path": "src/shop/models.py"
+  },
+  {
+   "endLine": 16,
+   "id": "py:method:src/shop/models.py#Order.total",
+   "kind": "method",
+   "label": "Order.total",
+   "lang": "py",
+   "level": 3,
+   "line": 15,
+   "meta": {
+    "complexity": 3,
+    "exported": true,
+    "loc": 2,
+    "signature": "def total(self, items)"
+   },
+   "parent": "py:class:src/shop/models.py#Order",
+   "path": "src/shop/models.py"
+  },
+  {
+   "id": "py:module-group:.",
+   "kind": "module-group",
+   "label": "shop",
+   "lang": "py",
+   "level": 1,
+   "meta": {},
+   "parent": "py:project:.",
+   "path": "."
+  },
+  {
+   "id": "py:module-group:src",
+   "kind": "module-group",
+   "label": "src",
+   "lang": "py",
+   "level": 1,
+   "meta": {},
+   "parent": "py:module-group:.",
+   "path": "src"
+  },
+  {
+   "id": "py:module-group:src/shop",
+   "kind": "module-group",
+   "label": "shop",
+   "lang": "py",
+   "level": 1,
+   "meta": {},
+   "parent": "py:module-group:src",
+   "path": "src/shop"
+  },
+  {
+   "id": "py:module-group:src/shop/services",
+   "kind": "module-group",
+   "label": "services",
+   "lang": "py",
+   "level": 1,
+   "meta": {},
+   "parent": "py:module-group:src/shop",
+   "path": "src/shop/services"
+  },
+  {
+   "id": "py:module-group:tests",
+   "kind": "module-group",
+   "label": "tests",
+   "lang": "py",
+   "level": 1,
+   "meta": {},
+   "parent": "py:module-group:.",
+   "path": "tests"
+  },
+  {
+   "endLine": 4,
+   "id": "py:module:src/shop/__init__.py",
+   "kind": "module",
+   "label": "__init__.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "doc": "Shop domain package.",
+    "exportsCount": 0,
+    "loc": 3
+   },
+   "parent": "py:module-group:src/shop",
+   "path": "src/shop/__init__.py"
+  },
+  {
+   "id": "py:module:src/shop/broken.py",
+   "kind": "module",
+   "label": "broken.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {},
+   "parent": "py:module-group:src/shop",
+   "path": "src/shop/broken.py"
+  },
+  {
+   "endLine": 9,
+   "id": "py:module:src/shop/cli.py",
+   "kind": "module",
+   "label": "cli.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 5
+   },
+   "parent": "py:module-group:src/shop",
+   "path": "src/shop/cli.py"
+  },
+  {
+   "endLine": 16,
+   "id": "py:module:src/shop/compat.py",
+   "kind": "module",
+   "label": "compat.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 13
+   },
+   "parent": "py:module-group:src/shop",
+   "path": "src/shop/compat.py"
+  },
+  {
+   "endLine": 24,
+   "id": "py:module:src/shop/models.py",
+   "kind": "module",
+   "label": "models.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 3,
+    "loc": 15
+   },
+   "parent": "py:module-group:src/shop",
+   "path": "src/shop/models.py"
+  },
+  {
+   "endLine": 19,
+   "id": "py:module:src/shop/notify.py",
+   "kind": "module",
+   "label": "notify.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 2,
+    "loc": 12
+   },
+   "parent": "py:module-group:src/shop",
+   "path": "src/shop/notify.py"
+  },
+  {
+   "endLine": 1,
+   "id": "py:module:src/shop/services/__init__.py",
+   "kind": "module",
+   "label": "__init__.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 0,
+    "loc": 0
+   },
+   "parent": "py:module-group:src/shop/services",
+   "path": "src/shop/services/__init__.py"
+  },
+  {
+   "endLine": 6,
+   "id": "py:module:src/shop/services/helpers.py",
+   "kind": "module",
+   "label": "helpers.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 4
+   },
+   "parent": "py:module-group:src/shop/services",
+   "path": "src/shop/services/helpers.py"
+  },
+  {
+   "endLine": 23,
+   "id": "py:module:src/shop/services/orders.py",
+   "kind": "module",
+   "label": "orders.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 3,
+    "loc": 16
+   },
+   "parent": "py:module-group:src/shop/services",
+   "path": "src/shop/services/orders.py"
+  },
+  {
+   "endLine": 13,
+   "id": "py:module:src/shop/settings.py",
+   "kind": "module",
+   "label": "settings.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 10
+   },
+   "parent": "py:module-group:src/shop",
+   "path": "src/shop/settings.py"
+  },
+  {
+   "endLine": 5,
+   "id": "py:module:tests/test_orders.py",
+   "kind": "module",
+   "label": "test_orders.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 3,
+    "role": "test"
+   },
+   "parent": "py:module-group:tests",
+   "path": "tests/test_orders.py"
+  },
+  {
+   "id": "py:project:.",
+   "kind": "project",
+   "label": "shop",
+   "lang": "py",
+   "level": 0,
+   "meta": {},
+   "parent": null,
+   "path": "."
+  }
+ ],
+ "projects": [
+  {
+   "frameworks": [],
+   "id": "py:project:.",
+   "lang": "py",
+   "root": "."
+  }
+ ],
+ "repoRoot": "<root>",
+ "stats": {
+  "edges.calls": 14,
+  "edges.imports": 8,
+  "edges.reads-env": 6,
+  "edges.tests": 1,
+  "nodes.class": 6,
+  "nodes.env-var": 6,
+  "nodes.function": 9,
+  "nodes.method": 8,
+  "nodes.module": 11,
+  "nodes.module-group": 5,
+  "nodes.project": 1,
+  "nodes.script": 1,
+  "py.callsDynamic": 4,
+  "py.callsExternal": 6,
+  "py.callsResolved": 14,
+  "py.externalImports": 8,
+  "py.typeCheckingImports": 1
+ },
+ "version": 1,
+ "warnings": [
+  {
+   "code": "py-syntax-error",
+   "count": 1,
+   "message": "Python files skipped because they do not parse",
+   "path": "src/shop/broken.py"
+  }
+ ]
+}

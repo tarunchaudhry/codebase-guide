@@ -1,0 +1,6 @@
+{
+  "name": "nest-fixture",
+  "private": true,
+  "scripts": { "start:dev": "nest start --watch", "test": "jest" },
+  "dependencies": { "@nestjs/common": "11.1.6", "@nestjs/core": "11.1.6", "reflect-metadata": "0.2.2" }
+}

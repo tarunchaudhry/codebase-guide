@@ -1,0 +1,764 @@
+{
+ "edges": [
+  {
+   "evidence": [
+    {
+     "line": 9,
+     "path": "pages/api/posts/[id].ts"
+    }
+   ],
+   "id": "calls:ts:function:pages/api/posts/[id].ts#postHandler->ts:function:lib/posts.ts#deletePost",
+   "kind": "calls",
+   "source": "ts:function:pages/api/posts/[id].ts#postHandler",
+   "target": "ts:function:lib/posts.ts#deletePost",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 7,
+     "path": "pages/api/posts/[id].ts"
+    }
+   ],
+   "id": "calls:ts:function:pages/api/posts/[id].ts#postHandler->ts:function:lib/posts.ts#getPost",
+   "kind": "calls",
+   "source": "ts:function:pages/api/posts/[id].ts#postHandler",
+   "target": "ts:function:lib/posts.ts#getPost",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 4,
+     "path": "pages/posts/[id].tsx"
+    }
+   ],
+   "id": "calls:ts:function:pages/posts/[id].tsx#getServerSideProps->ts:function:lib/posts.ts#getPost",
+   "kind": "calls",
+   "source": "ts:function:pages/posts/[id].tsx#getServerSideProps",
+   "target": "ts:function:lib/posts.ts#getPost",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 4,
+     "path": "pages/posts/index.tsx"
+    }
+   ],
+   "id": "calls:ts:function:pages/posts/index.tsx#getServerSideProps->ts:function:lib/posts.ts#listPosts",
+   "kind": "calls",
+   "source": "ts:function:pages/posts/index.tsx#getServerSideProps",
+   "target": "ts:function:lib/posts.ts#listPosts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "pages/api/hello.ts"
+    }
+   ],
+   "id": "handles:ts:endpoint:pages/api/hello.ts#default->ts:function:pages/api/hello.ts#handler",
+   "kind": "handles",
+   "source": "ts:endpoint:pages/api/hello.ts#default",
+   "target": "ts:function:pages/api/hello.ts#handler",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "pages/api/posts/[id].ts"
+    }
+   ],
+   "id": "handles:ts:endpoint:pages/api/posts/[id].ts#default->ts:function:pages/api/posts/[id].ts#postHandler",
+   "kind": "handles",
+   "source": "ts:endpoint:pages/api/posts/[id].ts#default",
+   "target": "ts:function:pages/api/posts/[id].ts#postHandler",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "pages/index.tsx"
+    }
+   ],
+   "id": "handles:ts:route:pages/index.tsx->ts:component:pages/index.tsx#Home",
+   "kind": "handles",
+   "source": "ts:route:pages/index.tsx",
+   "target": "ts:component:pages/index.tsx#Home",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "pages/posts/[id].tsx"
+    }
+   ],
+   "id": "handles:ts:route:pages/posts/[id].tsx->ts:component:pages/posts/[id].tsx#PostPage",
+   "kind": "handles",
+   "source": "ts:route:pages/posts/[id].tsx",
+   "target": "ts:component:pages/posts/[id].tsx#PostPage",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "pages/posts/index.tsx"
+    }
+   ],
+   "id": "handles:ts:route:pages/posts/index.tsx->ts:component:pages/posts/index.tsx#Posts",
+   "kind": "handles",
+   "source": "ts:route:pages/posts/index.tsx",
+   "target": "ts:component:pages/posts/index.tsx#Posts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 2,
+     "path": "pages/api/posts/[id].ts"
+    }
+   ],
+   "id": "imports:ts:module:pages/api/posts/[id].ts->ts:module:lib/posts.ts",
+   "kind": "imports",
+   "source": "ts:module:pages/api/posts/[id].ts",
+   "target": "ts:module:lib/posts.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "pages/posts/[id].tsx"
+    }
+   ],
+   "id": "imports:ts:module:pages/posts/[id].tsx->ts:module:lib/posts.ts",
+   "kind": "imports",
+   "source": "ts:module:pages/posts/[id].tsx",
+   "target": "ts:module:lib/posts.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "pages/posts/index.tsx"
+    }
+   ],
+   "id": "imports:ts:module:pages/posts/index.tsx->ts:module:lib/posts.ts",
+   "kind": "imports",
+   "source": "ts:module:pages/posts/index.tsx",
+   "target": "ts:module:lib/posts.ts",
+   "weight": 1
+  }
+ ],
+ "nodes": [
+  {
+   "id": "config:script:package.json#build",
+   "kind": "script",
+   "label": "build",
+   "lang": "config",
+   "level": 3,
+   "line": 4,
+   "meta": {
+    "role": "npm-script",
+    "signature": "next build"
+   },
+   "parent": "ts:project:.",
+   "path": "package.json"
+  },
+  {
+   "id": "config:script:package.json#dev",
+   "kind": "script",
+   "label": "dev",
+   "lang": "config",
+   "level": 3,
+   "line": 4,
+   "meta": {
+    "role": "npm-script",
+    "signature": "next dev"
+   },
+   "parent": "ts:project:.",
+   "path": "package.json"
+  },
+  {
+   "endLine": 5,
+   "id": "ts:component:pages/_app.tsx#App",
+   "kind": "component",
+   "label": "App",
+   "lang": "ts",
+   "level": 3,
+   "line": 3,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "App({ Component, pageProps }: AppProps)"
+   },
+   "parent": "ts:module:pages/_app.tsx",
+   "path": "pages/_app.tsx"
+  },
+  {
+   "endLine": 10,
+   "id": "ts:component:pages/_document.tsx#Document",
+   "kind": "component",
+   "label": "Document",
+   "lang": "ts",
+   "level": 3,
+   "line": 3,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 8,
+    "signature": "Document()"
+   },
+   "parent": "ts:module:pages/_document.tsx",
+   "path": "pages/_document.tsx"
+  },
+  {
+   "endLine": 3,
+   "id": "ts:component:pages/index.tsx#Home",
+   "kind": "component",
+   "label": "Home",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "Home()"
+   },
+   "parent": "ts:module:pages/index.tsx",
+   "path": "pages/index.tsx"
+  },
+  {
+   "endLine": 9,
+   "id": "ts:component:pages/posts/[id].tsx#PostPage",
+   "kind": "component",
+   "label": "PostPage",
+   "lang": "ts",
+   "level": 3,
+   "line": 7,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "PostPage({ post }: { post: Post })"
+   },
+   "parent": "ts:module:pages/posts/[id].tsx",
+   "path": "pages/posts/[id].tsx"
+  },
+  {
+   "endLine": 9,
+   "id": "ts:component:pages/posts/index.tsx#Posts",
+   "kind": "component",
+   "label": "Posts",
+   "lang": "ts",
+   "level": 3,
+   "line": 7,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "Posts({ posts }: { posts: Post[] })"
+   },
+   "parent": "ts:module:pages/posts/index.tsx",
+   "path": "pages/posts/index.tsx"
+  },
+  {
+   "id": "ts:endpoint:pages/api/hello.ts#default",
+   "kind": "endpoint",
+   "label": "* /api/hello",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "framework": "next",
+    "http": {
+     "fullPath": "/api/hello",
+     "methods": [
+      "*"
+     ],
+     "pathTemplate": "/api/hello"
+    }
+   },
+   "parent": "ts:route-group:pages",
+   "path": "pages/api/hello.ts"
+  },
+  {
+   "id": "ts:endpoint:pages/api/posts/[id].ts#default",
+   "kind": "endpoint",
+   "label": "DELETE|GET /api/posts/[id]",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "framework": "next",
+    "http": {
+     "fullPath": "/api/posts/[id]",
+     "methods": [
+      "DELETE",
+      "GET"
+     ],
+     "pathTemplate": "/api/posts/[id]"
+    }
+   },
+   "parent": "ts:route-group:pages",
+   "path": "pages/api/posts/[id].ts"
+  },
+  {
+   "endLine": 15,
+   "id": "ts:function:lib/posts.ts#deletePost",
+   "kind": "function",
+   "label": "deletePost",
+   "lang": "ts",
+   "level": 3,
+   "line": 13,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "async deletePost(id: string): Promise<void>"
+   },
+   "parent": "ts:module:lib/posts.ts",
+   "path": "lib/posts.ts"
+  },
+  {
+   "endLine": 11,
+   "id": "ts:function:lib/posts.ts#getPost",
+   "kind": "function",
+   "label": "getPost",
+   "lang": "ts",
+   "level": 3,
+   "line": 9,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "async getPost(id: string): Promise<Post | undefined>"
+   },
+   "parent": "ts:module:lib/posts.ts",
+   "path": "lib/posts.ts"
+  },
+  {
+   "endLine": 7,
+   "id": "ts:function:lib/posts.ts#listPosts",
+   "kind": "function",
+   "label": "listPosts",
+   "lang": "ts",
+   "level": 3,
+   "line": 5,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "async listPosts(): Promise<Post[]>"
+   },
+   "parent": "ts:module:lib/posts.ts",
+   "path": "lib/posts.ts"
+  },
+  {
+   "endLine": 5,
+   "id": "ts:function:pages/api/hello.ts#handler",
+   "kind": "function",
+   "label": "handler",
+   "lang": "ts",
+   "level": 3,
+   "line": 3,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "handler(_req: NextApiRequest, res: NextApiResponse)"
+   },
+   "parent": "ts:module:pages/api/hello.ts",
+   "path": "pages/api/hello.ts"
+  },
+  {
+   "endLine": 14,
+   "id": "ts:function:pages/api/posts/[id].ts#postHandler",
+   "kind": "function",
+   "label": "postHandler",
+   "lang": "ts",
+   "level": 3,
+   "line": 4,
+   "meta": {
+    "complexity": 3,
+    "exported": true,
+    "loc": 11,
+    "signature": "async postHandler(req: NextApiRequest, res: NextApiResponse)"
+   },
+   "parent": "ts:module:pages/api/posts/[id].ts",
+   "path": "pages/api/posts/[id].ts"
+  },
+  {
+   "endLine": 5,
+   "id": "ts:function:pages/posts/[id].tsx#getServerSideProps",
+   "kind": "function",
+   "label": "getServerSideProps",
+   "lang": "ts",
+   "level": 3,
+   "line": 3,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "async getServerSideProps({ params }: { params: { id: string } })"
+   },
+   "parent": "ts:module:pages/posts/[id].tsx",
+   "path": "pages/posts/[id].tsx"
+  },
+  {
+   "endLine": 5,
+   "id": "ts:function:pages/posts/index.tsx#getServerSideProps",
+   "kind": "function",
+   "label": "getServerSideProps",
+   "lang": "ts",
+   "level": 3,
+   "line": 3,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "async getServerSideProps()"
+   },
+   "parent": "ts:module:pages/posts/index.tsx",
+   "path": "pages/posts/index.tsx"
+  },
+  {
+   "id": "ts:module-group:.",
+   "kind": "module-group",
+   "label": "next-pages-fixture",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:project:.",
+   "path": "."
+  },
+  {
+   "id": "ts:module-group:lib",
+   "kind": "module-group",
+   "label": "lib",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:.",
+   "path": "lib"
+  },
+  {
+   "id": "ts:module-group:pages",
+   "kind": "module-group",
+   "label": "pages",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:.",
+   "path": "pages"
+  },
+  {
+   "id": "ts:module-group:pages/api",
+   "kind": "module-group",
+   "label": "api",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:pages",
+   "path": "pages/api"
+  },
+  {
+   "id": "ts:module-group:pages/api/posts",
+   "kind": "module-group",
+   "label": "posts",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:pages/api",
+   "path": "pages/api/posts"
+  },
+  {
+   "id": "ts:module-group:pages/posts",
+   "kind": "module-group",
+   "label": "posts",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:pages",
+   "path": "pages/posts"
+  },
+  {
+   "endLine": 16,
+   "id": "ts:module:lib/posts.ts",
+   "kind": "module",
+   "label": "posts.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 4,
+    "loc": 11,
+    "runtime": "shared"
+   },
+   "parent": "ts:module-group:lib",
+   "path": "lib/posts.ts"
+  },
+  {
+   "endLine": 6,
+   "id": "ts:module:pages/_app.tsx",
+   "kind": "module",
+   "label": "_app.tsx",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "framework": "next",
+    "loc": 4,
+    "role": "app",
+    "runtime": "shared"
+   },
+   "parent": "ts:module-group:pages",
+   "path": "pages/_app.tsx"
+  },
+  {
+   "endLine": 11,
+   "id": "ts:module:pages/_document.tsx",
+   "kind": "module",
+   "label": "_document.tsx",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "framework": "next",
+    "loc": 9,
+    "role": "document",
+    "runtime": "server"
+   },
+   "parent": "ts:module-group:pages",
+   "path": "pages/_document.tsx"
+  },
+  {
+   "endLine": 6,
+   "id": "ts:module:pages/api/hello.ts",
+   "kind": "module",
+   "label": "hello.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "framework": "next",
+    "loc": 4,
+    "role": "route",
+    "runtime": "server"
+   },
+   "parent": "ts:module-group:pages/api",
+   "path": "pages/api/hello.ts"
+  },
+  {
+   "endLine": 15,
+   "id": "ts:module:pages/api/posts/[id].ts",
+   "kind": "module",
+   "label": "[id].ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "framework": "next",
+    "loc": 13,
+    "role": "route",
+    "runtime": "server"
+   },
+   "parent": "ts:module-group:pages/api/posts",
+   "path": "pages/api/posts/[id].ts"
+  },
+  {
+   "endLine": 4,
+   "id": "ts:module:pages/index.tsx",
+   "kind": "module",
+   "label": "index.tsx",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "framework": "next",
+    "loc": 3,
+    "role": "page",
+    "runtime": "shared"
+   },
+   "parent": "ts:module-group:pages",
+   "path": "pages/index.tsx"
+  },
+  {
+   "endLine": 10,
+   "id": "ts:module:pages/posts/[id].tsx",
+   "kind": "module",
+   "label": "[id].tsx",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 2,
+    "framework": "next",
+    "loc": 7,
+    "role": "page",
+    "runtime": "shared"
+   },
+   "parent": "ts:module-group:pages/posts",
+   "path": "pages/posts/[id].tsx"
+  },
+  {
+   "endLine": 10,
+   "id": "ts:module:pages/posts/index.tsx",
+   "kind": "module",
+   "label": "index.tsx",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 2,
+    "framework": "next",
+    "loc": 7,
+    "role": "page",
+    "runtime": "shared"
+   },
+   "parent": "ts:module-group:pages/posts",
+   "path": "pages/posts/index.tsx"
+  },
+  {
+   "id": "ts:project:.",
+   "kind": "project",
+   "label": "next-pages-fixture",
+   "lang": "ts",
+   "level": 0,
+   "meta": {},
+   "parent": null,
+   "path": "."
+  },
+  {
+   "id": "ts:route-group:pages",
+   "kind": "route-group",
+   "label": "Pages Router",
+   "lang": "ts",
+   "level": 1,
+   "meta": {
+    "framework": "next",
+    "role": "pages-router"
+   },
+   "parent": "ts:project:.",
+   "path": "pages"
+  },
+  {
+   "id": "ts:route:pages/index.tsx",
+   "kind": "route",
+   "label": "/",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "framework": "next",
+    "http": {
+     "fullPath": "/",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/"
+    },
+    "role": "page"
+   },
+   "parent": "ts:route-group:pages",
+   "path": "pages/index.tsx"
+  },
+  {
+   "id": "ts:route:pages/posts/[id].tsx",
+   "kind": "route",
+   "label": "/posts/[id]",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "framework": "next",
+    "http": {
+     "fullPath": "/posts/[id]",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/posts/[id]"
+    },
+    "role": "page"
+   },
+   "parent": "ts:route-group:pages",
+   "path": "pages/posts/[id].tsx"
+  },
+  {
+   "id": "ts:route:pages/posts/index.tsx",
+   "kind": "route",
+   "label": "/posts",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "framework": "next",
+    "http": {
+     "fullPath": "/posts",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/posts"
+    },
+    "role": "page"
+   },
+   "parent": "ts:route-group:pages",
+   "path": "pages/posts/index.tsx"
+  }
+ ],
+ "projects": [
+  {
+   "frameworks": [
+    "next"
+   ],
+   "id": "ts:project:.",
+   "lang": "ts",
+   "root": "."
+  }
+ ],
+ "repoRoot": "<root>",
+ "stats": {
+  "edges.calls": 4,
+  "edges.handles": 5,
+  "edges.imports": 3,
+  "next.endpoints": 2,
+  "next.pages": 3,
+  "nodes.component": 5,
+  "nodes.endpoint": 2,
+  "nodes.function": 7,
+  "nodes.module": 8,
+  "nodes.module-group": 6,
+  "nodes.project": 1,
+  "nodes.route": 3,
+  "nodes.route-group": 1,
+  "nodes.script": 2,
+  "ts.callsExternal": 6,
+  "ts.callsResolved": 4,
+  "ts.callsUnresolved": 7,
+  "ts.externalImports": 1,
+  "ts.typeOnlyImports": 3
+ },
+ "version": 1,
+ "warnings": [
+  {
+   "code": "ts-unresolved-call",
+   "count": 7,
+   "message": "Calls dropped: callee type unknown (untyped JS, or dependencies/types not installed)",
+   "path": "pages/api/hello.ts"
+  }
+ ]
+}

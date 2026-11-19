@@ -1,0 +1,1404 @@
+{
+ "edges": [
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "src/routes/users.ts"
+    }
+   ],
+   "id": "calls:ts:module:src/routes/users.ts->ts:function:src/middleware/auth.ts#validate",
+   "kind": "calls",
+   "source": "ts:module:src/routes/users.ts",
+   "target": "ts:function:src/middleware/auth.ts#validate",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 17,
+     "path": "src/routes/posts.js"
+    }
+   ],
+   "id": "handles:js:endpoint:src/routes/posts.js#DELETE /:id->js:function:src/routes/posts.js#deletePost",
+   "kind": "handles",
+   "source": "js:endpoint:src/routes/posts.js#DELETE /:id",
+   "target": "js:function:src/routes/posts.js#deletePost",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 18,
+     "path": "src/routes/posts.js"
+    }
+   ],
+   "id": "handles:js:endpoint:src/routes/posts.js#GET /->js:function:src/routes/posts.js#GET /",
+   "kind": "handles",
+   "source": "js:endpoint:src/routes/posts.js#GET /",
+   "target": "js:function:src/routes/posts.js#GET /",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 17,
+     "path": "src/routes/posts.js"
+    }
+   ],
+   "id": "handles:js:endpoint:src/routes/posts.js#GET /:id->js:function:src/routes/posts.js#getPost",
+   "kind": "handles",
+   "source": "js:endpoint:src/routes/posts.js#GET /:id",
+   "target": "js:function:src/routes/posts.js#getPost",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 9,
+     "path": "src/app.ts"
+    }
+   ],
+   "id": "handles:ts:endpoint:src/app.ts#GET /health->ts:function:src/app.ts#GET /health",
+   "kind": "handles",
+   "source": "ts:endpoint:src/app.ts#GET /health",
+   "target": "ts:function:src/app.ts#GET /health",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "src/routes/users.ts"
+    }
+   ],
+   "id": "handles:ts:endpoint:src/routes/users.ts#GET /->ts:function:src/controllers/users.ts#listUsers",
+   "kind": "handles",
+   "source": "ts:endpoint:src/routes/users.ts#GET /",
+   "target": "ts:function:src/controllers/users.ts#listUsers",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 7,
+     "path": "src/routes/users.ts"
+    }
+   ],
+   "id": "handles:ts:endpoint:src/routes/users.ts#GET /:id->ts:function:src/controllers/users.ts#getUser",
+   "kind": "handles",
+   "source": "ts:endpoint:src/routes/users.ts#GET /:id",
+   "target": "ts:function:src/controllers/users.ts#getUser",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "src/routes/users.ts"
+    }
+   ],
+   "id": "handles:ts:endpoint:src/routes/users.ts#POST /->ts:function:src/controllers/users.ts#createUser",
+   "kind": "handles",
+   "source": "ts:endpoint:src/routes/users.ts#POST /",
+   "target": "ts:function:src/controllers/users.ts#createUser",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 2,
+     "path": "src/routes/posts.js"
+    }
+   ],
+   "id": "imports:js:module:src/routes/posts.js->ts:module:src/db.ts",
+   "kind": "imports",
+   "source": "js:module:src/routes/posts.js",
+   "target": "ts:module:src/db.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "src/routes/posts.js"
+    }
+   ],
+   "id": "imports:js:module:src/routes/posts.js->ts:module:src/middleware/auth.ts",
+   "kind": "imports",
+   "source": "js:module:src/routes/posts.js",
+   "target": "ts:module:src/middleware/auth.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 4,
+     "path": "src/app.ts"
+    }
+   ],
+   "id": "imports:ts:module:src/app.ts->ts:module:src/middleware/auth.ts",
+   "kind": "imports",
+   "source": "ts:module:src/app.ts",
+   "target": "ts:module:src/middleware/auth.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "src/app.ts"
+    }
+   ],
+   "id": "imports:ts:module:src/app.ts->ts:module:src/middleware/logger.ts",
+   "kind": "imports",
+   "source": "ts:module:src/app.ts",
+   "target": "ts:module:src/middleware/logger.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 2,
+     "path": "src/app.ts"
+    }
+   ],
+   "id": "imports:ts:module:src/app.ts->ts:module:src/routes/index.ts",
+   "kind": "imports",
+   "source": "ts:module:src/app.ts",
+   "target": "ts:module:src/routes/index.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 2,
+     "path": "src/controllers/users.ts"
+    }
+   ],
+   "id": "imports:ts:module:src/controllers/users.ts->ts:module:src/db.ts",
+   "kind": "imports",
+   "source": "ts:module:src/controllers/users.ts",
+   "target": "ts:module:src/db.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "src/routes/index.ts"
+    }
+   ],
+   "id": "imports:ts:module:src/routes/index.ts->js:module:src/routes/posts.js",
+   "kind": "imports",
+   "source": "ts:module:src/routes/index.ts",
+   "target": "js:module:src/routes/posts.js",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 2,
+     "path": "src/routes/index.ts"
+    }
+   ],
+   "id": "imports:ts:module:src/routes/index.ts->ts:module:src/routes/users.ts",
+   "kind": "imports",
+   "source": "ts:module:src/routes/index.ts",
+   "target": "ts:module:src/routes/users.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 2,
+     "path": "src/routes/users.ts"
+    }
+   ],
+   "id": "imports:ts:module:src/routes/users.ts->ts:module:src/controllers/users.ts",
+   "kind": "imports",
+   "source": "ts:module:src/routes/users.ts",
+   "target": "ts:module:src/controllers/users.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "src/routes/users.ts"
+    }
+   ],
+   "id": "imports:ts:module:src/routes/users.ts->ts:module:src/middleware/auth.ts",
+   "kind": "imports",
+   "source": "ts:module:src/routes/users.ts",
+   "target": "ts:module:src/middleware/auth.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "src/server.ts"
+    }
+   ],
+   "id": "imports:ts:module:src/server.ts->ts:module:src/app.ts",
+   "kind": "imports",
+   "source": "ts:module:src/server.ts",
+   "target": "ts:module:src/app.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "src/routes/posts.js"
+    }
+   ],
+   "id": "middleware-chain:js:endpoint:src/routes/posts.js#DELETE /:id->ts:function:src/middleware/auth.ts#requireAuth",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 2
+   },
+   "source": "js:endpoint:src/routes/posts.js#DELETE /:id",
+   "target": "ts:function:src/middleware/auth.ts#requireAuth",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "src/app.ts"
+    }
+   ],
+   "id": "middleware-chain:js:endpoint:src/routes/posts.js#DELETE /:id->ts:function:src/middleware/logger.ts#requestLogger",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 1
+   },
+   "source": "js:endpoint:src/routes/posts.js#DELETE /:id",
+   "target": "ts:function:src/middleware/logger.ts#requestLogger",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "src/routes/posts.js"
+    }
+   ],
+   "id": "middleware-chain:js:endpoint:src/routes/posts.js#GET /->ts:function:src/middleware/auth.ts#requireAuth",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 2
+   },
+   "source": "js:endpoint:src/routes/posts.js#GET /",
+   "target": "ts:function:src/middleware/auth.ts#requireAuth",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "src/app.ts"
+    }
+   ],
+   "id": "middleware-chain:js:endpoint:src/routes/posts.js#GET /->ts:function:src/middleware/logger.ts#requestLogger",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 1
+   },
+   "source": "js:endpoint:src/routes/posts.js#GET /",
+   "target": "ts:function:src/middleware/logger.ts#requestLogger",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "src/routes/posts.js"
+    }
+   ],
+   "id": "middleware-chain:js:endpoint:src/routes/posts.js#GET /:id->ts:function:src/middleware/auth.ts#requireAuth",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 2
+   },
+   "source": "js:endpoint:src/routes/posts.js#GET /:id",
+   "target": "ts:function:src/middleware/auth.ts#requireAuth",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "src/app.ts"
+    }
+   ],
+   "id": "middleware-chain:js:endpoint:src/routes/posts.js#GET /:id->ts:function:src/middleware/logger.ts#requestLogger",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 1
+   },
+   "source": "js:endpoint:src/routes/posts.js#GET /:id",
+   "target": "ts:function:src/middleware/logger.ts#requestLogger",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "src/app.ts"
+    }
+   ],
+   "id": "middleware-chain:ts:endpoint:src/app.ts#GET /health->ts:function:src/middleware/logger.ts#requestLogger",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 1
+   },
+   "source": "ts:endpoint:src/app.ts#GET /health",
+   "target": "ts:function:src/middleware/logger.ts#requestLogger",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "src/app.ts"
+    }
+   ],
+   "id": "middleware-chain:ts:endpoint:src/routes/users.ts#GET /->ts:function:src/middleware/logger.ts#requestLogger",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 1
+   },
+   "source": "ts:endpoint:src/routes/users.ts#GET /",
+   "target": "ts:function:src/middleware/logger.ts#requestLogger",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "src/app.ts"
+    }
+   ],
+   "id": "middleware-chain:ts:endpoint:src/routes/users.ts#GET /:id->ts:function:src/middleware/logger.ts#requestLogger",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 1
+   },
+   "source": "ts:endpoint:src/routes/users.ts#GET /:id",
+   "target": "ts:function:src/middleware/logger.ts#requestLogger",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "src/routes/users.ts"
+    }
+   ],
+   "id": "middleware-chain:ts:endpoint:src/routes/users.ts#POST /->ts:function:src/middleware/auth.ts#requireAuth",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 2
+   },
+   "source": "ts:endpoint:src/routes/users.ts#POST /",
+   "target": "ts:function:src/middleware/auth.ts#requireAuth",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "src/routes/users.ts"
+    }
+   ],
+   "id": "middleware-chain:ts:endpoint:src/routes/users.ts#POST /->ts:function:src/middleware/auth.ts#validate",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 3
+   },
+   "source": "ts:endpoint:src/routes/users.ts#POST /",
+   "target": "ts:function:src/middleware/auth.ts#validate",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "src/app.ts"
+    }
+   ],
+   "id": "middleware-chain:ts:endpoint:src/routes/users.ts#POST /->ts:function:src/middleware/logger.ts#requestLogger",
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 1
+   },
+   "source": "ts:endpoint:src/routes/users.ts#POST /",
+   "target": "ts:function:src/middleware/logger.ts#requestLogger",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 28,
+     "path": "prisma/schema.prisma"
+    }
+   ],
+   "id": "model-relation:config:model:prisma/schema.prisma#Comment->config:model:prisma/schema.prisma#Post",
+   "kind": "model-relation",
+   "source": "config:model:prisma/schema.prisma#Comment",
+   "target": "config:model:prisma/schema.prisma#Post",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 22,
+     "path": "prisma/schema.prisma"
+    }
+   ],
+   "id": "model-relation:config:model:prisma/schema.prisma#Post->config:model:prisma/schema.prisma#Comment",
+   "kind": "model-relation",
+   "source": "config:model:prisma/schema.prisma#Post",
+   "target": "config:model:prisma/schema.prisma#Comment",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 20,
+     "path": "prisma/schema.prisma"
+    }
+   ],
+   "id": "model-relation:config:model:prisma/schema.prisma#Post->config:model:prisma/schema.prisma#User",
+   "kind": "model-relation",
+   "source": "config:model:prisma/schema.prisma#Post",
+   "target": "config:model:prisma/schema.prisma#User",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 14,
+     "path": "prisma/schema.prisma"
+    }
+   ],
+   "id": "model-relation:config:model:prisma/schema.prisma#User->config:model:prisma/schema.prisma#Post",
+   "kind": "model-relation",
+   "source": "config:model:prisma/schema.prisma#User",
+   "target": "config:model:prisma/schema.prisma#Post",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 13,
+     "path": "src/app.ts"
+    }
+   ],
+   "id": "mounts:ts:route-group:src/app.ts#app->ts:route-group:src/routes/index.ts#apiRouter",
+   "kind": "mounts",
+   "meta": {
+    "prefix": "/api"
+   },
+   "source": "ts:route-group:src/app.ts#app",
+   "target": "ts:route-group:src/routes/index.ts#apiRouter",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 7,
+     "path": "src/routes/index.ts"
+    }
+   ],
+   "id": "mounts:ts:route-group:src/routes/index.ts#apiRouter->ts:route-group:src/routes/posts.js#router",
+   "kind": "mounts",
+   "meta": {
+    "prefix": "/posts"
+   },
+   "source": "ts:route-group:src/routes/index.ts#apiRouter",
+   "target": "ts:route-group:src/routes/posts.js#router",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "src/routes/index.ts"
+    }
+   ],
+   "id": "mounts:ts:route-group:src/routes/index.ts#apiRouter->ts:route-group:src/routes/users.ts#router",
+   "kind": "mounts",
+   "meta": {
+    "prefix": "/users"
+   },
+   "source": "ts:route-group:src/routes/index.ts#apiRouter",
+   "target": "ts:route-group:src/routes/users.ts#router",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "src/server.ts"
+    }
+   ],
+   "id": "reads-env:ts:module:src/server.ts->config:env-var:PORT",
+   "kind": "reads-env",
+   "source": "ts:module:src/server.ts",
+   "target": "config:env-var:PORT",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 19,
+     "path": "src/routes/posts.js"
+    }
+   ],
+   "id": "reads-model:js:function:src/routes/posts.js#GET /->config:model:prisma/schema.prisma#Post",
+   "kind": "reads-model",
+   "source": "js:function:src/routes/posts.js#GET /",
+   "target": "config:model:prisma/schema.prisma#Post",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 9,
+     "path": "src/routes/posts.js"
+    }
+   ],
+   "id": "reads-model:js:function:src/routes/posts.js#getPost->config:model:prisma/schema.prisma#Post",
+   "kind": "reads-model",
+   "source": "js:function:src/routes/posts.js#getPost",
+   "target": "config:model:prisma/schema.prisma#Post",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 9,
+     "path": "src/controllers/users.ts"
+    }
+   ],
+   "id": "reads-model:ts:function:src/controllers/users.ts#getUser->config:model:prisma/schema.prisma#User",
+   "kind": "reads-model",
+   "source": "ts:function:src/controllers/users.ts#getUser",
+   "target": "config:model:prisma/schema.prisma#User",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 5,
+     "path": "src/controllers/users.ts"
+    }
+   ],
+   "id": "reads-model:ts:function:src/controllers/users.ts#listUsers->config:model:prisma/schema.prisma#User",
+   "kind": "reads-model",
+   "source": "ts:function:src/controllers/users.ts#listUsers",
+   "target": "config:model:prisma/schema.prisma#User",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 13,
+     "path": "src/routes/posts.js"
+    }
+   ],
+   "id": "writes-model:js:function:src/routes/posts.js#deletePost->config:model:prisma/schema.prisma#Post",
+   "kind": "writes-model",
+   "source": "js:function:src/routes/posts.js#deletePost",
+   "target": "config:model:prisma/schema.prisma#Post",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 13,
+     "path": "src/controllers/users.ts"
+    }
+   ],
+   "id": "writes-model:ts:function:src/controllers/users.ts#createUser->config:model:prisma/schema.prisma#User",
+   "kind": "writes-model",
+   "source": "ts:function:src/controllers/users.ts#createUser",
+   "target": "config:model:prisma/schema.prisma#User",
+   "weight": 1
+  }
+ ],
+ "nodes": [
+  {
+   "id": "config:env-var:PORT",
+   "kind": "env-var",
+   "label": "PORT",
+   "lang": "config",
+   "level": 3,
+   "meta": {},
+   "parent": null
+  },
+  {
+   "endLine": 30,
+   "id": "config:model:prisma/schema.prisma#Comment",
+   "kind": "model",
+   "label": "Comment",
+   "lang": "config",
+   "level": 3,
+   "line": 25,
+   "meta": {
+    "fields": [
+     {
+      "name": "id",
+      "type": "Int"
+     },
+     {
+      "name": "body",
+      "type": "String"
+     },
+     {
+      "name": "post",
+      "relation": "one (fk: postId)",
+      "type": "Post"
+     },
+     {
+      "name": "postId",
+      "type": "Int"
+     }
+    ],
+    "framework": "prisma",
+    "role": "model"
+   },
+   "parent": null,
+   "path": "prisma/schema.prisma"
+  },
+  {
+   "endLine": 23,
+   "id": "config:model:prisma/schema.prisma#Post",
+   "kind": "model",
+   "label": "Post",
+   "lang": "config",
+   "level": 3,
+   "line": 17,
+   "meta": {
+    "fields": [
+     {
+      "name": "id",
+      "type": "Int"
+     },
+     {
+      "name": "title",
+      "type": "String"
+     },
+     {
+      "name": "author",
+      "relation": "one (fk: authorId)",
+      "type": "User"
+     },
+     {
+      "name": "authorId",
+      "type": "Int"
+     },
+     {
+      "name": "comments",
+      "relation": "many",
+      "type": "Comment[]"
+     }
+    ],
+    "framework": "prisma",
+    "role": "model"
+   },
+   "parent": null,
+   "path": "prisma/schema.prisma"
+  },
+  {
+   "endLine": 15,
+   "id": "config:model:prisma/schema.prisma#User",
+   "kind": "model",
+   "label": "User",
+   "lang": "config",
+   "level": 3,
+   "line": 11,
+   "meta": {
+    "doc": "A registered user.",
+    "fields": [
+     {
+      "name": "id",
+      "type": "Int"
+     },
+     {
+      "name": "email",
+      "type": "String"
+     },
+     {
+      "name": "posts",
+      "relation": "many",
+      "type": "Post[]"
+     }
+    ],
+    "framework": "prisma",
+    "role": "model"
+   },
+   "parent": null,
+   "path": "prisma/schema.prisma"
+  },
+  {
+   "id": "config:script:package.json#dev",
+   "kind": "script",
+   "label": "dev",
+   "lang": "config",
+   "level": 3,
+   "line": 4,
+   "meta": {
+    "role": "npm-script",
+    "signature": "tsx watch src/server.ts"
+   },
+   "parent": "ts:project:.",
+   "path": "package.json"
+  },
+  {
+   "id": "config:script:package.json#migrate",
+   "kind": "script",
+   "label": "migrate",
+   "lang": "config",
+   "level": 3,
+   "line": 4,
+   "meta": {
+    "role": "npm-script",
+    "signature": "prisma migrate dev"
+   },
+   "parent": "ts:project:.",
+   "path": "package.json"
+  },
+  {
+   "id": "js:endpoint:src/routes/posts.js#DELETE /:id",
+   "kind": "endpoint",
+   "label": "DELETE /api/posts/:id",
+   "lang": "js",
+   "level": 3,
+   "line": 17,
+   "meta": {
+    "framework": "express",
+    "http": {
+     "fullPath": "/api/posts/:id",
+     "methods": [
+      "DELETE"
+     ],
+     "pathTemplate": "/:id"
+    }
+   },
+   "parent": "ts:route-group:src/routes/posts.js#router",
+   "path": "src/routes/posts.js"
+  },
+  {
+   "id": "js:endpoint:src/routes/posts.js#GET /",
+   "kind": "endpoint",
+   "label": "GET /api/posts",
+   "lang": "js",
+   "level": 3,
+   "line": 18,
+   "meta": {
+    "framework": "express",
+    "http": {
+     "fullPath": "/api/posts",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/"
+    }
+   },
+   "parent": "ts:route-group:src/routes/posts.js#router",
+   "path": "src/routes/posts.js"
+  },
+  {
+   "id": "js:endpoint:src/routes/posts.js#GET /:id",
+   "kind": "endpoint",
+   "label": "GET /api/posts/:id",
+   "lang": "js",
+   "level": 3,
+   "line": 17,
+   "meta": {
+    "framework": "express",
+    "http": {
+     "fullPath": "/api/posts/:id",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/:id"
+    }
+   },
+   "parent": "ts:route-group:src/routes/posts.js#router",
+   "path": "src/routes/posts.js"
+  },
+  {
+   "endLine": 20,
+   "id": "js:function:src/routes/posts.js#GET /",
+   "kind": "function",
+   "label": "GET /",
+   "lang": "js",
+   "level": 3,
+   "line": 18,
+   "meta": {
+    "complexity": 1,
+    "loc": 3,
+    "role": "route-handler",
+    "signature": "async GET /(_req, res)"
+   },
+   "parent": "js:module:src/routes/posts.js",
+   "path": "src/routes/posts.js"
+  },
+  {
+   "endLine": 15,
+   "id": "js:function:src/routes/posts.js#deletePost",
+   "kind": "function",
+   "label": "deletePost",
+   "lang": "js",
+   "level": 3,
+   "line": 12,
+   "meta": {
+    "complexity": 1,
+    "loc": 4,
+    "signature": "async deletePost(req, res)"
+   },
+   "parent": "js:module:src/routes/posts.js",
+   "path": "src/routes/posts.js"
+  },
+  {
+   "endLine": 10,
+   "id": "js:function:src/routes/posts.js#getPost",
+   "kind": "function",
+   "label": "getPost",
+   "lang": "js",
+   "level": 3,
+   "line": 8,
+   "meta": {
+    "complexity": 1,
+    "loc": 3,
+    "signature": "async getPost(req, res)"
+   },
+   "parent": "js:module:src/routes/posts.js",
+   "path": "src/routes/posts.js"
+  },
+  {
+   "endLine": 23,
+   "id": "js:module:src/routes/posts.js",
+   "kind": "module",
+   "label": "posts.js",
+   "lang": "js",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 0,
+    "loc": 17
+   },
+   "parent": "ts:module-group:src/routes",
+   "path": "src/routes/posts.js"
+  },
+  {
+   "id": "ts:endpoint:src/app.ts#GET /health",
+   "kind": "endpoint",
+   "label": "GET /health",
+   "lang": "ts",
+   "level": 3,
+   "line": 9,
+   "meta": {
+    "framework": "express",
+    "http": {
+     "fullPath": "/health",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/health"
+    }
+   },
+   "parent": "ts:route-group:src/app.ts#app",
+   "path": "src/app.ts"
+  },
+  {
+   "id": "ts:endpoint:src/routes/users.ts#GET /",
+   "kind": "endpoint",
+   "label": "GET /api/users",
+   "lang": "ts",
+   "level": 3,
+   "line": 6,
+   "meta": {
+    "framework": "express",
+    "http": {
+     "fullPath": "/api/users",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/"
+    }
+   },
+   "parent": "ts:route-group:src/routes/users.ts#router",
+   "path": "src/routes/users.ts"
+  },
+  {
+   "id": "ts:endpoint:src/routes/users.ts#GET /:id",
+   "kind": "endpoint",
+   "label": "GET /api/users/:id",
+   "lang": "ts",
+   "level": 3,
+   "line": 7,
+   "meta": {
+    "framework": "express",
+    "http": {
+     "fullPath": "/api/users/:id",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/:id"
+    }
+   },
+   "parent": "ts:route-group:src/routes/users.ts#router",
+   "path": "src/routes/users.ts"
+  },
+  {
+   "id": "ts:endpoint:src/routes/users.ts#POST /",
+   "kind": "endpoint",
+   "label": "POST /api/users",
+   "lang": "ts",
+   "level": 3,
+   "line": 8,
+   "meta": {
+    "framework": "express",
+    "http": {
+     "fullPath": "/api/users",
+     "methods": [
+      "POST"
+     ],
+     "pathTemplate": "/"
+    }
+   },
+   "parent": "ts:route-group:src/routes/users.ts#router",
+   "path": "src/routes/users.ts"
+  },
+  {
+   "endLine": 11,
+   "id": "ts:function:src/app.ts#GET /health",
+   "kind": "function",
+   "label": "GET /health",
+   "lang": "ts",
+   "level": 3,
+   "line": 9,
+   "meta": {
+    "complexity": 1,
+    "loc": 3,
+    "role": "route-handler",
+    "signature": "GET /health(_req, res)"
+   },
+   "parent": "ts:module:src/app.ts",
+   "path": "src/app.ts"
+  },
+  {
+   "endLine": 14,
+   "id": "ts:function:src/controllers/users.ts#createUser",
+   "kind": "function",
+   "label": "createUser",
+   "lang": "ts",
+   "level": 3,
+   "line": 12,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "async createUser(req: Request, res: Response)"
+   },
+   "parent": "ts:module:src/controllers/users.ts",
+   "path": "src/controllers/users.ts"
+  },
+  {
+   "endLine": 10,
+   "id": "ts:function:src/controllers/users.ts#getUser",
+   "kind": "function",
+   "label": "getUser",
+   "lang": "ts",
+   "level": 3,
+   "line": 8,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "async getUser(req: Request, res: Response)"
+   },
+   "parent": "ts:module:src/controllers/users.ts",
+   "path": "src/controllers/users.ts"
+  },
+  {
+   "endLine": 6,
+   "id": "ts:function:src/controllers/users.ts#listUsers",
+   "kind": "function",
+   "label": "listUsers",
+   "lang": "ts",
+   "level": 3,
+   "line": 4,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "async listUsers(_req: Request, res: Response)"
+   },
+   "parent": "ts:module:src/controllers/users.ts",
+   "path": "src/controllers/users.ts"
+  },
+  {
+   "endLine": 11,
+   "id": "ts:function:src/middleware/auth.ts#requireAdmin",
+   "kind": "function",
+   "label": "requireAdmin",
+   "lang": "ts",
+   "level": 3,
+   "line": 8,
+   "meta": {
+    "complexity": 2,
+    "exported": true,
+    "loc": 4,
+    "signature": "requireAdmin(req: Request, res: Response, next: NextFunction)"
+   },
+   "parent": "ts:module:src/middleware/auth.ts",
+   "path": "src/middleware/auth.ts"
+  },
+  {
+   "endLine": 6,
+   "id": "ts:function:src/middleware/auth.ts#requireAuth",
+   "kind": "function",
+   "label": "requireAuth",
+   "lang": "ts",
+   "level": 3,
+   "line": 3,
+   "meta": {
+    "complexity": 2,
+    "exported": true,
+    "loc": 4,
+    "signature": "requireAuth(req: Request, res: Response, next: NextFunction)"
+   },
+   "parent": "ts:module:src/middleware/auth.ts",
+   "path": "src/middleware/auth.ts"
+  },
+  {
+   "endLine": 18,
+   "id": "ts:function:src/middleware/auth.ts#validate",
+   "kind": "function",
+   "label": "validate",
+   "lang": "ts",
+   "level": 3,
+   "line": 13,
+   "meta": {
+    "complexity": 2,
+    "exported": true,
+    "loc": 6,
+    "signature": "validate(schema: string)"
+   },
+   "parent": "ts:module:src/middleware/auth.ts",
+   "path": "src/middleware/auth.ts"
+  },
+  {
+   "endLine": 6,
+   "id": "ts:function:src/middleware/logger.ts#requestLogger",
+   "kind": "function",
+   "label": "requestLogger",
+   "lang": "ts",
+   "level": 3,
+   "line": 3,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 4,
+    "signature": "requestLogger(req: Request, _res: Response, next: NextFunction)"
+   },
+   "parent": "ts:module:src/middleware/logger.ts",
+   "path": "src/middleware/logger.ts"
+  },
+  {
+   "id": "ts:module-group:.",
+   "kind": "module-group",
+   "label": "express-prisma-fixture",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:project:.",
+   "path": "."
+  },
+  {
+   "id": "ts:module-group:src",
+   "kind": "module-group",
+   "label": "src",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:.",
+   "path": "src"
+  },
+  {
+   "id": "ts:module-group:src/controllers",
+   "kind": "module-group",
+   "label": "controllers",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:src",
+   "path": "src/controllers"
+  },
+  {
+   "id": "ts:module-group:src/middleware",
+   "kind": "module-group",
+   "label": "middleware",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:src",
+   "path": "src/middleware"
+  },
+  {
+   "id": "ts:module-group:src/routes",
+   "kind": "module-group",
+   "label": "routes",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:src",
+   "path": "src/routes"
+  },
+  {
+   "endLine": 16,
+   "id": "ts:module:src/app.ts",
+   "kind": "module",
+   "label": "app.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 13
+   },
+   "parent": "ts:module-group:src",
+   "path": "src/app.ts"
+  },
+  {
+   "endLine": 15,
+   "id": "ts:module:src/controllers/users.ts",
+   "kind": "module",
+   "label": "users.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 3,
+    "loc": 11
+   },
+   "parent": "ts:module-group:src/controllers",
+   "path": "src/controllers/users.ts"
+  },
+  {
+   "endLine": 4,
+   "id": "ts:module:src/db.ts",
+   "kind": "module",
+   "label": "db.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 2
+   },
+   "parent": "ts:module-group:src",
+   "path": "src/db.ts"
+  },
+  {
+   "endLine": 19,
+   "id": "ts:module:src/middleware/auth.ts",
+   "kind": "module",
+   "label": "auth.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 3,
+    "loc": 15
+   },
+   "parent": "ts:module-group:src/middleware",
+   "path": "src/middleware/auth.ts"
+  },
+  {
+   "endLine": 7,
+   "id": "ts:module:src/middleware/logger.ts",
+   "kind": "module",
+   "label": "logger.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 5
+   },
+   "parent": "ts:module-group:src/middleware",
+   "path": "src/middleware/logger.ts"
+  },
+  {
+   "endLine": 8,
+   "id": "ts:module:src/routes/index.ts",
+   "kind": "module",
+   "label": "index.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 6
+   },
+   "parent": "ts:module-group:src/routes",
+   "path": "src/routes/index.ts"
+  },
+  {
+   "endLine": 11,
+   "id": "ts:module:src/routes/users.ts",
+   "kind": "module",
+   "label": "users.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 8
+   },
+   "parent": "ts:module-group:src/routes",
+   "path": "src/routes/users.ts"
+  },
+  {
+   "endLine": 4,
+   "id": "ts:module:src/server.ts",
+   "kind": "module",
+   "label": "server.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 0,
+    "loc": 2
+   },
+   "parent": "ts:module-group:src",
+   "path": "src/server.ts"
+  },
+  {
+   "id": "ts:project:.",
+   "kind": "project",
+   "label": "express-prisma-fixture",
+   "lang": "ts",
+   "level": 0,
+   "meta": {},
+   "parent": null,
+   "path": "."
+  },
+  {
+   "id": "ts:route-group:src/app.ts#app",
+   "kind": "route-group",
+   "label": "app (express app, app.ts)",
+   "lang": "ts",
+   "level": 3,
+   "line": 6,
+   "meta": {
+    "framework": "express",
+    "role": "app"
+   },
+   "parent": "ts:module:src/app.ts",
+   "path": "src/app.ts"
+  },
+  {
+   "id": "ts:route-group:src/routes/index.ts#apiRouter",
+   "kind": "route-group",
+   "label": "apiRouter (express router, index.ts)",
+   "lang": "ts",
+   "level": 3,
+   "line": 5,
+   "meta": {
+    "framework": "express",
+    "role": "router"
+   },
+   "parent": "ts:module:src/routes/index.ts",
+   "path": "src/routes/index.ts"
+  },
+  {
+   "id": "ts:route-group:src/routes/posts.js#router",
+   "kind": "route-group",
+   "label": "router (express router, posts.js)",
+   "lang": "js",
+   "level": 3,
+   "line": 5,
+   "meta": {
+    "framework": "express",
+    "role": "router"
+   },
+   "parent": "js:module:src/routes/posts.js",
+   "path": "src/routes/posts.js"
+  },
+  {
+   "id": "ts:route-group:src/routes/users.ts#router",
+   "kind": "route-group",
+   "label": "router (express router, users.ts)",
+   "lang": "ts",
+   "level": 3,
+   "line": 5,
+   "meta": {
+    "framework": "express",
+    "role": "router"
+   },
+   "parent": "ts:module:src/routes/users.ts",
+   "path": "src/routes/users.ts"
+  }
+ ],
+ "projects": [
+  {
+   "frameworks": [
+    "express",
+    "prisma"
+   ],
+   "id": "ts:project:.",
+   "lang": "ts",
+   "root": "."
+  }
+ ],
+ "repoRoot": "<root>",
+ "stats": {
+  "edges.calls": 1,
+  "edges.handles": 7,
+  "edges.imports": 11,
+  "edges.middleware-chain": 12,
+  "edges.model-relation": 4,
+  "edges.mounts": 3,
+  "edges.reads-env": 1,
+  "edges.reads-model": 4,
+  "edges.writes-model": 2,
+  "express.endpoints": 7,
+  "http.externalMiddleware": 7,
+  "nodes.endpoint": 7,
+  "nodes.env-var": 1,
+  "nodes.function": 11,
+  "nodes.model": 3,
+  "nodes.module": 9,
+  "nodes.module-group": 5,
+  "nodes.project": 1,
+  "nodes.route-group": 4,
+  "nodes.script": 2,
+  "prisma.models": 3,
+  "prisma.uses": 6,
+  "ts.callsExternal": 12,
+  "ts.callsResolved": 1,
+  "ts.callsToNonSymbol": 1,
+  "ts.callsUnresolved": 35,
+  "ts.externalImports": 5,
+  "ts.typeOnlyImports": 3
+ },
+ "version": 1,
+ "warnings": [
+  {
+   "code": "ts-unresolved-call",
+   "count": 35,
+   "message": "Calls dropped: callee type unknown (untyped JS, or dependencies/types not installed)",
+   "path": "src/app.ts"
+  }
+ ]
+}

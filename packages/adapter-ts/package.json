@@ -1,0 +1,11 @@
+{
+  "name": "@codebase-guide/adapter-ts",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": { ".": "./src/index.ts" },
+  "dependencies": {
+    "@codebase-guide/core": "workspace:*",
+    "ts-morph": "28.0.0"
+  }
+}

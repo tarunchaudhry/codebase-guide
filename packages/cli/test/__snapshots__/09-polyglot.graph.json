@@ -1,0 +1,1361 @@
+{
+ "edges": [
+  {
+   "evidence": [
+    {
+     "line": 11,
+     "path": "backend/app/main.py"
+    }
+   ],
+   "id": "handles:py:endpoint:backend/app/main.py#health->py:function:backend/app/main.py#health",
+   "kind": "handles",
+   "source": "py:endpoint:backend/app/main.py#health",
+   "target": "py:function:backend/app/main.py#health",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "backend/app/routers/items.py"
+    }
+   ],
+   "id": "handles:py:endpoint:backend/app/routers/items.py#delete_item->py:function:backend/app/routers/items.py#delete_item",
+   "kind": "handles",
+   "source": "py:endpoint:backend/app/routers/items.py#delete_item",
+   "target": "py:function:backend/app/routers/items.py#delete_item",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "backend/app/routers/reports.py"
+    }
+   ],
+   "id": "handles:py:endpoint:backend/app/routers/reports.py#download_report->py:function:backend/app/routers/reports.py#download_report",
+   "kind": "handles",
+   "source": "py:endpoint:backend/app/routers/reports.py#download_report",
+   "target": "py:function:backend/app/routers/reports.py#download_report",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 11,
+     "path": "backend/app/routers/users.py"
+    }
+   ],
+   "id": "handles:py:endpoint:backend/app/routers/users.py#create_user->py:function:backend/app/routers/users.py#create_user",
+   "kind": "handles",
+   "source": "py:endpoint:backend/app/routers/users.py#create_user",
+   "target": "py:function:backend/app/routers/users.py#create_user",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 21,
+     "path": "backend/app/routers/users.py"
+    }
+   ],
+   "id": "handles:py:endpoint:backend/app/routers/users.py#get_user->py:function:backend/app/routers/users.py#get_user",
+   "kind": "handles",
+   "source": "py:endpoint:backend/app/routers/users.py#get_user",
+   "target": "py:function:backend/app/routers/users.py#get_user",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "backend/app/routers/users.py"
+    }
+   ],
+   "id": "handles:py:endpoint:backend/app/routers/users.py#list_users->py:function:backend/app/routers/users.py#list_users",
+   "kind": "handles",
+   "source": "py:endpoint:backend/app/routers/users.py#list_users",
+   "target": "py:function:backend/app/routers/users.py#list_users",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 16,
+     "path": "backend/app/routers/users.py"
+    }
+   ],
+   "id": "handles:py:endpoint:backend/app/routers/users.py#me->py:function:backend/app/routers/users.py#me",
+   "kind": "handles",
+   "source": "py:endpoint:backend/app/routers/users.py#me",
+   "target": "py:function:backend/app/routers/users.py#me",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "frontend/app/api/session/route.ts"
+    }
+   ],
+   "id": "handles:ts:endpoint:frontend/app/api/session/route.ts#GET->ts:function:frontend/app/api/session/route.ts#GET",
+   "kind": "handles",
+   "source": "ts:endpoint:frontend/app/api/session/route.ts#GET",
+   "target": "ts:function:frontend/app/api/session/route.ts#GET",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "frontend/app/users/page.tsx"
+    }
+   ],
+   "id": "handles:ts:route:frontend/app/users/page.tsx->ts:component:frontend/app/users/page.tsx#UsersPage",
+   "kind": "handles",
+   "source": "ts:route:frontend/app/users/page.tsx",
+   "target": "ts:component:frontend/app/users/page.tsx#UsersPage",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 18,
+     "path": "backend/app/worker.py"
+    }
+   ],
+   "id": "http:py:function:backend/app/worker.py#refresh->py:endpoint:backend/app/routers/users.py#get_user",
+   "inferred": true,
+   "kind": "http",
+   "meta": {
+    "confidence": "medium"
+   },
+   "source": "py:function:backend/app/worker.py#refresh",
+   "target": "py:endpoint:backend/app/routers/users.py#get_user",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 9,
+     "path": "backend/app/worker.py"
+    }
+   ],
+   "id": "http:py:function:backend/app/worker.py#sync_users->py:endpoint:backend/app/routers/users.py#create_user",
+   "inferred": true,
+   "kind": "http",
+   "meta": {
+    "confidence": "high"
+   },
+   "source": "py:function:backend/app/worker.py#sync_users",
+   "target": "py:endpoint:backend/app/routers/users.py#create_user",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "frontend/app/users/page.tsx"
+    }
+   ],
+   "id": "http:ts:component:frontend/app/users/page.tsx#UsersPage->py:endpoint:backend/app/routers/users.py#me",
+   "inferred": true,
+   "kind": "http",
+   "meta": {
+    "confidence": "high"
+   },
+   "source": "ts:component:frontend/app/users/page.tsx#UsersPage",
+   "target": "py:endpoint:backend/app/routers/users.py#me",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 16,
+     "path": "frontend/lib/api.ts"
+    }
+   ],
+   "id": "http:ts:function:frontend/lib/api.ts#createUser->py:endpoint:backend/app/routers/users.py#create_user",
+   "inferred": true,
+   "kind": "http",
+   "meta": {
+    "confidence": "medium"
+   },
+   "source": "ts:function:frontend/lib/api.ts#createUser",
+   "target": "py:endpoint:backend/app/routers/users.py#create_user",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 20,
+     "path": "frontend/lib/api.ts"
+    }
+   ],
+   "id": "http:ts:function:frontend/lib/api.ts#deleteItem->py:endpoint:backend/app/routers/items.py#delete_item",
+   "inferred": true,
+   "kind": "http",
+   "meta": {
+    "confidence": "medium"
+   },
+   "source": "ts:function:frontend/lib/api.ts#deleteItem",
+   "target": "py:endpoint:backend/app/routers/items.py#delete_item",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "frontend/lib/api.ts"
+    }
+   ],
+   "id": "http:ts:function:frontend/lib/api.ts#getHealth->py:endpoint:backend/app/main.py#health",
+   "inferred": true,
+   "kind": "http",
+   "meta": {
+    "confidence": "high"
+   },
+   "source": "ts:function:frontend/lib/api.ts#getHealth",
+   "target": "py:endpoint:backend/app/main.py#health",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 36,
+     "path": "frontend/lib/api.ts"
+    }
+   ],
+   "id": "http:ts:function:frontend/lib/api.ts#getSession->ts:endpoint:frontend/app/api/session/route.ts#GET",
+   "inferred": true,
+   "kind": "http",
+   "meta": {
+    "confidence": "high"
+   },
+   "source": "ts:function:frontend/lib/api.ts#getSession",
+   "target": "ts:endpoint:frontend/app/api/session/route.ts#GET",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 12,
+     "path": "frontend/lib/api.ts"
+    }
+   ],
+   "id": "http:ts:function:frontend/lib/api.ts#getUser->py:endpoint:backend/app/routers/users.py#get_user",
+   "inferred": true,
+   "kind": "http",
+   "meta": {
+    "confidence": "medium"
+   },
+   "source": "ts:function:frontend/lib/api.ts#getUser",
+   "target": "py:endpoint:backend/app/routers/users.py#get_user",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 24,
+     "path": "frontend/lib/api.ts"
+    }
+   ],
+   "id": "http:ts:function:frontend/lib/api.ts#listReports->py:endpoint:backend/app/routers/reports.py#download_report",
+   "inferred": true,
+   "kind": "http",
+   "meta": {
+    "confidence": "low"
+   },
+   "source": "ts:function:frontend/lib/api.ts#listReports",
+   "target": "py:endpoint:backend/app/routers/reports.py#download_report",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "backend/app/main.py"
+    }
+   ],
+   "id": "imports:py:module:backend/app/main.py->py:module:backend/app/routers/items.py",
+   "kind": "imports",
+   "source": "py:module:backend/app/main.py",
+   "target": "py:module:backend/app/routers/items.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "backend/app/main.py"
+    }
+   ],
+   "id": "imports:py:module:backend/app/main.py->py:module:backend/app/routers/reports.py",
+   "kind": "imports",
+   "source": "py:module:backend/app/main.py",
+   "target": "py:module:backend/app/routers/reports.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "backend/app/main.py"
+    }
+   ],
+   "id": "imports:py:module:backend/app/main.py->py:module:backend/app/routers/users.py",
+   "kind": "imports",
+   "source": "py:module:backend/app/main.py",
+   "target": "py:module:backend/app/routers/users.py",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 7,
+     "path": "backend/app/main.py"
+    }
+   ],
+   "id": "mounts:py:route-group:backend/app/main.py#app->py:route-group:backend/app/routers/items.py#router",
+   "kind": "mounts",
+   "meta": {
+    "prefix": "/api"
+   },
+   "source": "py:route-group:backend/app/main.py#app",
+   "target": "py:route-group:backend/app/routers/items.py#router",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 8,
+     "path": "backend/app/main.py"
+    }
+   ],
+   "id": "mounts:py:route-group:backend/app/main.py#app->py:route-group:backend/app/routers/reports.py#router",
+   "kind": "mounts",
+   "meta": {
+    "prefix": "/api"
+   },
+   "source": "py:route-group:backend/app/main.py#app",
+   "target": "py:route-group:backend/app/routers/reports.py#router",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "backend/app/main.py"
+    }
+   ],
+   "id": "mounts:py:route-group:backend/app/main.py#app->py:route-group:backend/app/routers/users.py#router",
+   "kind": "mounts",
+   "meta": {
+    "prefix": "/api"
+   },
+   "source": "py:route-group:backend/app/main.py#app",
+   "target": "py:route-group:backend/app/routers/users.py#router",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "frontend/lib/api.ts"
+    },
+    {
+     "line": 5,
+     "path": "frontend/lib/api.ts"
+    }
+   ],
+   "id": "reads-env:ts:module:frontend/lib/api.ts->config:env-var:NEXT_PUBLIC_API_URL",
+   "kind": "reads-env",
+   "source": "ts:module:frontend/lib/api.ts",
+   "target": "config:env-var:NEXT_PUBLIC_API_URL",
+   "weight": 2
+  }
+ ],
+ "nodes": [
+  {
+   "id": "config:env-var:NEXT_PUBLIC_API_URL",
+   "kind": "env-var",
+   "label": "NEXT_PUBLIC_API_URL",
+   "lang": "config",
+   "level": 3,
+   "meta": {},
+   "parent": null
+  },
+  {
+   "id": "config:script:frontend/package.json#build",
+   "kind": "script",
+   "label": "build",
+   "lang": "config",
+   "level": 3,
+   "line": 4,
+   "meta": {
+    "role": "npm-script",
+    "signature": "next build"
+   },
+   "parent": "ts:project:frontend",
+   "path": "frontend/package.json"
+  },
+  {
+   "id": "config:script:frontend/package.json#dev",
+   "kind": "script",
+   "label": "dev",
+   "lang": "config",
+   "level": 3,
+   "line": 4,
+   "meta": {
+    "role": "npm-script",
+    "signature": "next dev"
+   },
+   "parent": "ts:project:frontend",
+   "path": "frontend/package.json"
+  },
+  {
+   "id": "py:endpoint:backend/app/main.py#health",
+   "kind": "endpoint",
+   "label": "GET /api/health",
+   "lang": "py",
+   "level": 3,
+   "line": 11,
+   "meta": {
+    "framework": "fastapi",
+    "http": {
+     "fullPath": "/api/health",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/api/health"
+    }
+   },
+   "parent": "py:route-group:backend/app/main.py#app",
+   "path": "backend/app/main.py"
+  },
+  {
+   "id": "py:endpoint:backend/app/routers/items.py#delete_item",
+   "kind": "endpoint",
+   "label": "DELETE /api/items/{item_id}",
+   "lang": "py",
+   "level": 3,
+   "line": 6,
+   "meta": {
+    "framework": "fastapi",
+    "http": {
+     "fullPath": "/api/items/{item_id}",
+     "methods": [
+      "DELETE"
+     ],
+     "pathTemplate": "/items/{item_id}"
+    }
+   },
+   "parent": "py:route-group:backend/app/routers/items.py#router",
+   "path": "backend/app/routers/items.py"
+  },
+  {
+   "id": "py:endpoint:backend/app/routers/reports.py#download_report",
+   "kind": "endpoint",
+   "label": "GET /api/reports/{report_id}/download",
+   "lang": "py",
+   "level": 3,
+   "line": 6,
+   "meta": {
+    "framework": "fastapi",
+    "http": {
+     "fullPath": "/api/reports/{report_id}/download",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/reports/{report_id}/download"
+    }
+   },
+   "parent": "py:route-group:backend/app/routers/reports.py#router",
+   "path": "backend/app/routers/reports.py"
+  },
+  {
+   "id": "py:endpoint:backend/app/routers/users.py#create_user",
+   "kind": "endpoint",
+   "label": "POST /api/users/",
+   "lang": "py",
+   "level": 3,
+   "line": 11,
+   "meta": {
+    "framework": "fastapi",
+    "http": {
+     "fullPath": "/api/users/",
+     "methods": [
+      "POST"
+     ],
+     "pathTemplate": "/users/"
+    }
+   },
+   "parent": "py:route-group:backend/app/routers/users.py#router",
+   "path": "backend/app/routers/users.py"
+  },
+  {
+   "id": "py:endpoint:backend/app/routers/users.py#get_user",
+   "kind": "endpoint",
+   "label": "GET /api/users/{user_id}",
+   "lang": "py",
+   "level": 3,
+   "line": 21,
+   "meta": {
+    "framework": "fastapi",
+    "http": {
+     "fullPath": "/api/users/{user_id}",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/users/{user_id}"
+    }
+   },
+   "parent": "py:route-group:backend/app/routers/users.py#router",
+   "path": "backend/app/routers/users.py"
+  },
+  {
+   "id": "py:endpoint:backend/app/routers/users.py#list_users",
+   "kind": "endpoint",
+   "label": "GET /api/users/",
+   "lang": "py",
+   "level": 3,
+   "line": 6,
+   "meta": {
+    "framework": "fastapi",
+    "http": {
+     "fullPath": "/api/users/",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/users/"
+    }
+   },
+   "parent": "py:route-group:backend/app/routers/users.py#router",
+   "path": "backend/app/routers/users.py"
+  },
+  {
+   "id": "py:endpoint:backend/app/routers/users.py#me",
+   "kind": "endpoint",
+   "label": "GET /api/users/me",
+   "lang": "py",
+   "level": 3,
+   "line": 16,
+   "meta": {
+    "framework": "fastapi",
+    "http": {
+     "fullPath": "/api/users/me",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/users/me"
+    }
+   },
+   "parent": "py:route-group:backend/app/routers/users.py#router",
+   "path": "backend/app/routers/users.py"
+  },
+  {
+   "endLine": 13,
+   "id": "py:function:backend/app/main.py#health",
+   "kind": "function",
+   "label": "health",
+   "lang": "py",
+   "level": 3,
+   "line": 12,
+   "meta": {
+    "complexity": 1,
+    "decorators": [
+     "app.get"
+    ],
+    "exported": true,
+    "loc": 2,
+    "signature": "def health()"
+   },
+   "parent": "py:module:backend/app/main.py",
+   "path": "backend/app/main.py"
+  },
+  {
+   "endLine": 8,
+   "id": "py:function:backend/app/routers/items.py#delete_item",
+   "kind": "function",
+   "label": "delete_item",
+   "lang": "py",
+   "level": 3,
+   "line": 7,
+   "meta": {
+    "complexity": 1,
+    "decorators": [
+     "router.delete"
+    ],
+    "exported": true,
+    "loc": 2,
+    "signature": "def delete_item(item_id: int)"
+   },
+   "parent": "py:module:backend/app/routers/items.py",
+   "path": "backend/app/routers/items.py"
+  },
+  {
+   "endLine": 8,
+   "id": "py:function:backend/app/routers/reports.py#download_report",
+   "kind": "function",
+   "label": "download_report",
+   "lang": "py",
+   "level": 3,
+   "line": 7,
+   "meta": {
+    "complexity": 1,
+    "decorators": [
+     "router.get"
+    ],
+    "exported": true,
+    "loc": 2,
+    "signature": "def download_report(report_id: int)"
+   },
+   "parent": "py:module:backend/app/routers/reports.py",
+   "path": "backend/app/routers/reports.py"
+  },
+  {
+   "endLine": 13,
+   "id": "py:function:backend/app/routers/users.py#create_user",
+   "kind": "function",
+   "label": "create_user",
+   "lang": "py",
+   "level": 3,
+   "line": 12,
+   "meta": {
+    "complexity": 1,
+    "decorators": [
+     "router.post"
+    ],
+    "exported": true,
+    "loc": 2,
+    "signature": "def create_user(body: dict)"
+   },
+   "parent": "py:module:backend/app/routers/users.py",
+   "path": "backend/app/routers/users.py"
+  },
+  {
+   "endLine": 23,
+   "id": "py:function:backend/app/routers/users.py#get_user",
+   "kind": "function",
+   "label": "get_user",
+   "lang": "py",
+   "level": 3,
+   "line": 22,
+   "meta": {
+    "complexity": 1,
+    "decorators": [
+     "router.get"
+    ],
+    "exported": true,
+    "loc": 2,
+    "signature": "def get_user(user_id: str)"
+   },
+   "parent": "py:module:backend/app/routers/users.py",
+   "path": "backend/app/routers/users.py"
+  },
+  {
+   "endLine": 8,
+   "id": "py:function:backend/app/routers/users.py#list_users",
+   "kind": "function",
+   "label": "list_users",
+   "lang": "py",
+   "level": 3,
+   "line": 7,
+   "meta": {
+    "complexity": 1,
+    "decorators": [
+     "router.get"
+    ],
+    "exported": true,
+    "loc": 2,
+    "signature": "def list_users()"
+   },
+   "parent": "py:module:backend/app/routers/users.py",
+   "path": "backend/app/routers/users.py"
+  },
+  {
+   "endLine": 18,
+   "id": "py:function:backend/app/routers/users.py#me",
+   "kind": "function",
+   "label": "me",
+   "lang": "py",
+   "level": 3,
+   "line": 17,
+   "meta": {
+    "complexity": 1,
+    "decorators": [
+     "router.get"
+    ],
+    "exported": true,
+    "loc": 2,
+    "signature": "def me()"
+   },
+   "parent": "py:module:backend/app/routers/users.py",
+   "path": "backend/app/routers/users.py"
+  },
+  {
+   "endLine": 13,
+   "id": "py:function:backend/app/worker.py#charge",
+   "kind": "function",
+   "label": "charge",
+   "lang": "py",
+   "level": 3,
+   "line": 12,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 2,
+    "signature": "def charge(amount)"
+   },
+   "parent": "py:module:backend/app/worker.py",
+   "path": "backend/app/worker.py"
+  },
+  {
+   "endLine": 18,
+   "id": "py:function:backend/app/worker.py#refresh",
+   "kind": "function",
+   "label": "refresh",
+   "lang": "py",
+   "level": 3,
+   "line": 16,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "async def refresh(user_id)"
+   },
+   "parent": "py:module:backend/app/worker.py",
+   "path": "backend/app/worker.py"
+  },
+  {
+   "endLine": 9,
+   "id": "py:function:backend/app/worker.py#sync_users",
+   "kind": "function",
+   "label": "sync_users",
+   "lang": "py",
+   "level": 3,
+   "line": 7,
+   "meta": {
+    "complexity": 2,
+    "exported": true,
+    "loc": 3,
+    "signature": "def sync_users(emails)"
+   },
+   "parent": "py:module:backend/app/worker.py",
+   "path": "backend/app/worker.py"
+  },
+  {
+   "id": "py:module-group:backend",
+   "kind": "module-group",
+   "label": "shop-backend",
+   "lang": "py",
+   "level": 1,
+   "meta": {},
+   "parent": "py:project:backend",
+   "path": "backend"
+  },
+  {
+   "id": "py:module-group:backend/app",
+   "kind": "module-group",
+   "label": "app",
+   "lang": "py",
+   "level": 1,
+   "meta": {},
+   "parent": "py:module-group:backend",
+   "path": "backend/app"
+  },
+  {
+   "id": "py:module-group:backend/app/routers",
+   "kind": "module-group",
+   "label": "routers",
+   "lang": "py",
+   "level": 1,
+   "meta": {},
+   "parent": "py:module-group:backend/app",
+   "path": "backend/app/routers"
+  },
+  {
+   "endLine": 1,
+   "id": "py:module:backend/app/__init__.py",
+   "kind": "module",
+   "label": "__init__.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 0,
+    "loc": 0
+   },
+   "parent": "py:module-group:backend/app",
+   "path": "backend/app/__init__.py"
+  },
+  {
+   "endLine": 13,
+   "id": "py:module:backend/app/main.py",
+   "kind": "module",
+   "label": "main.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 9
+   },
+   "parent": "py:module-group:backend/app",
+   "path": "backend/app/main.py"
+  },
+  {
+   "endLine": 1,
+   "id": "py:module:backend/app/routers/__init__.py",
+   "kind": "module",
+   "label": "__init__.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 0,
+    "loc": 0
+   },
+   "parent": "py:module-group:backend/app/routers",
+   "path": "backend/app/routers/__init__.py"
+  },
+  {
+   "endLine": 8,
+   "id": "py:module:backend/app/routers/items.py",
+   "kind": "module",
+   "label": "items.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 5
+   },
+   "parent": "py:module-group:backend/app/routers",
+   "path": "backend/app/routers/items.py"
+  },
+  {
+   "endLine": 8,
+   "id": "py:module:backend/app/routers/reports.py",
+   "kind": "module",
+   "label": "reports.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 5
+   },
+   "parent": "py:module-group:backend/app/routers",
+   "path": "backend/app/routers/reports.py"
+  },
+  {
+   "endLine": 23,
+   "id": "py:module:backend/app/routers/users.py",
+   "kind": "module",
+   "label": "users.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 4,
+    "loc": 14
+   },
+   "parent": "py:module-group:backend/app/routers",
+   "path": "backend/app/routers/users.py"
+  },
+  {
+   "endLine": 18,
+   "id": "py:module:backend/app/worker.py",
+   "kind": "module",
+   "label": "worker.py",
+   "lang": "py",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 3,
+    "loc": 11
+   },
+   "parent": "py:module-group:backend/app",
+   "path": "backend/app/worker.py"
+  },
+  {
+   "id": "py:project:backend",
+   "kind": "project",
+   "label": "shop-backend",
+   "lang": "py",
+   "level": 0,
+   "meta": {},
+   "parent": null,
+   "path": "backend"
+  },
+  {
+   "id": "py:route-group:backend/app/main.py#app",
+   "kind": "route-group",
+   "label": "app (fastapi app, main.py)",
+   "lang": "py",
+   "level": 3,
+   "line": 5,
+   "meta": {
+    "framework": "fastapi",
+    "role": "app"
+   },
+   "parent": "py:module:backend/app/main.py",
+   "path": "backend/app/main.py"
+  },
+  {
+   "id": "py:route-group:backend/app/routers/items.py#router",
+   "kind": "route-group",
+   "label": "router (fastapi router, items.py)",
+   "lang": "py",
+   "level": 3,
+   "line": 3,
+   "meta": {
+    "framework": "fastapi",
+    "role": "router"
+   },
+   "parent": "py:module:backend/app/routers/items.py",
+   "path": "backend/app/routers/items.py"
+  },
+  {
+   "id": "py:route-group:backend/app/routers/reports.py#router",
+   "kind": "route-group",
+   "label": "router (fastapi router, reports.py)",
+   "lang": "py",
+   "level": 3,
+   "line": 3,
+   "meta": {
+    "framework": "fastapi",
+    "role": "router"
+   },
+   "parent": "py:module:backend/app/routers/reports.py",
+   "path": "backend/app/routers/reports.py"
+  },
+  {
+   "id": "py:route-group:backend/app/routers/users.py#router",
+   "kind": "route-group",
+   "label": "router (fastapi router, users.py)",
+   "lang": "py",
+   "level": 3,
+   "line": 3,
+   "meta": {
+    "framework": "fastapi",
+    "role": "router"
+   },
+   "parent": "py:module:backend/app/routers/users.py",
+   "path": "backend/app/routers/users.py"
+  },
+  {
+   "endLine": 8,
+   "id": "ts:component:frontend/app/users/page.tsx#UsersPage",
+   "kind": "component",
+   "label": "UsersPage",
+   "lang": "ts",
+   "level": 3,
+   "line": 5,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 4,
+    "signature": "UsersPage()"
+   },
+   "parent": "ts:module:frontend/app/users/page.tsx",
+   "path": "frontend/app/users/page.tsx"
+  },
+  {
+   "id": "ts:endpoint:frontend/app/api/session/route.ts#GET",
+   "kind": "endpoint",
+   "label": "GET /api/session",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "framework": "next",
+    "http": {
+     "fullPath": "/api/session",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/api/session"
+    }
+   },
+   "parent": "ts:route-group:frontend/app",
+   "path": "frontend/app/api/session/route.ts"
+  },
+  {
+   "endLine": 3,
+   "id": "ts:function:frontend/app/api/session/route.ts#GET",
+   "kind": "function",
+   "label": "GET",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "async GET()"
+   },
+   "parent": "ts:module:frontend/app/api/session/route.ts",
+   "path": "frontend/app/api/session/route.ts"
+  },
+  {
+   "endLine": 33,
+   "id": "ts:function:frontend/lib/api.ts#callAnything",
+   "kind": "function",
+   "label": "callAnything",
+   "lang": "ts",
+   "level": 3,
+   "line": 31,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "async callAnything(url: string)"
+   },
+   "parent": "ts:module:frontend/lib/api.ts",
+   "path": "frontend/lib/api.ts"
+  },
+  {
+   "endLine": 17,
+   "id": "ts:function:frontend/lib/api.ts#createUser",
+   "kind": "function",
+   "label": "createUser",
+   "lang": "ts",
+   "level": 3,
+   "line": 15,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "async createUser(email: string)"
+   },
+   "parent": "ts:module:frontend/lib/api.ts",
+   "path": "frontend/lib/api.ts"
+  },
+  {
+   "endLine": 21,
+   "id": "ts:function:frontend/lib/api.ts#deleteItem",
+   "kind": "function",
+   "label": "deleteItem",
+   "lang": "ts",
+   "level": 3,
+   "line": 19,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "async deleteItem(itemId: number)"
+   },
+   "parent": "ts:module:frontend/lib/api.ts",
+   "path": "frontend/lib/api.ts"
+  },
+  {
+   "endLine": 9,
+   "id": "ts:function:frontend/lib/api.ts#getHealth",
+   "kind": "function",
+   "label": "getHealth",
+   "lang": "ts",
+   "level": 3,
+   "line": 7,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "async getHealth()"
+   },
+   "parent": "ts:module:frontend/lib/api.ts",
+   "path": "frontend/lib/api.ts"
+  },
+  {
+   "endLine": 37,
+   "id": "ts:function:frontend/lib/api.ts#getSession",
+   "kind": "function",
+   "label": "getSession",
+   "lang": "ts",
+   "level": 3,
+   "line": 35,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "async getSession()"
+   },
+   "parent": "ts:module:frontend/lib/api.ts",
+   "path": "frontend/lib/api.ts"
+  },
+  {
+   "endLine": 13,
+   "id": "ts:function:frontend/lib/api.ts#getUser",
+   "kind": "function",
+   "label": "getUser",
+   "lang": "ts",
+   "level": 3,
+   "line": 11,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "async getUser(id: string)"
+   },
+   "parent": "ts:module:frontend/lib/api.ts",
+   "path": "frontend/lib/api.ts"
+  },
+  {
+   "endLine": 29,
+   "id": "ts:function:frontend/lib/api.ts#githubProfile",
+   "kind": "function",
+   "label": "githubProfile",
+   "lang": "ts",
+   "level": 3,
+   "line": 27,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "async githubProfile(name: string)"
+   },
+   "parent": "ts:module:frontend/lib/api.ts",
+   "path": "frontend/lib/api.ts"
+  },
+  {
+   "endLine": 25,
+   "id": "ts:function:frontend/lib/api.ts#listReports",
+   "kind": "function",
+   "label": "listReports",
+   "lang": "ts",
+   "level": 3,
+   "line": 23,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "async listReports()"
+   },
+   "parent": "ts:module:frontend/lib/api.ts",
+   "path": "frontend/lib/api.ts"
+  },
+  {
+   "id": "ts:module-group:frontend",
+   "kind": "module-group",
+   "label": "shop-frontend",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:project:frontend",
+   "path": "frontend"
+  },
+  {
+   "id": "ts:module-group:frontend/app",
+   "kind": "module-group",
+   "label": "app",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:frontend",
+   "path": "frontend/app"
+  },
+  {
+   "id": "ts:module-group:frontend/app/api",
+   "kind": "module-group",
+   "label": "api",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:frontend/app",
+   "path": "frontend/app/api"
+  },
+  {
+   "id": "ts:module-group:frontend/app/api/session",
+   "kind": "module-group",
+   "label": "session",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:frontend/app/api",
+   "path": "frontend/app/api/session"
+  },
+  {
+   "id": "ts:module-group:frontend/app/users",
+   "kind": "module-group",
+   "label": "users",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:frontend/app",
+   "path": "frontend/app/users"
+  },
+  {
+   "id": "ts:module-group:frontend/lib",
+   "kind": "module-group",
+   "label": "lib",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:frontend",
+   "path": "frontend/lib"
+  },
+  {
+   "endLine": 4,
+   "id": "ts:module:frontend/app/api/session/route.ts",
+   "kind": "module",
+   "label": "route.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "framework": "next",
+    "loc": 3,
+    "role": "route",
+    "runtime": "server"
+   },
+   "parent": "ts:module-group:frontend/app/api/session",
+   "path": "frontend/app/api/session/route.ts"
+  },
+  {
+   "endLine": 9,
+   "id": "ts:module:frontend/app/users/page.tsx",
+   "kind": "module",
+   "label": "page.tsx",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "framework": "next",
+    "loc": 6,
+    "role": "page",
+    "runtime": "client"
+   },
+   "parent": "ts:module-group:frontend/app/users",
+   "path": "frontend/app/users/page.tsx"
+  },
+  {
+   "endLine": 38,
+   "id": "ts:module:frontend/lib/api.ts",
+   "kind": "module",
+   "label": "api.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 9,
+    "loc": 27
+   },
+   "parent": "ts:module-group:frontend/lib",
+   "path": "frontend/lib/api.ts"
+  },
+  {
+   "id": "ts:project:frontend",
+   "kind": "project",
+   "label": "shop-frontend",
+   "lang": "ts",
+   "level": 0,
+   "meta": {},
+   "parent": null,
+   "path": "frontend"
+  },
+  {
+   "id": "ts:route-group:frontend/app",
+   "kind": "route-group",
+   "label": "App Router",
+   "lang": "ts",
+   "level": 1,
+   "meta": {
+    "framework": "next",
+    "role": "app-router"
+   },
+   "parent": "ts:project:frontend",
+   "path": "frontend/app"
+  },
+  {
+   "id": "ts:route:frontend/app/users/page.tsx",
+   "kind": "route",
+   "label": "/users",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "framework": "next",
+    "http": {
+     "fullPath": "/users",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/users"
+    },
+    "role": "page"
+   },
+   "parent": "ts:route-group:frontend/app",
+   "path": "frontend/app/users/page.tsx"
+  }
+ ],
+ "projects": [
+  {
+   "frameworks": [
+    "fastapi"
+   ],
+   "id": "py:project:backend",
+   "lang": "py",
+   "root": "backend"
+  },
+  {
+   "frameworks": [
+    "next"
+   ],
+   "id": "ts:project:frontend",
+   "lang": "ts",
+   "root": "frontend"
+  }
+ ],
+ "repoRoot": "<root>",
+ "stats": {
+  "edges.handles": 9,
+  "edges.http": 9,
+  "edges.imports": 3,
+  "edges.mounts": 3,
+  "edges.reads-env": 1,
+  "fastapi.endpoints": 7,
+  "files": 17,
+  "http.dynamicUrls": 1,
+  "http.externalUrls": 2,
+  "http.linked.high": 4,
+  "http.linked.low": 1,
+  "http.linked.medium": 4,
+  "http.outbound": 12,
+  "next.endpoints": 1,
+  "next.pages": 1,
+  "nodes.component": 1,
+  "nodes.endpoint": 8,
+  "nodes.env-var": 1,
+  "nodes.function": 19,
+  "nodes.module": 10,
+  "nodes.module-group": 9,
+  "nodes.project": 2,
+  "nodes.route": 1,
+  "nodes.route-group": 5,
+  "nodes.script": 2,
+  "py.callsDynamic": 11,
+  "py.callsExternal": 7,
+  "py.externalImports": 6,
+  "ts.callsExternal": 11,
+  "ts.callsUnresolved": 1,
+  "ts.externalImports": 2
+ },
+ "version": 1,
+ "warnings": [
+  {
+   "code": "http-dynamic-url",
+   "count": 1,
+   "message": "Outbound HTTP calls with a fully dynamic URL (not linked)",
+   "path": "frontend/lib/api.ts"
+  },
+  {
+   "code": "ts-unresolved-call",
+   "count": 1,
+   "message": "Calls dropped: callee type unknown (untyped JS, or dependencies/types not installed)",
+   "path": "frontend/lib/api.ts"
+  }
+ ]
+}

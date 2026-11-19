@@ -1,0 +1,8 @@
+{
+  "name": "codebase-guide",
+  "description": "Local marketplace for the codebase-guide plugin.",
+  "owner": { "name": "Tarun Chaudhary" },
+  "plugins": [
+    { "name": "codebase-guide", "source": "./", "category": "development" }
+  ]
+}

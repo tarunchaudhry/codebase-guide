@@ -1,0 +1,11 @@
+{
+  "name": "@codebase-guide/cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@codebase-guide/core": "workspace:*",
+    "@codebase-guide/adapter-ts": "workspace:*",
+    "@codebase-guide/adapter-py": "workspace:*"
+  }
+}

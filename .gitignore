@@ -1,0 +1,5 @@
+node_modules/
+packages/*/dist/
+.codebase-guide/
+.DS_Store
+__pycache__/

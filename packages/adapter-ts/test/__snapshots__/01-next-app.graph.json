@@ -1,0 +1,2160 @@
+{
+ "edges": [
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "app/todos/page.tsx"
+    }
+   ],
+   "id": "calls:ts:component:app/todos/page.tsx#TodosPage->ts:function:lib/db.ts#listTodos",
+   "kind": "calls",
+   "source": "ts:component:app/todos/page.tsx#TodosPage",
+   "target": "ts:function:lib/db.ts#listTodos",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 15,
+     "path": "app/todos/page.tsx"
+    }
+   ],
+   "id": "calls:ts:component:app/todos/page.tsx#TodosPage->ts:function:lib/format.ts#formatCount",
+   "kind": "calls",
+   "source": "ts:component:app/todos/page.tsx#TodosPage",
+   "target": "ts:function:lib/format.ts#formatCount",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 11,
+     "path": "components/TodoForm.tsx"
+    }
+   ],
+   "id": "calls:ts:component:components/TodoForm.tsx#TodoForm->ts:function:lib/format.ts#formatCount",
+   "kind": "calls",
+   "source": "ts:component:components/TodoForm.tsx#TodoForm",
+   "target": "ts:function:lib/format.ts#formatCount",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 6,
+     "path": "app/actions.ts"
+    }
+   ],
+   "id": "calls:ts:function:app/actions.ts#createTodo->ts:function:lib/db.ts#insertTodo",
+   "kind": "calls",
+   "source": "ts:function:app/actions.ts#createTodo",
+   "target": "ts:function:lib/db.ts#insertTodo",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 4,
+     "path": "app/api/todos/route.ts"
+    }
+   ],
+   "id": "calls:ts:function:app/api/todos/route.ts#GET->ts:function:lib/db.ts#listTodos",
+   "kind": "calls",
+   "source": "ts:function:app/api/todos/route.ts#GET",
+   "target": "ts:function:lib/db.ts#listTodos",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 9,
+     "path": "app/api/todos/route.ts"
+    }
+   ],
+   "id": "calls:ts:function:app/api/todos/route.ts#POST->ts:function:lib/db.ts#insertTodo",
+   "kind": "calls",
+   "source": "ts:function:app/api/todos/route.ts#POST",
+   "target": "ts:function:lib/db.ts#insertTodo",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 10,
+     "path": "app/todos/page.tsx"
+    }
+   ],
+   "id": "calls:ts:function:app/todos/page.tsx#deleteAll->ts:function:lib/db.ts#clearTodos",
+   "kind": "calls",
+   "source": "ts:function:app/todos/page.tsx#deleteAll",
+   "target": "ts:function:lib/db.ts#clearTodos",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "app/api/todos/route.ts"
+    }
+   ],
+   "id": "handles:ts:endpoint:app/api/todos/route.ts#GET->ts:function:app/api/todos/route.ts#GET",
+   "kind": "handles",
+   "source": "ts:endpoint:app/api/todos/route.ts#GET",
+   "target": "ts:function:app/api/todos/route.ts#GET",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 7,
+     "path": "app/api/todos/route.ts"
+    }
+   ],
+   "id": "handles:ts:endpoint:app/api/todos/route.ts#POST->ts:function:app/api/todos/route.ts#POST",
+   "kind": "handles",
+   "source": "ts:endpoint:app/api/todos/route.ts#POST",
+   "target": "ts:function:app/api/todos/route.ts#POST",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "app/(marketing)/about/page.tsx"
+    }
+   ],
+   "id": "handles:ts:route:app/(marketing)/about/page.tsx->ts:component:app/(marketing)/about/page.tsx#AboutPage",
+   "kind": "handles",
+   "source": "ts:route:app/(marketing)/about/page.tsx",
+   "target": "ts:component:app/(marketing)/about/page.tsx#AboutPage",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "app/blog/[...slug]/page.tsx"
+    }
+   ],
+   "id": "handles:ts:route:app/blog/[...slug]/page.tsx->ts:component:app/blog/[...slug]/page.tsx#BlogPost",
+   "kind": "handles",
+   "source": "ts:route:app/blog/[...slug]/page.tsx",
+   "target": "ts:component:app/blog/[...slug]/page.tsx#BlogPost",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "app/dashboard/@analytics/page.tsx"
+    }
+   ],
+   "id": "handles:ts:route:app/dashboard/@analytics/page.tsx->ts:component:app/dashboard/@analytics/page.tsx#AnalyticsSlot",
+   "kind": "handles",
+   "source": "ts:route:app/dashboard/@analytics/page.tsx",
+   "target": "ts:component:app/dashboard/@analytics/page.tsx#AnalyticsSlot",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "app/dashboard/page.tsx"
+    }
+   ],
+   "id": "handles:ts:route:app/dashboard/page.tsx->ts:component:app/dashboard/page.tsx#DashboardPage",
+   "kind": "handles",
+   "source": "ts:route:app/dashboard/page.tsx",
+   "target": "ts:component:app/dashboard/page.tsx#DashboardPage",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "app/docs/[[...path]]/page.tsx"
+    }
+   ],
+   "id": "handles:ts:route:app/docs/[[...path]]/page.tsx->ts:component:app/docs/[[...path]]/page.tsx#Docs",
+   "kind": "handles",
+   "source": "ts:route:app/docs/[[...path]]/page.tsx",
+   "target": "ts:component:app/docs/[[...path]]/page.tsx#Docs",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "app/edge/page.tsx"
+    }
+   ],
+   "id": "handles:ts:route:app/edge/page.tsx->ts:component:app/edge/page.tsx#EdgePage",
+   "kind": "handles",
+   "source": "ts:route:app/edge/page.tsx",
+   "target": "ts:component:app/edge/page.tsx#EdgePage",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "app/feed/(..)photo/[id]/page.tsx"
+    }
+   ],
+   "id": "handles:ts:route:app/feed/(..)photo/[id]/page.tsx->ts:component:app/feed/(..)photo/[id]/page.tsx#PhotoModal",
+   "kind": "handles",
+   "source": "ts:route:app/feed/(..)photo/[id]/page.tsx",
+   "target": "ts:component:app/feed/(..)photo/[id]/page.tsx#PhotoModal",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "app/feed/page.tsx"
+    }
+   ],
+   "id": "handles:ts:route:app/feed/page.tsx->ts:component:app/feed/page.tsx#FeedPage",
+   "kind": "handles",
+   "source": "ts:route:app/feed/page.tsx",
+   "target": "ts:component:app/feed/page.tsx#FeedPage",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "app/page.tsx"
+    }
+   ],
+   "id": "handles:ts:route:app/page.tsx->ts:component:app/page.tsx#HomePage",
+   "kind": "handles",
+   "source": "ts:route:app/page.tsx",
+   "target": "ts:component:app/page.tsx#HomePage",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "app/photo/[id]/page.tsx"
+    }
+   ],
+   "id": "handles:ts:route:app/photo/[id]/page.tsx->ts:component:app/photo/[id]/page.tsx#PhotoPage",
+   "kind": "handles",
+   "source": "ts:route:app/photo/[id]/page.tsx",
+   "target": "ts:component:app/photo/[id]/page.tsx#PhotoPage",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "app/todos/page.tsx"
+    }
+   ],
+   "id": "handles:ts:route:app/todos/page.tsx->ts:component:app/todos/page.tsx#TodosPage",
+   "kind": "handles",
+   "source": "ts:route:app/todos/page.tsx",
+   "target": "ts:component:app/todos/page.tsx#TodosPage",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "app/actions.ts"
+    }
+   ],
+   "id": "imports:ts:module:app/actions.ts->ts:module:lib/db.ts",
+   "kind": "imports",
+   "source": "ts:module:app/actions.ts",
+   "target": "ts:module:lib/db.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "app/api/todos/route.ts"
+    }
+   ],
+   "id": "imports:ts:module:app/api/todos/route.ts->ts:module:lib/db.ts",
+   "kind": "imports",
+   "source": "ts:module:app/api/todos/route.ts",
+   "target": "ts:module:lib/db.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "app/layout.tsx"
+    }
+   ],
+   "id": "imports:ts:module:app/layout.tsx->ts:module:app/_components/Header.tsx",
+   "kind": "imports",
+   "source": "ts:module:app/layout.tsx",
+   "target": "ts:module:app/_components/Header.tsx",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "app/todos/page.tsx"
+    }
+   ],
+   "id": "imports:ts:module:app/todos/page.tsx->ts:module:components/TodoForm.tsx",
+   "kind": "imports",
+   "source": "ts:module:app/todos/page.tsx",
+   "target": "ts:module:components/TodoForm.tsx",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 2,
+     "path": "app/todos/page.tsx"
+    }
+   ],
+   "id": "imports:ts:module:app/todos/page.tsx->ts:module:lib/db.ts",
+   "kind": "imports",
+   "source": "ts:module:app/todos/page.tsx",
+   "target": "ts:module:lib/db.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "app/todos/page.tsx"
+    }
+   ],
+   "id": "imports:ts:module:app/todos/page.tsx->ts:module:lib/format.ts",
+   "kind": "imports",
+   "source": "ts:module:app/todos/page.tsx",
+   "target": "ts:module:lib/format.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "components/TodoForm.tsx"
+    }
+   ],
+   "id": "imports:ts:module:components/TodoForm.tsx->ts:module:app/actions.ts",
+   "kind": "imports",
+   "source": "ts:module:components/TodoForm.tsx",
+   "target": "ts:module:app/actions.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 5,
+     "path": "components/TodoForm.tsx"
+    }
+   ],
+   "id": "imports:ts:module:components/TodoForm.tsx->ts:module:components/Button.tsx",
+   "kind": "imports",
+   "source": "ts:module:components/TodoForm.tsx",
+   "target": "ts:module:components/Button.tsx",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 4,
+     "path": "components/TodoForm.tsx"
+    }
+   ],
+   "id": "imports:ts:module:components/TodoForm.tsx->ts:module:lib/format.ts",
+   "kind": "imports",
+   "source": "ts:module:components/TodoForm.tsx",
+   "target": "ts:module:lib/format.ts",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 17,
+     "path": "app/todos/page.tsx"
+    }
+   ],
+   "id": "invokes-server-action:ts:component:app/todos/page.tsx#TodosPage->ts:function:app/todos/page.tsx#deleteAll",
+   "kind": "invokes-server-action",
+   "source": "ts:component:app/todos/page.tsx#TodosPage",
+   "target": "ts:function:app/todos/page.tsx#deleteAll",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 9,
+     "path": "components/TodoForm.tsx"
+    }
+   ],
+   "id": "invokes-server-action:ts:component:components/TodoForm.tsx#TodoForm->ts:function:app/actions.ts#createTodo",
+   "kind": "invokes-server-action",
+   "source": "ts:component:components/TodoForm.tsx#TodoForm",
+   "target": "ts:function:app/actions.ts#createTodo",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "middleware.ts"
+    }
+   ],
+   "id": "middleware-chain:ts:endpoint:app/api/todos/route.ts#GET->ts:function:middleware.ts#middleware",
+   "inferred": true,
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 0
+   },
+   "source": "ts:endpoint:app/api/todos/route.ts#GET",
+   "target": "ts:function:middleware.ts#middleware",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "middleware.ts"
+    }
+   ],
+   "id": "middleware-chain:ts:endpoint:app/api/todos/route.ts#POST->ts:function:middleware.ts#middleware",
+   "inferred": true,
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 0
+   },
+   "source": "ts:endpoint:app/api/todos/route.ts#POST",
+   "target": "ts:function:middleware.ts#middleware",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "middleware.ts"
+    }
+   ],
+   "id": "middleware-chain:ts:route:app/dashboard/@analytics/page.tsx->ts:function:middleware.ts#middleware",
+   "inferred": true,
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 0
+   },
+   "source": "ts:route:app/dashboard/@analytics/page.tsx",
+   "target": "ts:function:middleware.ts#middleware",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 3,
+     "path": "middleware.ts"
+    }
+   ],
+   "id": "middleware-chain:ts:route:app/dashboard/page.tsx->ts:function:middleware.ts#middleware",
+   "inferred": true,
+   "kind": "middleware-chain",
+   "meta": {
+    "order": 0
+   },
+   "source": "ts:route:app/dashboard/page.tsx",
+   "target": "ts:function:middleware.ts#middleware",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 7,
+     "path": "app/layout.tsx"
+    }
+   ],
+   "id": "renders:ts:component:app/layout.tsx#RootLayout->ts:component:app/_components/Header.tsx#Header",
+   "kind": "renders",
+   "source": "ts:component:app/layout.tsx#RootLayout",
+   "target": "ts:component:app/_components/Header.tsx#Header",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 16,
+     "path": "app/todos/page.tsx"
+    }
+   ],
+   "id": "renders:ts:component:app/todos/page.tsx#TodosPage->ts:component:components/TodoForm.tsx#TodoForm",
+   "kind": "renders",
+   "source": "ts:component:app/todos/page.tsx#TodosPage",
+   "target": "ts:component:components/TodoForm.tsx#TodoForm",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 11,
+     "path": "components/TodoForm.tsx"
+    }
+   ],
+   "id": "renders:ts:component:components/TodoForm.tsx#TodoForm->ts:component:components/Button.tsx#Button",
+   "kind": "renders",
+   "source": "ts:component:components/TodoForm.tsx#TodoForm",
+   "target": "ts:component:components/Button.tsx#Button",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "app/(marketing)/about/page.tsx"
+    }
+   ],
+   "id": "route-child:ts:module:app/(marketing)/layout.tsx->ts:module:app/(marketing)/about/page.tsx",
+   "kind": "route-child",
+   "source": "ts:module:app/(marketing)/layout.tsx",
+   "target": "ts:module:app/(marketing)/about/page.tsx",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "app/dashboard/@analytics/default.tsx"
+    }
+   ],
+   "id": "route-child:ts:module:app/dashboard/layout.tsx->ts:module:app/dashboard/@analytics/default.tsx",
+   "kind": "route-child",
+   "source": "ts:module:app/dashboard/layout.tsx",
+   "target": "ts:module:app/dashboard/@analytics/default.tsx",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "app/dashboard/@analytics/page.tsx"
+    }
+   ],
+   "id": "route-child:ts:module:app/dashboard/layout.tsx->ts:module:app/dashboard/@analytics/page.tsx",
+   "kind": "route-child",
+   "source": "ts:module:app/dashboard/layout.tsx",
+   "target": "ts:module:app/dashboard/@analytics/page.tsx",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "app/dashboard/page.tsx"
+    }
+   ],
+   "id": "route-child:ts:module:app/dashboard/layout.tsx->ts:module:app/dashboard/page.tsx",
+   "kind": "route-child",
+   "source": "ts:module:app/dashboard/layout.tsx",
+   "target": "ts:module:app/dashboard/page.tsx",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "app/(marketing)/layout.tsx"
+    }
+   ],
+   "id": "route-child:ts:module:app/layout.tsx->ts:module:app/(marketing)/layout.tsx",
+   "kind": "route-child",
+   "source": "ts:module:app/layout.tsx",
+   "target": "ts:module:app/(marketing)/layout.tsx",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "app/blog/[...slug]/page.tsx"
+    }
+   ],
+   "id": "route-child:ts:module:app/layout.tsx->ts:module:app/blog/[...slug]/page.tsx",
+   "kind": "route-child",
+   "source": "ts:module:app/layout.tsx",
+   "target": "ts:module:app/blog/[...slug]/page.tsx",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "app/dashboard/layout.tsx"
+    }
+   ],
+   "id": "route-child:ts:module:app/layout.tsx->ts:module:app/dashboard/layout.tsx",
+   "kind": "route-child",
+   "source": "ts:module:app/layout.tsx",
+   "target": "ts:module:app/dashboard/layout.tsx",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "app/docs/[[...path]]/page.tsx"
+    }
+   ],
+   "id": "route-child:ts:module:app/layout.tsx->ts:module:app/docs/[[...path]]/page.tsx",
+   "kind": "route-child",
+   "source": "ts:module:app/layout.tsx",
+   "target": "ts:module:app/docs/[[...path]]/page.tsx",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "app/edge/page.tsx"
+    }
+   ],
+   "id": "route-child:ts:module:app/layout.tsx->ts:module:app/edge/page.tsx",
+   "kind": "route-child",
+   "source": "ts:module:app/layout.tsx",
+   "target": "ts:module:app/edge/page.tsx",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "app/feed/(..)photo/[id]/page.tsx"
+    }
+   ],
+   "id": "route-child:ts:module:app/layout.tsx->ts:module:app/feed/(..)photo/[id]/page.tsx",
+   "kind": "route-child",
+   "source": "ts:module:app/layout.tsx",
+   "target": "ts:module:app/feed/(..)photo/[id]/page.tsx",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "app/feed/page.tsx"
+    }
+   ],
+   "id": "route-child:ts:module:app/layout.tsx->ts:module:app/feed/page.tsx",
+   "kind": "route-child",
+   "source": "ts:module:app/layout.tsx",
+   "target": "ts:module:app/feed/page.tsx",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "app/page.tsx"
+    }
+   ],
+   "id": "route-child:ts:module:app/layout.tsx->ts:module:app/page.tsx",
+   "kind": "route-child",
+   "source": "ts:module:app/layout.tsx",
+   "target": "ts:module:app/page.tsx",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "app/photo/[id]/page.tsx"
+    }
+   ],
+   "id": "route-child:ts:module:app/layout.tsx->ts:module:app/photo/[id]/page.tsx",
+   "kind": "route-child",
+   "source": "ts:module:app/layout.tsx",
+   "target": "ts:module:app/photo/[id]/page.tsx",
+   "weight": 1
+  },
+  {
+   "evidence": [
+    {
+     "line": 1,
+     "path": "app/todos/page.tsx"
+    }
+   ],
+   "id": "route-child:ts:module:app/layout.tsx->ts:module:app/todos/page.tsx",
+   "kind": "route-child",
+   "source": "ts:module:app/layout.tsx",
+   "target": "ts:module:app/todos/page.tsx",
+   "weight": 1
+  }
+ ],
+ "nodes": [
+  {
+   "id": "config:script:package.json#build",
+   "kind": "script",
+   "label": "build",
+   "lang": "config",
+   "level": 3,
+   "line": 4,
+   "meta": {
+    "role": "npm-script",
+    "signature": "next build"
+   },
+   "parent": "ts:project:.",
+   "path": "package.json"
+  },
+  {
+   "id": "config:script:package.json#dev",
+   "kind": "script",
+   "label": "dev",
+   "lang": "config",
+   "level": 3,
+   "line": 4,
+   "meta": {
+    "role": "npm-script",
+    "signature": "next dev"
+   },
+   "parent": "ts:project:.",
+   "path": "package.json"
+  },
+  {
+   "id": "config:script:package.json#start",
+   "kind": "script",
+   "label": "start",
+   "lang": "config",
+   "level": 3,
+   "line": 4,
+   "meta": {
+    "role": "npm-script",
+    "signature": "next start"
+   },
+   "parent": "ts:project:.",
+   "path": "package.json"
+  },
+  {
+   "endLine": 3,
+   "id": "ts:component:app/(marketing)/about/page.tsx#AboutPage",
+   "kind": "component",
+   "label": "AboutPage",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "AboutPage()"
+   },
+   "parent": "ts:module:app/(marketing)/about/page.tsx",
+   "path": "app/(marketing)/about/page.tsx"
+  },
+  {
+   "endLine": 3,
+   "id": "ts:component:app/(marketing)/layout.tsx#MarketingLayout",
+   "kind": "component",
+   "label": "MarketingLayout",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "MarketingLayout({ children }: { children: React.ReactNode })"
+   },
+   "parent": "ts:module:app/(marketing)/layout.tsx",
+   "path": "app/(marketing)/layout.tsx"
+  },
+  {
+   "endLine": 3,
+   "id": "ts:component:app/_components/Header.tsx#Header",
+   "kind": "component",
+   "label": "Header",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "Header()"
+   },
+   "parent": "ts:module:app/_components/Header.tsx",
+   "path": "app/_components/Header.tsx"
+  },
+  {
+   "endLine": 3,
+   "id": "ts:component:app/blog/[...slug]/page.tsx#BlogPost",
+   "kind": "component",
+   "label": "BlogPost",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "BlogPost()"
+   },
+   "parent": "ts:module:app/blog/[...slug]/page.tsx",
+   "path": "app/blog/[...slug]/page.tsx"
+  },
+  {
+   "endLine": 3,
+   "id": "ts:component:app/dashboard/@analytics/page.tsx#AnalyticsSlot",
+   "kind": "component",
+   "label": "AnalyticsSlot",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "AnalyticsSlot()"
+   },
+   "parent": "ts:module:app/dashboard/@analytics/page.tsx",
+   "path": "app/dashboard/@analytics/page.tsx"
+  },
+  {
+   "endLine": 3,
+   "id": "ts:component:app/dashboard/layout.tsx#DashboardLayout",
+   "kind": "component",
+   "label": "DashboardLayout",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "DashboardLayout({ children, analytics }: { children: React.ReactNode; analytics: React.ReactNode })"
+   },
+   "parent": "ts:module:app/dashboard/layout.tsx",
+   "path": "app/dashboard/layout.tsx"
+  },
+  {
+   "endLine": 3,
+   "id": "ts:component:app/dashboard/page.tsx#DashboardPage",
+   "kind": "component",
+   "label": "DashboardPage",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "DashboardPage()"
+   },
+   "parent": "ts:module:app/dashboard/page.tsx",
+   "path": "app/dashboard/page.tsx"
+  },
+  {
+   "endLine": 3,
+   "id": "ts:component:app/docs/[[...path]]/page.tsx#Docs",
+   "kind": "component",
+   "label": "Docs",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "Docs()"
+   },
+   "parent": "ts:module:app/docs/[[...path]]/page.tsx",
+   "path": "app/docs/[[...path]]/page.tsx"
+  },
+  {
+   "endLine": 5,
+   "id": "ts:component:app/edge/page.tsx#EdgePage",
+   "kind": "component",
+   "label": "EdgePage",
+   "lang": "ts",
+   "level": 3,
+   "line": 3,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "EdgePage()"
+   },
+   "parent": "ts:module:app/edge/page.tsx",
+   "path": "app/edge/page.tsx"
+  },
+  {
+   "endLine": 3,
+   "id": "ts:component:app/feed/(..)photo/[id]/page.tsx#PhotoModal",
+   "kind": "component",
+   "label": "PhotoModal",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "PhotoModal({ params }: { params: { id: string } })"
+   },
+   "parent": "ts:module:app/feed/(..)photo/[id]/page.tsx",
+   "path": "app/feed/(..)photo/[id]/page.tsx"
+  },
+  {
+   "endLine": 3,
+   "id": "ts:component:app/feed/page.tsx#FeedPage",
+   "kind": "component",
+   "label": "FeedPage",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "FeedPage()"
+   },
+   "parent": "ts:module:app/feed/page.tsx",
+   "path": "app/feed/page.tsx"
+  },
+  {
+   "endLine": 12,
+   "id": "ts:component:app/layout.tsx#RootLayout",
+   "kind": "component",
+   "label": "RootLayout",
+   "lang": "ts",
+   "level": 3,
+   "line": 3,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 10,
+    "signature": "RootLayout({ children }: { children: React.ReactNode })"
+   },
+   "parent": "ts:module:app/layout.tsx",
+   "path": "app/layout.tsx"
+  },
+  {
+   "endLine": 3,
+   "id": "ts:component:app/page.tsx#HomePage",
+   "kind": "component",
+   "label": "HomePage",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "HomePage()"
+   },
+   "parent": "ts:module:app/page.tsx",
+   "path": "app/page.tsx"
+  },
+  {
+   "endLine": 3,
+   "id": "ts:component:app/photo/[id]/page.tsx#PhotoPage",
+   "kind": "component",
+   "label": "PhotoPage",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "PhotoPage({ params }: { params: { id: string } })"
+   },
+   "parent": "ts:module:app/photo/[id]/page.tsx",
+   "path": "app/photo/[id]/page.tsx"
+  },
+  {
+   "endLine": 22,
+   "id": "ts:component:app/todos/page.tsx#TodosPage",
+   "kind": "component",
+   "label": "TodosPage",
+   "lang": "ts",
+   "level": 3,
+   "line": 5,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 18,
+    "signature": "async TodosPage()"
+   },
+   "parent": "ts:module:app/todos/page.tsx",
+   "path": "app/todos/page.tsx"
+  },
+  {
+   "endLine": 3,
+   "id": "ts:component:components/Button.tsx#Button",
+   "kind": "component",
+   "label": "Button",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "Button({ label }: { label: string })"
+   },
+   "parent": "ts:module:components/Button.tsx",
+   "path": "components/Button.tsx"
+  },
+  {
+   "endLine": 14,
+   "id": "ts:component:components/TodoForm.tsx#TodoForm",
+   "kind": "component",
+   "label": "TodoForm",
+   "lang": "ts",
+   "level": 3,
+   "line": 7,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 8,
+    "signature": "TodoForm()"
+   },
+   "parent": "ts:module:components/TodoForm.tsx",
+   "path": "components/TodoForm.tsx"
+  },
+  {
+   "id": "ts:endpoint:app/api/todos/route.ts#GET",
+   "kind": "endpoint",
+   "label": "GET /api/todos",
+   "lang": "ts",
+   "level": 3,
+   "line": 3,
+   "meta": {
+    "framework": "next",
+    "http": {
+     "fullPath": "/api/todos",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/api/todos"
+    }
+   },
+   "parent": "ts:route-group:app",
+   "path": "app/api/todos/route.ts"
+  },
+  {
+   "id": "ts:endpoint:app/api/todos/route.ts#POST",
+   "kind": "endpoint",
+   "label": "POST /api/todos",
+   "lang": "ts",
+   "level": 3,
+   "line": 7,
+   "meta": {
+    "framework": "next",
+    "http": {
+     "fullPath": "/api/todos",
+     "methods": [
+      "POST"
+     ],
+     "pathTemplate": "/api/todos"
+    }
+   },
+   "parent": "ts:route-group:app",
+   "path": "app/api/todos/route.ts"
+  },
+  {
+   "endLine": 7,
+   "id": "ts:function:app/actions.ts#createTodo",
+   "kind": "function",
+   "label": "createTodo",
+   "lang": "ts",
+   "level": 3,
+   "line": 5,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "role": "server-action",
+    "signature": "async createTodo(formData: FormData)"
+   },
+   "parent": "ts:module:app/actions.ts",
+   "path": "app/actions.ts"
+  },
+  {
+   "endLine": 5,
+   "id": "ts:function:app/api/todos/route.ts#GET",
+   "kind": "function",
+   "label": "GET",
+   "lang": "ts",
+   "level": 3,
+   "line": 3,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "async GET()"
+   },
+   "parent": "ts:module:app/api/todos/route.ts",
+   "path": "app/api/todos/route.ts"
+  },
+  {
+   "endLine": 10,
+   "id": "ts:function:app/api/todos/route.ts#POST",
+   "kind": "function",
+   "label": "POST",
+   "lang": "ts",
+   "level": 3,
+   "line": 7,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 4,
+    "signature": "async POST(req: Request)"
+   },
+   "parent": "ts:module:app/api/todos/route.ts",
+   "path": "app/api/todos/route.ts"
+  },
+  {
+   "endLine": 3,
+   "id": "ts:function:app/dashboard/@analytics/default.tsx#AnalyticsDefault",
+   "kind": "function",
+   "label": "AnalyticsDefault",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "AnalyticsDefault()"
+   },
+   "parent": "ts:module:app/dashboard/@analytics/default.tsx",
+   "path": "app/dashboard/@analytics/default.tsx"
+  },
+  {
+   "endLine": 11,
+   "id": "ts:function:app/todos/page.tsx#deleteAll",
+   "kind": "function",
+   "label": "deleteAll",
+   "lang": "ts",
+   "level": 3,
+   "line": 8,
+   "meta": {
+    "complexity": 1,
+    "loc": 4,
+    "role": "server-action",
+    "signature": "async deleteAll()"
+   },
+   "parent": "ts:module:app/todos/page.tsx",
+   "path": "app/todos/page.tsx"
+  },
+  {
+   "endLine": 14,
+   "id": "ts:function:lib/db.ts#clearTodos",
+   "kind": "function",
+   "label": "clearTodos",
+   "lang": "ts",
+   "level": 3,
+   "line": 12,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "async clearTodos()"
+   },
+   "parent": "ts:module:lib/db.ts",
+   "path": "lib/db.ts"
+  },
+  {
+   "endLine": 10,
+   "id": "ts:function:lib/db.ts#insertTodo",
+   "kind": "function",
+   "label": "insertTodo",
+   "lang": "ts",
+   "level": 3,
+   "line": 7,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 4,
+    "signature": "async insertTodo(title: string)"
+   },
+   "parent": "ts:module:lib/db.ts",
+   "path": "lib/db.ts"
+  },
+  {
+   "endLine": 5,
+   "id": "ts:function:lib/db.ts#listTodos",
+   "kind": "function",
+   "label": "listTodos",
+   "lang": "ts",
+   "level": 3,
+   "line": 3,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "async listTodos()"
+   },
+   "parent": "ts:module:lib/db.ts",
+   "path": "lib/db.ts"
+  },
+  {
+   "endLine": 3,
+   "id": "ts:function:lib/format.ts#formatCount",
+   "kind": "function",
+   "label": "formatCount",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "complexity": 1,
+    "exported": true,
+    "loc": 3,
+    "signature": "formatCount(n: number): string"
+   },
+   "parent": "ts:module:lib/format.ts",
+   "path": "lib/format.ts"
+  },
+  {
+   "endLine": 6,
+   "id": "ts:function:middleware.ts#middleware",
+   "kind": "function",
+   "label": "middleware",
+   "lang": "ts",
+   "level": 3,
+   "line": 3,
+   "meta": {
+    "complexity": 2,
+    "exported": true,
+    "loc": 4,
+    "signature": "middleware(req: NextRequest)"
+   },
+   "parent": "ts:module:middleware.ts",
+   "path": "middleware.ts"
+  },
+  {
+   "id": "ts:module-group:.",
+   "kind": "module-group",
+   "label": "next-app-fixture",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:project:.",
+   "path": "."
+  },
+  {
+   "id": "ts:module-group:app",
+   "kind": "module-group",
+   "label": "app",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:.",
+   "path": "app"
+  },
+  {
+   "id": "ts:module-group:app/(marketing)",
+   "kind": "module-group",
+   "label": "(marketing)",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:app",
+   "path": "app/(marketing)"
+  },
+  {
+   "id": "ts:module-group:app/(marketing)/about",
+   "kind": "module-group",
+   "label": "about",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:app/(marketing)",
+   "path": "app/(marketing)/about"
+  },
+  {
+   "id": "ts:module-group:app/_components",
+   "kind": "module-group",
+   "label": "_components",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:app",
+   "path": "app/_components"
+  },
+  {
+   "id": "ts:module-group:app/api",
+   "kind": "module-group",
+   "label": "api",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:app",
+   "path": "app/api"
+  },
+  {
+   "id": "ts:module-group:app/api/todos",
+   "kind": "module-group",
+   "label": "todos",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:app/api",
+   "path": "app/api/todos"
+  },
+  {
+   "id": "ts:module-group:app/blog",
+   "kind": "module-group",
+   "label": "blog",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:app",
+   "path": "app/blog"
+  },
+  {
+   "id": "ts:module-group:app/blog/[...slug]",
+   "kind": "module-group",
+   "label": "[...slug]",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:app/blog",
+   "path": "app/blog/[...slug]"
+  },
+  {
+   "id": "ts:module-group:app/dashboard",
+   "kind": "module-group",
+   "label": "dashboard",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:app",
+   "path": "app/dashboard"
+  },
+  {
+   "id": "ts:module-group:app/dashboard/@analytics",
+   "kind": "module-group",
+   "label": "@analytics",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:app/dashboard",
+   "path": "app/dashboard/@analytics"
+  },
+  {
+   "id": "ts:module-group:app/docs",
+   "kind": "module-group",
+   "label": "docs",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:app",
+   "path": "app/docs"
+  },
+  {
+   "id": "ts:module-group:app/docs/[[...path]]",
+   "kind": "module-group",
+   "label": "[[...path]]",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:app/docs",
+   "path": "app/docs/[[...path]]"
+  },
+  {
+   "id": "ts:module-group:app/edge",
+   "kind": "module-group",
+   "label": "edge",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:app",
+   "path": "app/edge"
+  },
+  {
+   "id": "ts:module-group:app/feed",
+   "kind": "module-group",
+   "label": "feed",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:app",
+   "path": "app/feed"
+  },
+  {
+   "id": "ts:module-group:app/feed/(..)photo",
+   "kind": "module-group",
+   "label": "(..)photo",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:app/feed",
+   "path": "app/feed/(..)photo"
+  },
+  {
+   "id": "ts:module-group:app/feed/(..)photo/[id]",
+   "kind": "module-group",
+   "label": "[id]",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:app/feed/(..)photo",
+   "path": "app/feed/(..)photo/[id]"
+  },
+  {
+   "id": "ts:module-group:app/photo",
+   "kind": "module-group",
+   "label": "photo",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:app",
+   "path": "app/photo"
+  },
+  {
+   "id": "ts:module-group:app/photo/[id]",
+   "kind": "module-group",
+   "label": "[id]",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:app/photo",
+   "path": "app/photo/[id]"
+  },
+  {
+   "id": "ts:module-group:app/todos",
+   "kind": "module-group",
+   "label": "todos",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:app",
+   "path": "app/todos"
+  },
+  {
+   "id": "ts:module-group:components",
+   "kind": "module-group",
+   "label": "components",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:.",
+   "path": "components"
+  },
+  {
+   "id": "ts:module-group:lib",
+   "kind": "module-group",
+   "label": "lib",
+   "lang": "ts",
+   "level": 1,
+   "meta": {},
+   "parent": "ts:module-group:.",
+   "path": "lib"
+  },
+  {
+   "endLine": 4,
+   "id": "ts:module:app/(marketing)/about/page.tsx",
+   "kind": "module",
+   "label": "page.tsx",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "framework": "next",
+    "loc": 3,
+    "role": "page",
+    "runtime": "server"
+   },
+   "parent": "ts:module-group:app/(marketing)/about",
+   "path": "app/(marketing)/about/page.tsx"
+  },
+  {
+   "endLine": 4,
+   "id": "ts:module:app/(marketing)/layout.tsx",
+   "kind": "module",
+   "label": "layout.tsx",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "framework": "next",
+    "loc": 3,
+    "role": "layout",
+    "runtime": "server"
+   },
+   "parent": "ts:module-group:app/(marketing)",
+   "path": "app/(marketing)/layout.tsx"
+  },
+  {
+   "endLine": 4,
+   "id": "ts:module:app/_components/Header.tsx",
+   "kind": "module",
+   "label": "Header.tsx",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 3,
+    "runtime": "server"
+   },
+   "parent": "ts:module-group:app/_components",
+   "path": "app/_components/Header.tsx"
+  },
+  {
+   "endLine": 8,
+   "id": "ts:module:app/actions.ts",
+   "kind": "module",
+   "label": "actions.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 5,
+    "runtime": "server"
+   },
+   "parent": "ts:module-group:app",
+   "path": "app/actions.ts"
+  },
+  {
+   "endLine": 11,
+   "id": "ts:module:app/api/todos/route.ts",
+   "kind": "module",
+   "label": "route.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 2,
+    "framework": "next",
+    "loc": 8,
+    "role": "route",
+    "runtime": "server"
+   },
+   "parent": "ts:module-group:app/api/todos",
+   "path": "app/api/todos/route.ts"
+  },
+  {
+   "endLine": 4,
+   "id": "ts:module:app/blog/[...slug]/page.tsx",
+   "kind": "module",
+   "label": "page.tsx",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "framework": "next",
+    "loc": 3,
+    "role": "page",
+    "runtime": "server"
+   },
+   "parent": "ts:module-group:app/blog/[...slug]",
+   "path": "app/blog/[...slug]/page.tsx"
+  },
+  {
+   "endLine": 4,
+   "id": "ts:module:app/dashboard/@analytics/default.tsx",
+   "kind": "module",
+   "label": "default.tsx",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "framework": "next",
+    "loc": 3,
+    "role": "default",
+    "runtime": "server"
+   },
+   "parent": "ts:module-group:app/dashboard/@analytics",
+   "path": "app/dashboard/@analytics/default.tsx"
+  },
+  {
+   "endLine": 4,
+   "id": "ts:module:app/dashboard/@analytics/page.tsx",
+   "kind": "module",
+   "label": "page.tsx",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "framework": "next",
+    "loc": 3,
+    "role": "page",
+    "runtime": "server"
+   },
+   "parent": "ts:module-group:app/dashboard/@analytics",
+   "path": "app/dashboard/@analytics/page.tsx"
+  },
+  {
+   "endLine": 4,
+   "id": "ts:module:app/dashboard/layout.tsx",
+   "kind": "module",
+   "label": "layout.tsx",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "framework": "next",
+    "loc": 3,
+    "role": "layout",
+    "runtime": "server"
+   },
+   "parent": "ts:module-group:app/dashboard",
+   "path": "app/dashboard/layout.tsx"
+  },
+  {
+   "endLine": 4,
+   "id": "ts:module:app/dashboard/page.tsx",
+   "kind": "module",
+   "label": "page.tsx",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "framework": "next",
+    "loc": 3,
+    "role": "page",
+    "runtime": "server"
+   },
+   "parent": "ts:module-group:app/dashboard",
+   "path": "app/dashboard/page.tsx"
+  },
+  {
+   "endLine": 4,
+   "id": "ts:module:app/docs/[[...path]]/page.tsx",
+   "kind": "module",
+   "label": "page.tsx",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "framework": "next",
+    "loc": 3,
+    "role": "page",
+    "runtime": "server"
+   },
+   "parent": "ts:module-group:app/docs/[[...path]]",
+   "path": "app/docs/[[...path]]/page.tsx"
+  },
+  {
+   "endLine": 6,
+   "id": "ts:module:app/edge/page.tsx",
+   "kind": "module",
+   "label": "page.tsx",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 2,
+    "framework": "next",
+    "loc": 4,
+    "role": "page",
+    "runtime": "edge"
+   },
+   "parent": "ts:module-group:app/edge",
+   "path": "app/edge/page.tsx"
+  },
+  {
+   "endLine": 4,
+   "id": "ts:module:app/feed/(..)photo/[id]/page.tsx",
+   "kind": "module",
+   "label": "page.tsx",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "framework": "next",
+    "loc": 3,
+    "role": "page",
+    "runtime": "server"
+   },
+   "parent": "ts:module-group:app/feed/(..)photo/[id]",
+   "path": "app/feed/(..)photo/[id]/page.tsx"
+  },
+  {
+   "endLine": 4,
+   "id": "ts:module:app/feed/page.tsx",
+   "kind": "module",
+   "label": "page.tsx",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "framework": "next",
+    "loc": 3,
+    "role": "page",
+    "runtime": "server"
+   },
+   "parent": "ts:module-group:app/feed",
+   "path": "app/feed/page.tsx"
+  },
+  {
+   "endLine": 13,
+   "id": "ts:module:app/layout.tsx",
+   "kind": "module",
+   "label": "layout.tsx",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "framework": "next",
+    "loc": 11,
+    "role": "layout",
+    "runtime": "server"
+   },
+   "parent": "ts:module-group:app",
+   "path": "app/layout.tsx"
+  },
+  {
+   "endLine": 4,
+   "id": "ts:module:app/page.tsx",
+   "kind": "module",
+   "label": "page.tsx",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "framework": "next",
+    "loc": 3,
+    "role": "page",
+    "runtime": "server"
+   },
+   "parent": "ts:module-group:app",
+   "path": "app/page.tsx"
+  },
+  {
+   "endLine": 4,
+   "id": "ts:module:app/photo/[id]/page.tsx",
+   "kind": "module",
+   "label": "page.tsx",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "framework": "next",
+    "loc": 3,
+    "role": "page",
+    "runtime": "server"
+   },
+   "parent": "ts:module-group:app/photo/[id]",
+   "path": "app/photo/[id]/page.tsx"
+  },
+  {
+   "endLine": 23,
+   "id": "ts:module:app/todos/page.tsx",
+   "kind": "module",
+   "label": "page.tsx",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "framework": "next",
+    "loc": 19,
+    "role": "page",
+    "runtime": "server"
+   },
+   "parent": "ts:module-group:app/todos",
+   "path": "app/todos/page.tsx"
+  },
+  {
+   "endLine": 4,
+   "id": "ts:module:components/Button.tsx",
+   "kind": "module",
+   "label": "Button.tsx",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 3,
+    "runtime": "client"
+   },
+   "parent": "ts:module-group:components",
+   "path": "components/Button.tsx"
+  },
+  {
+   "endLine": 15,
+   "id": "ts:module:components/TodoForm.tsx",
+   "kind": "module",
+   "label": "TodoForm.tsx",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 12,
+    "runtime": "client"
+   },
+   "parent": "ts:module-group:components",
+   "path": "components/TodoForm.tsx"
+  },
+  {
+   "endLine": 15,
+   "id": "ts:module:lib/db.ts",
+   "kind": "module",
+   "label": "db.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 3,
+    "loc": 11,
+    "runtime": "server"
+   },
+   "parent": "ts:module-group:lib",
+   "path": "lib/db.ts"
+  },
+  {
+   "endLine": 4,
+   "id": "ts:module:lib/format.ts",
+   "kind": "module",
+   "label": "format.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 1,
+    "loc": 3,
+    "runtime": "shared"
+   },
+   "parent": "ts:module-group:lib",
+   "path": "lib/format.ts"
+  },
+  {
+   "endLine": 9,
+   "id": "ts:module:middleware.ts",
+   "kind": "module",
+   "label": "middleware.ts",
+   "lang": "ts",
+   "level": 2,
+   "line": 1,
+   "meta": {
+    "exportsCount": 2,
+    "framework": "next",
+    "loc": 6,
+    "role": "middleware",
+    "runtime": "edge"
+   },
+   "parent": "ts:module-group:.",
+   "path": "middleware.ts"
+  },
+  {
+   "id": "ts:project:.",
+   "kind": "project",
+   "label": "next-app-fixture",
+   "lang": "ts",
+   "level": 0,
+   "meta": {},
+   "parent": null,
+   "path": "."
+  },
+  {
+   "id": "ts:route-group:app",
+   "kind": "route-group",
+   "label": "App Router",
+   "lang": "ts",
+   "level": 1,
+   "meta": {
+    "framework": "next",
+    "role": "app-router"
+   },
+   "parent": "ts:project:.",
+   "path": "app"
+  },
+  {
+   "id": "ts:route:app/(marketing)/about/page.tsx",
+   "kind": "route",
+   "label": "/about",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "framework": "next",
+    "http": {
+     "fullPath": "/about",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/about"
+    },
+    "role": "page"
+   },
+   "parent": "ts:route-group:app",
+   "path": "app/(marketing)/about/page.tsx"
+  },
+  {
+   "id": "ts:route:app/blog/[...slug]/page.tsx",
+   "kind": "route",
+   "label": "/blog/[...slug]",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "framework": "next",
+    "http": {
+     "fullPath": "/blog/[...slug]",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/blog/[...slug]"
+    },
+    "role": "page"
+   },
+   "parent": "ts:route-group:app",
+   "path": "app/blog/[...slug]/page.tsx"
+  },
+  {
+   "id": "ts:route:app/dashboard/@analytics/page.tsx",
+   "kind": "route",
+   "label": "/dashboard (@analytics)",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "framework": "next",
+    "http": {
+     "fullPath": "/dashboard",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/dashboard"
+    },
+    "role": "page"
+   },
+   "parent": "ts:route-group:app",
+   "path": "app/dashboard/@analytics/page.tsx"
+  },
+  {
+   "id": "ts:route:app/dashboard/page.tsx",
+   "kind": "route",
+   "label": "/dashboard",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "framework": "next",
+    "http": {
+     "fullPath": "/dashboard",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/dashboard"
+    },
+    "role": "page"
+   },
+   "parent": "ts:route-group:app",
+   "path": "app/dashboard/page.tsx"
+  },
+  {
+   "id": "ts:route:app/docs/[[...path]]/page.tsx",
+   "kind": "route",
+   "label": "/docs/[[...path]]",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "framework": "next",
+    "http": {
+     "fullPath": "/docs/[[...path]]",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/docs/[[...path]]"
+    },
+    "role": "page"
+   },
+   "parent": "ts:route-group:app",
+   "path": "app/docs/[[...path]]/page.tsx"
+  },
+  {
+   "id": "ts:route:app/edge/page.tsx",
+   "kind": "route",
+   "label": "/edge",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "framework": "next",
+    "http": {
+     "fullPath": "/edge",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/edge"
+    },
+    "role": "page"
+   },
+   "parent": "ts:route-group:app",
+   "path": "app/edge/page.tsx"
+  },
+  {
+   "id": "ts:route:app/feed/(..)photo/[id]/page.tsx",
+   "kind": "route",
+   "label": "/photo/[id] (intercepting)",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "framework": "next",
+    "http": {
+     "fullPath": "/photo/[id]",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/photo/[id]"
+    },
+    "role": "page"
+   },
+   "parent": "ts:route-group:app",
+   "path": "app/feed/(..)photo/[id]/page.tsx"
+  },
+  {
+   "id": "ts:route:app/feed/page.tsx",
+   "kind": "route",
+   "label": "/feed",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "framework": "next",
+    "http": {
+     "fullPath": "/feed",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/feed"
+    },
+    "role": "page"
+   },
+   "parent": "ts:route-group:app",
+   "path": "app/feed/page.tsx"
+  },
+  {
+   "id": "ts:route:app/page.tsx",
+   "kind": "route",
+   "label": "/",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "framework": "next",
+    "http": {
+     "fullPath": "/",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/"
+    },
+    "role": "page"
+   },
+   "parent": "ts:route-group:app",
+   "path": "app/page.tsx"
+  },
+  {
+   "id": "ts:route:app/photo/[id]/page.tsx",
+   "kind": "route",
+   "label": "/photo/[id]",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "framework": "next",
+    "http": {
+     "fullPath": "/photo/[id]",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/photo/[id]"
+    },
+    "role": "page"
+   },
+   "parent": "ts:route-group:app",
+   "path": "app/photo/[id]/page.tsx"
+  },
+  {
+   "id": "ts:route:app/todos/page.tsx",
+   "kind": "route",
+   "label": "/todos",
+   "lang": "ts",
+   "level": 3,
+   "line": 1,
+   "meta": {
+    "framework": "next",
+    "http": {
+     "fullPath": "/todos",
+     "methods": [
+      "GET"
+     ],
+     "pathTemplate": "/todos"
+    },
+    "role": "page"
+   },
+   "parent": "ts:route-group:app",
+   "path": "app/todos/page.tsx"
+  }
+ ],
+ "projects": [
+  {
+   "frameworks": [
+    "next"
+   ],
+   "id": "ts:project:.",
+   "lang": "ts",
+   "root": "."
+  }
+ ],
+ "repoRoot": "<root>",
+ "stats": {
+  "edges.calls": 7,
+  "edges.handles": 13,
+  "edges.imports": 9,
+  "edges.invokes-server-action": 2,
+  "edges.middleware-chain": 4,
+  "edges.renders": 3,
+  "edges.route-child": 14,
+  "next.endpoints": 2,
+  "next.pages": 11,
+  "nodes.component": 17,
+  "nodes.endpoint": 2,
+  "nodes.function": 10,
+  "nodes.module": 23,
+  "nodes.module-group": 22,
+  "nodes.project": 1,
+  "nodes.route": 11,
+  "nodes.route-group": 1,
+  "nodes.script": 3,
+  "ts.callsExternal": 9,
+  "ts.callsResolved": 7,
+  "ts.callsUnresolved": 1,
+  "ts.externalImports": 1
+ },
+ "version": 1,
+ "warnings": [
+  {
+   "code": "ts-unresolved-call",
+   "count": 1,
+   "message": "Calls dropped: callee type unknown (untyped JS, or dependencies/types not installed)",
+   "path": "middleware.ts"
+  }
+ ]
+}
